@@ -1,0 +1,947 @@
+{
+  "image": "Hero_Shield_96.png",
+  "width": 4608,
+  "height": 3072,
+  "columns": 12,
+  "rows": 8,
+  "cell": [
+    384,
+    384
+  ],
+  "pixels_per_unit": 96,
+  "pivot": [
+    0.5,
+    0.1875
+  ],
+  "facing": "right",
+  "animations": [
+    {
+      "name": "Idle",
+      "row_from_top": 0,
+      "duration_seconds": 1.2,
+      "loop": true,
+      "frames": [
+        {
+          "name": "Idle_00",
+          "rect_from_bottom_left": [
+            0,
+            2688,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Idle_01",
+          "rect_from_bottom_left": [
+            384,
+            2688,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Idle_02",
+          "rect_from_bottom_left": [
+            768,
+            2688,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Idle_03",
+          "rect_from_bottom_left": [
+            1152,
+            2688,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Idle_04",
+          "rect_from_bottom_left": [
+            1536,
+            2688,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Idle_05",
+          "rect_from_bottom_left": [
+            1920,
+            2688,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Idle_06",
+          "rect_from_bottom_left": [
+            2304,
+            2688,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Idle_07",
+          "rect_from_bottom_left": [
+            2688,
+            2688,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Idle_08",
+          "rect_from_bottom_left": [
+            3072,
+            2688,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Idle_09",
+          "rect_from_bottom_left": [
+            3456,
+            2688,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Idle_10",
+          "rect_from_bottom_left": [
+            3840,
+            2688,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Idle_11",
+          "rect_from_bottom_left": [
+            4224,
+            2688,
+            384,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Walk",
+      "row_from_top": 1,
+      "duration_seconds": 0.8,
+      "loop": true,
+      "frames": [
+        {
+          "name": "Walk_00",
+          "rect_from_bottom_left": [
+            0,
+            2304,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Walk_01",
+          "rect_from_bottom_left": [
+            384,
+            2304,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Walk_02",
+          "rect_from_bottom_left": [
+            768,
+            2304,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Walk_03",
+          "rect_from_bottom_left": [
+            1152,
+            2304,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Walk_04",
+          "rect_from_bottom_left": [
+            1536,
+            2304,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Walk_05",
+          "rect_from_bottom_left": [
+            1920,
+            2304,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Walk_06",
+          "rect_from_bottom_left": [
+            2304,
+            2304,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Walk_07",
+          "rect_from_bottom_left": [
+            2688,
+            2304,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Walk_08",
+          "rect_from_bottom_left": [
+            3072,
+            2304,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Walk_09",
+          "rect_from_bottom_left": [
+            3456,
+            2304,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Walk_10",
+          "rect_from_bottom_left": [
+            3840,
+            2304,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Walk_11",
+          "rect_from_bottom_left": [
+            4224,
+            2304,
+            384,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crouch",
+      "row_from_top": 2,
+      "duration_seconds": 1.2,
+      "loop": true,
+      "frames": [
+        {
+          "name": "Crouch_00",
+          "rect_from_bottom_left": [
+            0,
+            1920,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Crouch_01",
+          "rect_from_bottom_left": [
+            384,
+            1920,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Crouch_02",
+          "rect_from_bottom_left": [
+            768,
+            1920,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Crouch_03",
+          "rect_from_bottom_left": [
+            1152,
+            1920,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Crouch_04",
+          "rect_from_bottom_left": [
+            1536,
+            1920,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Crouch_05",
+          "rect_from_bottom_left": [
+            1920,
+            1920,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Crouch_06",
+          "rect_from_bottom_left": [
+            2304,
+            1920,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Crouch_07",
+          "rect_from_bottom_left": [
+            2688,
+            1920,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Crouch_08",
+          "rect_from_bottom_left": [
+            3072,
+            1920,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Crouch_09",
+          "rect_from_bottom_left": [
+            3456,
+            1920,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Crouch_10",
+          "rect_from_bottom_left": [
+            3840,
+            1920,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Crouch_11",
+          "rect_from_bottom_left": [
+            4224,
+            1920,
+            384,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Attack",
+      "row_from_top": 3,
+      "duration_seconds": 0.625,
+      "loop": false,
+      "frames": [
+        {
+          "name": "Attack_00",
+          "rect_from_bottom_left": [
+            0,
+            1536,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Attack_01",
+          "rect_from_bottom_left": [
+            384,
+            1536,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Attack_02",
+          "rect_from_bottom_left": [
+            768,
+            1536,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Attack_03",
+          "rect_from_bottom_left": [
+            1152,
+            1536,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Attack_04",
+          "rect_from_bottom_left": [
+            1536,
+            1536,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Attack_05",
+          "rect_from_bottom_left": [
+            1920,
+            1536,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Attack_06",
+          "rect_from_bottom_left": [
+            2304,
+            1536,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Attack_07",
+          "rect_from_bottom_left": [
+            2688,
+            1536,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Attack_08",
+          "rect_from_bottom_left": [
+            3072,
+            1536,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Attack_09",
+          "rect_from_bottom_left": [
+            3456,
+            1536,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Attack_10",
+          "rect_from_bottom_left": [
+            3840,
+            1536,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Attack_11",
+          "rect_from_bottom_left": [
+            4224,
+            1536,
+            384,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Jump",
+      "row_from_top": 4,
+      "duration_seconds": 0.4,
+      "loop": false,
+      "frames": [
+        {
+          "name": "Jump_00",
+          "rect_from_bottom_left": [
+            0,
+            1152,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Jump_01",
+          "rect_from_bottom_left": [
+            384,
+            1152,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Jump_02",
+          "rect_from_bottom_left": [
+            768,
+            1152,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Jump_03",
+          "rect_from_bottom_left": [
+            1152,
+            1152,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Jump_04",
+          "rect_from_bottom_left": [
+            1536,
+            1152,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Jump_05",
+          "rect_from_bottom_left": [
+            1920,
+            1152,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Jump_06",
+          "rect_from_bottom_left": [
+            2304,
+            1152,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Jump_07",
+          "rect_from_bottom_left": [
+            2688,
+            1152,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Jump_08",
+          "rect_from_bottom_left": [
+            3072,
+            1152,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Jump_09",
+          "rect_from_bottom_left": [
+            3456,
+            1152,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Jump_10",
+          "rect_from_bottom_left": [
+            3840,
+            1152,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Jump_11",
+          "rect_from_bottom_left": [
+            4224,
+            1152,
+            384,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fall",
+      "row_from_top": 5,
+      "duration_seconds": 0.6,
+      "loop": false,
+      "frames": [
+        {
+          "name": "Fall_00",
+          "rect_from_bottom_left": [
+            0,
+            768,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Fall_01",
+          "rect_from_bottom_left": [
+            384,
+            768,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Fall_02",
+          "rect_from_bottom_left": [
+            768,
+            768,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Fall_03",
+          "rect_from_bottom_left": [
+            1152,
+            768,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Fall_04",
+          "rect_from_bottom_left": [
+            1536,
+            768,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Fall_05",
+          "rect_from_bottom_left": [
+            1920,
+            768,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Fall_06",
+          "rect_from_bottom_left": [
+            2304,
+            768,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Fall_07",
+          "rect_from_bottom_left": [
+            2688,
+            768,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Fall_08",
+          "rect_from_bottom_left": [
+            3072,
+            768,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Fall_09",
+          "rect_from_bottom_left": [
+            3456,
+            768,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Fall_10",
+          "rect_from_bottom_left": [
+            3840,
+            768,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Fall_11",
+          "rect_from_bottom_left": [
+            4224,
+            768,
+            384,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Block",
+      "row_from_top": 6,
+      "duration_seconds": 1.2,
+      "loop": true,
+      "frames": [
+        {
+          "name": "Block_00",
+          "rect_from_bottom_left": [
+            0,
+            384,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Block_01",
+          "rect_from_bottom_left": [
+            384,
+            384,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Block_02",
+          "rect_from_bottom_left": [
+            768,
+            384,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Block_03",
+          "rect_from_bottom_left": [
+            1152,
+            384,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Block_04",
+          "rect_from_bottom_left": [
+            1536,
+            384,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Block_05",
+          "rect_from_bottom_left": [
+            1920,
+            384,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Block_06",
+          "rect_from_bottom_left": [
+            2304,
+            384,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Block_07",
+          "rect_from_bottom_left": [
+            2688,
+            384,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Block_08",
+          "rect_from_bottom_left": [
+            3072,
+            384,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Block_09",
+          "rect_from_bottom_left": [
+            3456,
+            384,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Block_10",
+          "rect_from_bottom_left": [
+            3840,
+            384,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Block_11",
+          "rect_from_bottom_left": [
+            4224,
+            384,
+            384,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Die",
+      "row_from_top": 7,
+      "duration_seconds": 0.9,
+      "loop": false,
+      "frames": [
+        {
+          "name": "Die_00",
+          "rect_from_bottom_left": [
+            0,
+            0,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Die_01",
+          "rect_from_bottom_left": [
+            384,
+            0,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Die_02",
+          "rect_from_bottom_left": [
+            768,
+            0,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Die_03",
+          "rect_from_bottom_left": [
+            1152,
+            0,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Die_04",
+          "rect_from_bottom_left": [
+            1536,
+            0,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Die_05",
+          "rect_from_bottom_left": [
+            1920,
+            0,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Die_06",
+          "rect_from_bottom_left": [
+            2304,
+            0,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Die_07",
+          "rect_from_bottom_left": [
+            2688,
+            0,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Die_08",
+          "rect_from_bottom_left": [
+            3072,
+            0,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Die_09",
+          "rect_from_bottom_left": [
+            3456,
+            0,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Die_10",
+          "rect_from_bottom_left": [
+            3840,
+            0,
+            384,
+            384
+          ]
+        },
+        {
+          "name": "Die_11",
+          "rect_from_bottom_left": [
+            4224,
+            0,
+            384,
+            384
+          ]
+        }
+      ]
+    }
+  ]
+}
