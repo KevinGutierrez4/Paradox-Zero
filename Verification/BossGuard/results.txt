@@ -1,0 +1,21 @@
+PASS: Game initialized
+PASS: Shield raises immediately using the authored Block clip
+PASS: Shield restores 65% damage reduction and slower movement
+PASS: Blocked 20-damage hit deals 7 damage in the actual game scene
+PASS: Cannot attack while blocking
+PASS: Releasing shield restores full incoming damage and movement
+PASS: Attack starts while walking
+PASS: Legs continue walking during the axe attack
+PASS: Walking legs preserve the upper-body attack and its combat clock
+PASS: Raising shield cancels an active swing and switches to Block
+PASS: Legs also keep walking while the shield stays raised
+PASS: Standing still disables the walking override
+PASS: Pause releases guard and clears damage reduction
+PASS: Boss tool menu is available
+PASS: Boss tool jumps from pause to a fresh phase 6 without playing phases 1-5
+PASS: Boss shortcut preserves its presentation
+PASS: Restarting boss preview closes the old QTE without unlocking the new introduction
+PASS: Boss presentation finishes and hands control back for combat
+PASS: Boss preview cannot alter saved or displayed records
+PASS: Normal JUGAR still starts phase 1 after a boss preview
+PASS: No runtime errors during guard, walking-attack, or boss shortcut tests

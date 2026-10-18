@@ -1,0 +1,84 @@
+[
+  {
+    "Folder": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated",
+    "Files": 63,
+    "Bytes": 411777.0,
+    "RequiredFiles": 0,
+    "RequiredPaths": [
+      null
+    ]
+  },
+  {
+    "Folder": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated 1",
+    "Files": 63,
+    "Bytes": 411831.0,
+    "RequiredFiles": 0,
+    "RequiredPaths": [
+      null
+    ]
+  },
+  {
+    "Folder": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated 2",
+    "Files": 63,
+    "Bytes": 411839.0,
+    "RequiredFiles": 0,
+    "RequiredPaths": [
+      null
+    ]
+  },
+  {
+    "Folder": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated 3",
+    "Files": 65,
+    "Bytes": 592819.0,
+    "RequiredFiles": 0,
+    "RequiredPaths": [
+      null
+    ]
+  },
+  {
+    "Folder": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final",
+    "Files": 326,
+    "Bytes": 63090827.0,
+    "RequiredFiles": 0,
+    "RequiredPaths": [
+      null
+    ]
+  },
+  {
+    "Folder": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 1",
+    "Files": 282,
+    "Bytes": 60656523.0,
+    "RequiredFiles": 2,
+    "RequiredPaths": [
+      "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 1\\SpritesUnlit.mat",
+      "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 1\\SpritesUnlit.mat.meta"
+    ]
+  },
+  {
+    "Folder": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 3",
+    "Files": 226,
+    "Bytes": 41108369.0,
+    "RequiredFiles": 0,
+    "RequiredPaths": [
+      null
+    ]
+  },
+  {
+    "Folder": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\_Recovery",
+    "Files": 2,
+    "Bytes": 183027.0,
+    "RequiredFiles": 0,
+    "RequiredPaths": [
+      null
+    ]
+  },
+  {
+    "Folder": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\Scenes",
+    "Files": 2,
+    "Bytes": 10102.0,
+    "RequiredFiles": 0,
+    "RequiredPaths": [
+      null
+    ]
+  }
+]

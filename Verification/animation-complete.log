@@ -1,0 +1,550 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.5/staging' branch; Version is '6000.5.5f1 (d16e074b49fd) revision 13725191'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gehbd" at "2026-10-18T21:43:26.4870275Z"
+OS: 'Windows 11  (10.0.26300) Core' Language: 'en' Physical Memory: 24216 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-18T21:43:26Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 27976, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              934869f2eb964c14bd5c520b240602e0
+  Correlation Id:          e87e60bffd9edcb8d22daf0f2bef7f59
+  External correlation Id: 1757345118295114710
+  Machine Id:              YnZeAC56/NzUixr0l3qI1HeCN9g=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-gehbd" (connect: 0.00s, validation: 0.00s, handshake: 0.06s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gehbd-notifications" at "2026-10-18T21:43:26.5490663Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 4673054916575-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.02
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.17s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Unity.exe
+-batchmode
+-force-d3d11
+-projectPath
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox
+-executeMethod
+OneMoreTime.Editor.AnimationPresentationValidation.PrepareAndRun
+-logFile
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\animation-complete.log
+Successfully changed project path to: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox
+C:/Users/gehbd/Downloads/Paradox_Zero/Verification/PresentationSandbox
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=0"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.Player connection [12520]  Target information:
+
+Player connection [12520]  * "[IP] 192.168.26.2 [Port] 55505 [Flags] 2 [Guid] 4063807962 [EditorId] 4063807962 [Version] 1048832 [Id] WindowsEditor(7,Victus_FacundoR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [12520] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [12520] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-15916" after 0.2 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.5.5f1 (d16e074b49fd)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/gehbd/Downloads/Paradox_Zero/Verification/PresentationSandbox/Assets
+Forcing GfxDevice: Direct3D 11
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4050 Laptop GPU (ID=0x28a1)
+    Vendor:   NVIDIA
+    VRAM:     5920 MB
+    Driver:   32.0.16.1742
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56916
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002379 seconds.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.470 seconds
+Domain Reload Profiling: 1008ms
+	BeginReloadAssembly (147ms)
+		CreateAndSetChildDomain (10ms)
+	RebuildCommonClasses (5ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (70ms)
+	LoadAllAssembliesAndSetupDomain (288ms)
+		LoadAssemblies (133ms)
+		AnalyzeDomain (206ms)
+			TypeCache.Refresh (204ms)
+				TypeCache.ScanAssembly (190ms)
+	FinalizeReload (473ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			BeforeProcessingInitializeOnLoad (122ms)
+			ProcessInitializeOnLoadAttributes (106ms)
+			ProcessInitializeOnLoadMethodAttributes (137ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 65 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.2d.animation@15.1.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.2d.animation@6d5a363ae647)
+    com.unity.2d.aseprite@5.0.3 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.2d.aseprite@d13865913efa)
+    com.unity.2d.psdimporter@14.0.3 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.2d.psdimporter@5d82044f9e43)
+    com.unity.2d.spriteshape@15.0.3 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.2d.spriteshape@fcb7ec61a58b)
+    com.unity.2d.tilemap.extras@8.0.3 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.2d.tilemap.extras@a80140457adc)
+    com.unity.2d.tooling@3.0.1 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.2d.tooling@6f06ffb033c0)
+    com.unity.collab-proxy@2.13.3 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.collab-proxy@4f3be89e8675)
+    com.unity.ide.rider@3.0.38 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.19.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.inputsystem@21a28c3a6c83)
+    com.unity.timeline@1.8.12 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.timeline@8cd8509afae5)
+    com.unity.visualscripting@1.9.11 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.visualscripting@8bed5ad90189)
+    com.unity.2d.common@14.0.1 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.2d.common@73badf92ba8b)
+    com.unity.searcher@4.9.4 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.searcher@d45a78918735)
+    com.unity.burst@1.8.29 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.burst@6bb9aca3ef38)
+    com.unity.nuget.mono-cecil@1.11.6 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.test-framework.performance@3.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.test-framework.performance@8b56083ec0f0)
+  Built-in packages:
+    com.unity.2d.sprite@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.2d.sprite@053a968eab56)
+    com.unity.2d.tilemap@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.2d.tilemap@b959501fd678)
+    com.unity.multiplayer.center@1.0.1 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.multiplayer.center@b860850997d0)
+    com.unity.render-pipelines.universal@17.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.render-pipelines.universal@040461d037aa)
+    com.unity.test-framework@1.7.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.test-framework@1405238725ab)
+    com.unity.ugui@2.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.ugui@f2d87ebaaa32)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.1.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.ext.nunit@44f7d31723bd)
+    com.unity.render-pipelines.core@17.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.render-pipelines.core@b19a46951e65)
+    com.unity.shadergraph@17.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.shadergraph@8d7376ec43ee)
+    com.unity.render-pipelines.universal-config@17.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.render-pipelines.universal-config@fdda01c80fe3)
+    com.unity.collections@6.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.collections@a43cabe808ca)
+    com.unity.mathematics@1.4.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\PresentationSandbox\Library\PackageCache\com.unity.mathematics@981956d94fb6)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.04 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/gehbd/Downloads/Paradox_Zero/Verification/PresentationSandbox
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 3s560ms
+[ 870/1121  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[1117/1121  0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[1118/1121  0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 141 defines and 376 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1119/1121  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[1120/1121  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (3.52 seconds), 5 items updated, 1121 evaluated
+Total cache size 120888632
+Total cache size after purge 120888632, took 00:00:00.1431700
+AssetDatabase: script compilation time: 5.100912s
+Begin MonoManager ReloadAssembly
+Refreshing native plugins compatible for Editor in 3.14 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 4.18 ms, found 5 plugins.
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.487 seconds
+Domain Reload Profiling: 4561ms
+	BeginReloadAssembly (218ms)
+		DisableScriptedObjects (17ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (8ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (772ms)
+		LoadAssemblies (402ms)
+		AnalyzeDomain (321ms)
+			TypeCache.Refresh (215ms)
+				TypeCache.ScanAssembly (202ms)
+			BuildScriptInfoCaches (94ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (3488ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (2626ms)
+			ProcessInitializeOnLoadMethodAttributes (372ms)
+			AfterProcessingInitializeOnLoad (7ms)
+		AwakeInstancesAfterBackupRestoration (31ms)
+Starting new worker id: 0 with log in C:/Users/gehbd/Downloads/Paradox_Zero/Verification/PresentationSandbox/Logs/AssetImportWorkerHW0.log
+Refreshing native plugins compatible for Editor in 2.23 ms, found 5 plugins.
+
+Asset Pipeline Refresh (id=52d97fc43b92e9044962c8189389946f): Total: 10.843 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=4200 ms
+		Asset DB Callback time: managed=277 ms, native=50 ms
+		Scripting: domain reloads=1, domain reload time=1145 ms, compile time=5104 ms, other=64 ms
+		Project Asset Count: scripts=1621, non-scripts=3625
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 46.691ms
+	ApplyChangesToAssetFolders: 0.755ms
+	Scan: 260.688ms
+	Collect global state as custom dependencies: 6.264ms
+	OnSourceAssetsModified: 0.721ms
+	CategorizeScriptCompilationAssets: 48.778ms
+	ProcessAssetsWithTransientArtifactChanges: 86.182ms
+	CategorizeAssets: 62.925ms
+	CompileScripts: 5104.335ms
+	ImportOutOfDateAssets: 3576.923ms (3511.373ms without children)
+		ReloadNativeAssets: 0.057ms
+		UnloadImportedAssets: 1.419ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.059ms
+		ImportSchedulerStart: 63.009ms
+	PostProcessAllAssets: 279.211ms
+		VCAutoAddAssetPostprocess 1.153ms
+		XRBuildSystem.XRAssetImported 1.099ms
+		PostProcessCallbackCreateDeferredMaterials 0.055ms
+		MonoPostProcessAllAssets: 276.381ms
+			AssetPostprocessor.OnPostprocessAllAssets 169.804ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 26.896ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 17.784ms
+			SyncVS.PostprocessSyncProject 5.990ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 5.731ms
+			SpriteSlicePostprocessor.OnPostprocessAllAssets 4.421ms
+			SpriteEditorTexturePostprocessor.OnPostprocessAllAssets 2.987ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 2.500ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 2.183ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 1.907ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 1.838ms
+			AssetChangedListener.OnPostprocessAllAssets 1.720ms
+			AssetProcessor.OnPostprocessAllAssets 1.571ms
+			MaterialPostprocessor.OnPostprocessAllAssets 1.321ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.255ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 1.227ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.593ms
+			SpriteShapeAssetPostProcessor.OnPostprocessAllAssets 0.503ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.450ms
+			SampleDependencyImporterPostProcessor.OnPostprocessAllAssets 0.404ms
+			PostProcessor.OnPostprocessAllAssets 0.369ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.369ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.364ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.358ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.355ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.341ms
+			PSDImportPostProcessor.OnPostprocessAllAssets 0.331ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.328ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.292ms
+			SamplePostprocessor.OnPostprocessAllAssets 0.263ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.261ms
+			AssetEvents.OnPostprocessAllAssets 0.237ms
+			SpriteLibraryAssetPostprocessor.OnPostprocessAllAssets 0.226ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.209ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.187ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.177ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.162ms
+			PSDImporterAssetPostProcessor.OnPostprocessAllAssets 0.131ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.123ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.116ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.115ms
+	PostAssetChangesProfiler: 4.221ms
+	UnloadStreamsBegin: 1.824ms
+	PersistCurrentRevisions: 0.190ms
+	GenerateScriptTypeHashes: 2.783ms
+	GenerateScriptTypeSerializationHashes: 4.269ms
+	Untracked: 1355.259ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Scanning for USB devices : 1.889ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-My project (2)
+Unloading 70 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7450 unused Assets / (10.3 MB). Loaded Objects now: 8267.
+Memory consumption went from 447.9 MB to 437.5 MB.
+Total: 18.073900 ms (FindLiveObjects: 1.170000 ms CreateObjectMapping: 2.540000 ms MarkObjects: 6.927300 ms  DeleteObjects: 7.430700 ms)
+
+Importing 'GUID: c59f5875bc52cdb48a477a79339ec754 - Path: Assets/OneMoreTime/Generated_Hacha_Final 2/Animations/Archer/Actor.controller' with importer (NativeFormatImporter)
+Imported 'GUID: c59f5875bc52cdb48a477a79339ec754' -> (Import Result ID: 'cce758a3328e1b897d7794027f18e23e') in 0.018 seconds [static dependencies only]. Details - ImportResultOutputID=822f5f6532dba6413c1befadf191c3c3 DependenciesID=f1f8c08aa193f65a62423464889280bb StaticDependenciesID=959bc997196f7badc2967604579785a4 
+Refreshing native plugins compatible for Editor in 3.30 ms, found 5 plugins.
+Asset Pipeline Refresh (id=c687e13e03cf9f34a8843b913b688504): Total: 0.172 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 88c9e012d23879c4eb80d2cf2bc5532b - Path: Assets/OneMoreTime/Generated_Hacha_Final 2/Animations/Mage/Actor.controller' with importer (NativeFormatImporter)
+Imported 'GUID: 88c9e012d23879c4eb80d2cf2bc5532b' -> (Import Result ID: 'd6caafa1e9a4ea5ac9de01c34f293dc0') in 0.003 seconds [static dependencies only]. Details - ImportResultOutputID=0668be0d24568a9346fbf40990698a10 DependenciesID=ad5559bf0047412f29a18423605706ca StaticDependenciesID=0ec8d0dbf56ee51f46c16055023842ce 
+Refreshing native plugins compatible for Editor in 3.01 ms, found 5 plugins.
+Asset Pipeline Refresh (id=508f2ef74b05efb49b883171eb39b8ce): Total: 0.080 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 2e093ccb2ef548146953fc33f99c75a1 - Path: Assets/OneMoreTime/Generated_Hacha_Final 2/Animations/WhiteWolf/Actor.controller' with importer (NativeFormatImporter)
+Imported 'GUID: 2e093ccb2ef548146953fc33f99c75a1' -> (Import Result ID: '79083107f13ab1794701a3eb96565896') in 0.003 seconds [static dependencies only]. Details - ImportResultOutputID=035c7017610a5d3bae0607f9f920c0e4 DependenciesID=aa76b75d7eb44ba513f1cd1f4a47bf06 StaticDependenciesID=bb5b4a6fc03bf57f2958ad6923e87929 
+Refreshing native plugins compatible for Editor in 3.01 ms, found 5 plugins.
+Asset Pipeline Refresh (id=fc9cd1589f34cef42aaf0253644ad081): Total: 0.079 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 29a40036ce027b74d90d4ba3b0eff557 - Path: Assets/OneMoreTime/Generated_Hacha_Final 2/Animations/BlueWolf/Actor.controller' with importer (NativeFormatImporter)
+Imported 'GUID: 29a40036ce027b74d90d4ba3b0eff557' -> (Import Result ID: 'b3e8b5c75b13e2ab8312229b936a6c63') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=f22f749cfd4fdf61e5b920b763b9735c DependenciesID=e37129ca301eb298c624f35c6600bfc3 StaticDependenciesID=3ac3c714c7ac595144d941a69fc4ec41 
+Refreshing native plugins compatible for Editor in 3.62 ms, found 5 plugins.
+Asset Pipeline Refresh (id=15e6fb9a5204b264183aa51aaca49cfe): Total: 0.077 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 6f88602ba922d2940ab16509ce7b6982 - Path: Assets/OneMoreTime/Generated_Hacha_Final 2/Animations/Boss/Actor.controller' with importer (NativeFormatImporter)
+Imported 'GUID: 6f88602ba922d2940ab16509ce7b6982' -> (Import Result ID: '337805f2b2ba25d558f155bd738e90b4') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=2c263a52a18b95f20d2efae340b7fd45 DependenciesID=ce389498d559869ca3d8320aecc36235 StaticDependenciesID=272b82bc6616aa614b5d91531eb43384 
+Refreshing native plugins compatible for Editor in 3.69 ms, found 5 plugins.
+Asset Pipeline Refresh (id=31e2ef3ea4f8f9145afa23dd168a9eb1): Total: 0.077 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Loaded scene 'Library/Unused/b11a30ff85bb21840ba3243040980ae6'
+	Deserialize:            2.496 ms
+	Integration:            11.897 ms
+	Integration of assets:  0.009 ms
+	Thread Wait Time:       0.044 ms
+	Total Operation Time:   14.445 ms
+Loaded scene 'Library/Unused/2281a5208b75ea94891459c12fb59584'
+	Deserialize:            0.912 ms
+	Integration:            10.185 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.055 ms
+	Total Operation Time:   11.154 ms
+Loaded scene 'Library/Unused/37b383483c5598b46a3f85b0ef6f8e11'
+	Deserialize:            1.460 ms
+	Integration:            11.798 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.013 ms
+	Total Operation Time:   13.273 ms
+Loaded scene 'Library/Unused/4fdcaebe738ac184a867705808450f71'
+	Deserialize:            0.962 ms
+	Integration:            6.918 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.046 ms
+	Total Operation Time:   7.928 ms
+Loaded scene 'Library/Unused/2430142fc44c56d4ab37970a281c6fb4'
+	Deserialize:            2.417 ms
+	Integration:            5.217 ms
+	Integration of assets:  0.003 ms
+	Thread Wait Time:       0.046 ms
+	Total Operation Time:   7.684 ms
+Importing 'GUID: b557443a7e2475845b627c3956b422d8 - Path: Assets/OneMoreTime/Generated_Hacha_Final 2/Animations/Player/Actor.controller' with importer (NativeFormatImporter)
+Imported 'GUID: b557443a7e2475845b627c3956b422d8' -> (Import Result ID: 'ee70251c2405303a778b1c6b4a8dac4e') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=15b450fa17030b36cc88ff5ad43b5c5e DependenciesID=6e40642549c57a378b2bc79876e07297 StaticDependenciesID=b59b4d73a9604f3c168826366f958d61 
+Refreshing native plugins compatible for Editor in 2.14 ms, found 5 plugins.
+Asset Pipeline Refresh (id=b241d7dea1cdb8c4b90ea6b2a95cf468): Total: 0.065 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Worker ready: AssetImportWorkerHW0 0
+OMT_ANIMATION_INSPECTION_PASS
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.AnimationPresentationValidation:Inspect () (at Assets/OneMoreTime/Editor/AnimationPresentationValidation.cs:241)
+OneMoreTime.Editor.AnimationPresentationValidation:PrepareEnemyAnimations () (at Assets/OneMoreTime/Editor/AnimationPresentationValidation.cs:90)
+OneMoreTime.Editor.AnimationPresentationValidation:PrepareAndRun () (at Assets/OneMoreTime/Editor/AnimationPresentationValidation.cs:20)
+
+(Filename: Assets/OneMoreTime/Editor/AnimationPresentationValidation.cs Line: 241)
+
+[Project] Loading completed in 16.597 seconds
+	Project init time: 				14.300 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.214 seconds
+		Asset Database init time: 		1.299 seconds
+		Global illumination init time: 	0.003 seconds
+		Assemblies load time: 			1.056 seconds
+		Unity extensions init time: 	0.023 seconds
+		Asset Database refresh time: 	10.843 seconds
+	Scene opening time: 			1.948 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1792359822972,"processId":15916,"projectLoad":16.5969835,"projectInit":14.3003005,"templateInit":0.0,"packageManagerInit":0.2135645,"assetDatabaseInit":1.2993186,"globalIlluminationInit":0.0026177,"assembliesLoad":1.0556487,"unityExtensionsInit":0.0226895,"assetDatabaseRefresh":10.8433529,"sceneOpening":1.9484547}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1792359822972,"processId":15916,"editorVersion":"6000.5.5f1 (d16e074b49fd)","branch":"6000.5/staging","buildType":"Release","platform":"Windows"}
+[Licensing::Client] Successfully resolved entitlement details
+Start Indexing on Editor startup
+[Indexing] Starting Initial Indexing for Assets
+Opening scene 'Assets/OneMoreTime/Generated_Hacha_Final 2/Scenes/OneMoreTime_Demo.unity'
+Unloading 152 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/OneMoreTime/Generated_Hacha_Final 2/Scenes/OneMoreTime_Demo.unity'
+	Deserialize:            16.615 ms
+	Integration:            228.896 ms
+	Integration of assets:  3.665 ms
+	Thread Wait Time:       0.043 ms
+	Total Operation Time:   249.219 ms
+Unloading 267 unused Assets / (398.8 KB). Loaded Objects now: 9633.
+Memory consumption went from 454.5 MB to 454.1 MB.
+Total: 11.724000 ms (FindLiveObjects: 0.566900 ms CreateObjectMapping: 1.237800 ms MarkObjects: 8.943200 ms  DeleteObjects: 0.974300 ms)
+
+SpriteAtlasPacking completed in 0.018782 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            10.524 ms
+	Integration:            271.053 ms
+	Integration of assets:  2.359 ms
+	Thread Wait Time:       0.006 ms
+	Total Operation Time:   283.941 ms
+Created GICache directory at C:/Users/gehbd/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.013s, timestamps: [16.601 - 16.614]
+[Licensing::Client] Successfully resolved entitlement details
+One More Time: pruebas de reglas terminadas correctamente (256 semillas, cinco ofertas por semilla).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoValidation:ValidateRules () (at Assets/OneMoreTime/Editor/DemoValidation.cs:110)
+OneMoreTime.Editor.DemoValidation:ValidateAll () (at Assets/OneMoreTime/Editor/DemoValidation.cs:15)
+OneMoreTime.Editor.StartupCameraValidationRunner/<Tests>d__10:MoveNext () (at Assets/OneMoreTime/Editor/StartupCameraValidation.cs:161)
+OneMoreTime.Editor.StartupCameraValidationRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/StartupCameraValidation.cs:145)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoValidation.cs Line: 110)
+
+One More Time: reglas y referencias principales correctas. Completa también las pruebas de Play Mode del LEEME.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoValidation:ValidateAll () (at Assets/OneMoreTime/Editor/DemoValidation.cs:42)
+OneMoreTime.Editor.StartupCameraValidationRunner/<Tests>d__10:MoveNext () (at Assets/OneMoreTime/Editor/StartupCameraValidation.cs:161)
+OneMoreTime.Editor.StartupCameraValidationRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/StartupCameraValidation.cs:145)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoValidation.cs Line: 42)
+
+Starting new worker id: 1 with log in C:/Users/gehbd/Downloads/Paradox_Zero/Verification/PresentationSandbox/Logs/AssetImportWorkerHW1.log
+Starting new worker id: 2 with log in C:/Users/gehbd/Downloads/Paradox_Zero/Verification/PresentationSandbox/Logs/AssetImportWorkerHW2.log
+[Worker0] Imported GUID: d85dbfd554d160e42bd90d84bb5bee30 - Path: Assets/OneMoreTime/Editor/DemoVisualValidation.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '3232b68952c5bcb040595efba3447b2b') in 0.1467311 seconds
+[Worker0] Imported GUID: 85fca4ade19cb824a88ebc433e14ac1b - Path: Assets/OneMoreTime/Generated_Hacha_Final 2/LegacySpritesUnlit.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'a19b19bcb74b3d1bea0c5a4832fe2ae5') in 0.0492507 seconds
+[Worker0] Imported GUID: 5b7ab6cbd704f4da13bebeb1c8956b23 - Path: Assets/OneMoreTime/Art/Environment/JawTrapChain.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '1755ec27ab9b673c61d9462762b66050') in 0.0877975 seconds
+[Worker0] Imported GUID: 09643fc1d3f330dcc788e942dcb8ed57 - Path: Assets/OneMoreTime/Art/Environment/IcicleFrame.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '471c9077582bb5248eed3ecae4b1ef7f') in 0.0259602 seconds
+[Worker0] Imported GUID: 97902ccd6945c4e0056002572fde816d - Path: Assets/OneMoreTime/Art/Environment/FloatingIceTiny.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '9fedc9f81ba38e6805e98b55a6df70a7') in 0.0254513 seconds
+[Worker0] Imported GUID: 5f4195ada73d548300b4e40ab3e26992 - Path: Assets/OneMoreTime/Art/Environment/IcicleOverhang.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'd94ac867544c3828391c12b27fc0ebbc') in 0.0274757 seconds
+[Worker0] Imported GUID: 74ef665d73ef2e6a21e1e909ecf8bf82 - Path: Assets/OneMoreTime/Art/Environment/JawTrapSnap.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '5dea29a2a987a79d6c1b086e21d4b52a') in 0.0243579 seconds
+[Worker0] Imported GUID: 54c40d5221b89cdde55a293dec80b3ee - Path: Assets/OneMoreTime/Art/Environment/FloatingIceSmall.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'fecf4ab51eecbc6ce7852ceb6d7cc58e') in 0.0287392 seconds
+OMT_STARTUP_CAMERA_PASS
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.StartupCameraValidationRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/StartupCameraValidation.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/StartupCameraValidation.cs Line: 152)
+
+Unloading 147 Unused Serialized files (Serialized files now loaded: 0)
+[Worker0] Imported GUID: 2bcd2660ca9b64942af0de543d8d7100 - Path: Assets/Settings/InputSystem_Actions.inputactions - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '0e52d01406d99e120a31b3c7b38040d6') in 0.229675 seconds
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.956 ms
+	Integration:            201.731 ms
+	Integration of assets:  0.006 ms
+	Thread Wait Time:       0.016 ms
+	Total Operation Time:   205.710 ms
+Unloading 3 unused Assets / (0.6 MB). Loaded Objects now: 10473.
+Memory consumption went from 0.55 GB to 0.55 GB.
+Total: 13.380400 ms (FindLiveObjects: 0.505800 ms CreateObjectMapping: 1.393300 ms MarkObjects: 11.304200 ms  DeleteObjects: 0.175400 ms)
+
+[Worker0] Imported GUID: ca3b69e762e4e68d42e47be62d488b63 - Path: Assets/OneMoreTime/Art/Environment/Icicle.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'a14c229d1ff94eacacfcc8c527abedfd') in 0.0283988 seconds
+[Worker0] Imported GUID: 316a957e65e4c1c6ee2a50e825181d9b - Path: Assets/OneMoreTime/Art/Environment/BrokenBarricade.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'aed2e7dec11134e6a1b7132c53355fe6') in 0.0297645 seconds
+MonoPathRemapper: Attempts to remap: 55317; Successful remaps: 29056
+Serialized file version minimum: 23, current 23
+[Worker0] Imported GUID: 2deb207c1e7f6f06f1664749d36b0763 - Path: Assets/OneMoreTime/Art/Environment/IceSpikeRow.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '033914979483669b96e3ca42f35f7383') in 0.0432786 seconds
+[Worker0] Imported GUID: 7533becca72eff2dd9fc014ccc8323b8 - Path: Assets/OneMoreTime/Art/Environment/IceChunkA.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '1b5dc0bef13705bca2cce45e8551db2a') in 0.0289851 seconds
+[Worker0] Imported GUID: f995dc3f9eb99bb6e3c0dff0ccf29fbe - Path: Assets/OneMoreTime/Art/Environment/IcePillar.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '92a7d044636991038f2e321be7d78380') in 0.0289101 seconds
+[Worker0] Imported GUID: 9ba60280a4c46414a85ed2e6000b8564 - Path: Assets/OneMoreTime/Generated_Hacha_Final 2/SpritesUnlit.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'd3e0526ac11eea0dc8483c33d8d83d53') in 0.0262987 seconds
+[Worker0] Imported GUID: deaee3e199d237e5701ffdb915c3cdf1 - Path: Assets/OneMoreTime/Art/Environment/BannerPost.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '9f6821fced9f8fa44075a14249ee7b43') in 0.0357148 seconds
+[Worker0] Imported GUID: 941c8285c948b5248b643ed9c7e5780a - Path: Assets/OneMoreTime/Editor/DemoAnimatorFactory.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '1f2dc30515081cb8d2794c49f9da678f') in 0.0247592 seconds
+[Worker0] Imported GUID: 2bc7a3494c03143277300f36c136532a - Path: Assets/OneMoreTime/Art/Environment/IceSpikes.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '484e354b03b28972f6b67f94ab33ff20') in 0.1096107 seconds
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-gehbd-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-gehbd channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+[Package Manager] Server process was shutdown
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1792359828652,"processId":15916,"allocatedMemory":51021087,"memoryLabels":[{"Default":221850},{"Permanent":15516},{"NewDelete":66635},{"Thread":4197560},{"Manager":819461},{"VertexData":680},{"Geometry":816},{"Texture":24},{"Shader":852004},{"Material":24},{"GfxDevice":55832},{"Animation":137976},{"Audio":1544},{"FreeType":8},{"FontEngine":736},{"Physics":2146},{"Physics2D":16},{"Serialization":37456},{"Input":42840},{"JobScheduler":256},{"TextLib":7414},{"Mono":48},{"MonoCode":64},{"ScriptingNativeRuntime":1574452},{"BaseObject":1680233},{"Resource":1208},{"Renderer":3080},{"Transform":4685},{"File":4009},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":20693},{"StaticString":3808},{"Utility":2673238},{"Curl":2579},{"PoolAlloc":2360},{"AI":80},{"TypeTree":14869},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"CloudService":10408},{"WebRequest":552},{"VR":47114},{"SceneManager":608},{"Video":208},{"LazyScriptCache":32},{"NativeArray":33005840},{"Camera":17},{"Secure":2377},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":728},{"Hierarchy":1176},{"UIElements":16496},{"CoreStats":13688},{"Identifiers":6768},{"Gui":189},{"EditorUtility":144299},{"VersionControl":8},{"Undo":931},{"AssetDatabase":5026761},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":38929},{"Upm":1912},{"UpmDiagnostics":8},{"AssetCompliance":64},{"DrivenProperties":72},{"LocalIPC":260},{"ProfilerEditor":9778},{"CoreBusinessMetrics":3480},{"Windowing":456},{"Licensing":776},{"AssetReference":32},{"IPCStream":32}]}

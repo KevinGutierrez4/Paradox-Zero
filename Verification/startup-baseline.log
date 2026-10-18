@@ -1,0 +1,745 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.5/staging' branch; Version is '6000.5.5f1 (d16e074b49fd) revision 13725191'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gehbd" at "2026-10-18T20:39:21.6465389Z"
+OS: 'Windows 11  (10.0.26300) Core' Language: 'en' Physical Memory: 24216 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-18T20:39:21Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 27976, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              56408a51f633495eb4b81ec20874045d
+  Correlation Id:          e87e60bffd9edcb8d22daf0f2bef7f59
+  External correlation Id: 7457568041993182938
+  Machine Id:              YnZeAC56/NzUixr0l3qI1HeCN9g=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-gehbd" (connect: 0.00s, validation: 0.00s, handshake: 0.11s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gehbd-notifications" at "2026-10-18T20:39:21.7564389Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 4673054916575-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.02
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.22s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Unity.exe
+-batchmode
+-nographics
+-projectPath
+C:\Users\gehbd\Downloads\Paradox_Zero
+-executeMethod
+OneMoreTime.Editor.StartupCameraValidation.Run
+-logFile
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\startup-baseline.log
+Successfully changed project path to: C:\Users\gehbd\Downloads\Paradox_Zero
+C:/Users/gehbd/Downloads/Paradox_Zero
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=0"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.Player connection [23428]  Target information:
+
+Player connection [23428]  * "[IP] 192.168.26.2 [Port] 55504 [Flags] 2 [Guid] 3261446476 [EditorId] 3261446476 [Version] 1048832 [Id] WindowsEditor(7,Victus_FacundoR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [23428] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [23428] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-25648" after 0.3 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.5.5f1 (d16e074b49fd)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/gehbd/Downloads/Paradox_Zero/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56648
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003437 seconds.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.450 seconds
+Domain Reload Profiling: 1033ms
+	BeginReloadAssembly (155ms)
+		CreateAndSetChildDomain (12ms)
+	RebuildCommonClasses (5ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (87ms)
+	LoadAllAssembliesAndSetupDomain (314ms)
+		LoadAssemblies (139ms)
+		AnalyzeDomain (229ms)
+			TypeCache.Refresh (227ms)
+				TypeCache.ScanAssembly (211ms)
+	FinalizeReload (455ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (106ms)
+			ProcessInitializeOnLoadAttributes (106ms)
+			ProcessInitializeOnLoadMethodAttributes (148ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 65 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.2d.animation@15.1.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.2d.animation@6d5a363ae647)
+    com.unity.2d.aseprite@5.0.3 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.2d.aseprite@d13865913efa)
+    com.unity.2d.psdimporter@14.0.3 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.2d.psdimporter@5d82044f9e43)
+    com.unity.2d.spriteshape@15.0.3 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.2d.spriteshape@fcb7ec61a58b)
+    com.unity.2d.tilemap.extras@8.0.3 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.2d.tilemap.extras@a80140457adc)
+    com.unity.2d.tooling@3.0.1 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.2d.tooling@6f06ffb033c0)
+    com.unity.collab-proxy@2.13.3 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.collab-proxy@4f3be89e8675)
+    com.unity.ide.rider@3.0.38 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.19.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.inputsystem@21a28c3a6c83)
+    com.unity.timeline@1.8.12 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.timeline@8cd8509afae5)
+    com.unity.visualscripting@1.9.11 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.visualscripting@8bed5ad90189)
+    com.unity.2d.common@14.0.1 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.2d.common@73badf92ba8b)
+    com.unity.searcher@4.9.4 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.searcher@d45a78918735)
+    com.unity.burst@1.8.29 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.burst@6bb9aca3ef38)
+    com.unity.nuget.mono-cecil@1.11.6 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.test-framework.performance@3.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.test-framework.performance@8b56083ec0f0)
+  Built-in packages:
+    com.unity.2d.sprite@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.2d.sprite@053a968eab56)
+    com.unity.2d.tilemap@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.2d.tilemap@b959501fd678)
+    com.unity.multiplayer.center@1.0.1 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.multiplayer.center@b860850997d0)
+    com.unity.render-pipelines.universal@17.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.render-pipelines.universal@040461d037aa)
+    com.unity.test-framework@1.7.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.test-framework@1405238725ab)
+    com.unity.ugui@2.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.ugui@f2d87ebaaa32)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.1.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.ext.nunit@44f7d31723bd)
+    com.unity.render-pipelines.core@17.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.render-pipelines.core@b19a46951e65)
+    com.unity.shadergraph@17.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.shadergraph@8d7376ec43ee)
+    com.unity.render-pipelines.universal-config@17.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.render-pipelines.universal-config@fdda01c80fe3)
+    com.unity.collections@6.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.collections@a43cabe808ca)
+    com.unity.mathematics@1.4.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.mathematics@981956d94fb6)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.05 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/gehbd/Downloads/Paradox_Zero
+DisplayProgressbar: Compiling Scripts
+ExitCode: 4 Duration: 0s421ms
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
+[ 871/1121  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+*** Tundra requires additional run (0.38 seconds), 1 items updated, 870 evaluated
+Starting: C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Data\netcorerun\netcorerun.exe "C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: C:/Users/gehbd/Downloads/Paradox_Zero
+ExitCode: 0 Duration: 1s375ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/gehbd/Downloads/Paradox_Zero
+ExitCode: 0 Duration: 6s209ms
+Finished compiling graph: 1125 nodes, 22734 flattened edges (18738 ToBuild, 178 ToUse), maximum node priority 1289
+[ 605/1121  0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.rsp
+[ 870/1121  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[1117/1121  2s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[1118/1121  1s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 141 defines and 376 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1119/1121  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[1120/1121  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (6.18 seconds), 6 items updated, 1121 evaluated
+Total cache size 120888632
+Total cache size after purge 120888632, took 00:00:00.1531768
+AssetDatabase: script compilation time: 8.796391s
+Begin MonoManager ReloadAssembly
+Refreshing native plugins compatible for Editor in 7.09 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.74 ms, found 5 plugins.
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.906 seconds
+Domain Reload Profiling: 5062ms
+	BeginReloadAssembly (278ms)
+		DisableScriptedObjects (38ms)
+		CreateAndSetChildDomain (56ms)
+	RebuildCommonClasses (10ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (790ms)
+		LoadAssemblies (472ms)
+		AnalyzeDomain (303ms)
+			TypeCache.Refresh (209ms)
+				TypeCache.ScanAssembly (196ms)
+			BuildScriptInfoCaches (82ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (3908ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (131ms)
+			ProcessInitializeOnLoadAttributes (3036ms)
+			ProcessInitializeOnLoadMethodAttributes (443ms)
+			AfterProcessingInitializeOnLoad (9ms)
+		AwakeInstancesAfterBackupRestoration (33ms)
+Starting new worker id: 0 with log in C:/Users/gehbd/Downloads/Paradox_Zero/Logs/AssetImportWorkerHW0.log
+Refreshing native plugins compatible for Editor in 3.46 ms, found 5 plugins.
+
+Asset Pipeline Refresh (id=5f2daedc52be16744af8be6e3da12e2b): Total: 15.745 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=4685 ms
+		Asset DB Callback time: managed=889 ms, native=70 ms
+		Scripting: domain reloads=1, domain reload time=1225 ms, compile time=8799 ms, other=74 ms
+		Project Asset Count: scripts=1680, non-scripts=4165
+		Asset File Changes: new=1, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 54.837ms
+	ApplyChangesToAssetFolders: 0.925ms
+	Scan: 172.339ms
+	Collect global state as custom dependencies: 5.722ms
+	OnSourceAssetsModified: 0.776ms
+	CategorizeScriptCompilationAssets: 57.724ms
+	ProcessAssetsWithTransientArtifactChanges: 108.938ms
+	CategorizeAssets: 97.319ms
+	CompileScripts: 8799.354ms
+	ImportOutOfDateAssets: 4054.821ms (3947.116ms without children)
+		UnloadImportedAssets: 0.734ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.229ms
+		ImportSchedulerStart: 105.702ms
+	PostProcessAllAssets: 895.037ms
+		VCAutoAddAssetPostprocess 8.920ms
+		XRBuildSystem.XRAssetImported 1.085ms
+		VersionControlSettings.HiddenFilePostprocess 0.228ms
+		PostProcessCallbackCreateDeferredMaterials 0.057ms
+		MonoPostProcessAllAssets: 883.736ms
+			SyncVS.PostprocessSyncProject 308.081ms
+			AssetPostprocessor.OnPostprocessAllAssets 211.601ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 201.870ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 26.428ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 21.261ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 4.979ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 4.824ms
+			SpriteSlicePostprocessor.OnPostprocessAllAssets 4.808ms
+			AssetChangedListener.OnPostprocessAllAssets 4.151ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 4.028ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 3.350ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 1.391ms
+			MaterialPostprocessor.OnPostprocessAllAssets 1.296ms
+			SpriteEditorTexturePostprocessor.OnPostprocessAllAssets 1.280ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 1.217ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 1.179ms
+			AssetProcessor.OnPostprocessAllAssets 1.057ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 1.016ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.968ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.915ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.904ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.845ms
+			SpriteShapeAssetPostProcessor.OnPostprocessAllAssets 0.740ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.645ms
+			PostProcessor.OnPostprocessAllAssets 0.557ms
+			SamplePostprocessor.OnPostprocessAllAssets 0.550ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.549ms
+			SpriteLibraryAssetPostprocessor.OnPostprocessAllAssets 0.549ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.542ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.503ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.437ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.433ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.409ms
+			SampleDependencyImporterPostProcessor.OnPostprocessAllAssets 0.404ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.346ms
+			PSDImportPostProcessor.OnPostprocessAllAssets 0.338ms
+			AssetEvents.OnPostprocessAllAssets 0.302ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.275ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.267ms
+			PSDImporterAssetPostProcessor.OnPostprocessAllAssets 0.188ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.148ms
+	PostAssetChangesProfiler: 12.476ms
+	UnloadStreamsBegin: 2.993ms
+	PersistCurrentRevisions: 0.348ms
+	GenerateScriptTypeHashes: 2.865ms
+	GenerateScriptTypeSerializationHashes: 4.441ms
+	Untracked: 1470.816ms
+
+Application.AssetDatabase Initial Refresh End
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Scanning for USB devices : 1.964ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-My project (2)
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7402 unused Assets / (2.7 MB). Loaded Objects now: 8310.
+Memory consumption went from 440.7 MB to 438.0 MB.
+Total: 13.369000 ms (FindLiveObjects: 1.115200 ms CreateObjectMapping: 2.193700 ms MarkObjects: 6.704300 ms  DeleteObjects: 3.351200 ms)
+
+Opening scene 'Assets/OneMoreTime/Generated_Hacha_Final 2/Scenes/OneMoreTime_Demo.unity'
+Unloading 67 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/OneMoreTime/Generated_Hacha_Final 2/Scenes/OneMoreTime_Demo.unity'
+	Deserialize:            59.881 ms
+	Integration:            355.629 ms
+	Integration of assets:  21.815 ms
+	Thread Wait Time:       0.011 ms
+	Total Operation Time:   437.336 ms
+Unloading 2 unused Assets / (Unknown). Loaded Objects now: 9417.
+Memory consumption went from 458.8 MB to 459.1 MB.
+Total: 9.190500 ms (FindLiveObjects: 0.704800 ms CreateObjectMapping: 1.276600 ms MarkObjects: 7.163900 ms  DeleteObjects: 0.043800 ms)
+
+Microsoft Media Foundation video decoding to texture disabled: graphics device is Null, only Direct3D 11 and Direct3D 12 (only on desktop) are supported for hardware-accelerated video decoding.
+[Project] Loading completed in 20.334 seconds
+	Project init time: 				19.240 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.295 seconds
+		Asset Database init time: 		1.451 seconds
+		Global illumination init time: 	0.003 seconds
+		Assemblies load time: 			1.092 seconds
+		Unity extensions init time: 	0.034 seconds
+		Asset Database refresh time: 	15.745 seconds
+	Scene opening time: 			0.727 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1792355981967,"processId":25648,"projectLoad":20.33438,"projectInit":19.240391,"templateInit":0.0,"packageManagerInit":0.2953071,"assetDatabaseInit":1.4513467,"globalIlluminationInit":0.0032974,"assembliesLoad":1.0917106,"unityExtensionsInit":0.0342257,"assetDatabaseRefresh":15.7450866,"sceneOpening":0.7265206}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1792355981967,"processId":25648,"editorVersion":"6000.5.5f1 (d16e074b49fd)","branch":"6000.5/staging","buildType":"Release","platform":"Windows"}
+SpriteAtlasPacking completed in 0.009702 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            9.147 ms
+	Integration:            336.565 ms
+	Integration of assets:  0.315 ms
+	Thread Wait Time:       -0.003 ms
+	Total Operation Time:   346.024 ms
+Configura los prefabs de enemigos/boss/proyectil y GroundMask.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogError (object,UnityEngine.Object)
+OneMoreTime.GameManager:Fail (string) (at Assets/OneMoreTime/Scripts/Core/GameManager.cs:90)
+OneMoreTime.GameManager:Start () (at Assets/OneMoreTime/Scripts/Core/GameManager.cs:62)
+
+(Filename: Assets/OneMoreTime/Scripts/Core/GameManager.cs Line: 90)
+
+Worker ready: AssetImportWorkerHW0 0
+[Licensing::Client] Successfully resolved entitlement details
+Start Indexing on Editor startup
+[Indexing] Starting Initial Indexing for Assets
+Created GICache directory at C:/Users/gehbd/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.020s, timestamps: [20.846 - 20.866]
+[Licensing::Client] Successfully resolved entitlement details
+RenderTexture.Create failed
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.RenderTexture:Create ()
+UnityEngine.Rendering.RTHandleSystem:CreateRenderTexture (int,int,UnityEngine.Experimental.Rendering.GraphicsFormat,int,UnityEngine.FilterMode,UnityEngine.TextureWrapMode,UnityEngine.TextureWrapMode,UnityEngine.TextureWrapMode,UnityEngine.Rendering.TextureDimension,bool,bool,bool,bool,int,single,UnityEngine.Rendering.MSAASamples,bool,bool,bool,UnityEngine.RenderTextureMemoryless,UnityEngine.VRTextureUsage,bool,string) (at ./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/Textures/RTHandleSystem.cs:909)
+UnityEngine.Rendering.RTHandleSystem:Alloc (int,int,UnityEngine.Experimental.Rendering.GraphicsFormat,UnityEngine.TextureWrapMode,UnityEngine.TextureWrapMode,UnityEngine.TextureWrapMode,int,UnityEngine.FilterMode,UnityEngine.Rendering.TextureDimension,bool,bool,bool,bool,int,single,UnityEngine.Rendering.MSAASamples,bool,bool,bool,UnityEngine.RenderTextureMemoryless,UnityEngine.VRTextureUsage,string) (at ./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/Textures/RTHandleSystem.cs:774)
+UnityEngine.Rendering.RTHandleSystem:Alloc (int,int,UnityEngine.Experimental.Rendering.GraphicsFormat,int,UnityEngine.FilterMode,UnityEngine.TextureWrapMode,UnityEngine.Rendering.TextureDimension,bool,bool,bool,bool,int,single,UnityEngine.Rendering.MSAASamples,bool,bool,bool,UnityEngine.RenderTextureMemoryless,UnityEngine.VRTextureUsage,string) (at ./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/Textures/RTHandleSystem.cs:638)
+UnityEngine.Rendering.RTHandles:Alloc (int,int,UnityEngine.Experimental.Rendering.GraphicsFormat,int,UnityEngine.FilterMode,UnityEngine.TextureWrapMode,UnityEngine.Rendering.TextureDimension,bool,bool,bool,bool,int,single,UnityEngine.Rendering.MSAASamples,bool,bool,bool,UnityEngine.RenderTextureMemoryless,UnityEngine.VRTextureUsage,string) (at ./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/Textures/RTHandles.cs:169)
+UnityEngine.Rendering.RenderGraphModule.RenderGraphDefaultResources:InitDefaultResourcesIfNeeded () (at ./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/RenderGraph/RenderGraphDefaultResources.cs:52)
+UnityEngine.Rendering.RenderGraphModule.RenderGraphDefaultResources:.ctor () (at ./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/RenderGraph/RenderGraphDefaultResources.cs:39)
+UnityEngine.Rendering.RenderGraphModule.RenderGraph:.ctor (string) (at ./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/RenderGraph/RenderGraph.cs:364)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:.ctor (UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:393)
+UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline () (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/Data/UniversalRenderPipelineAsset.cs:802)
+UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline ()
+UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline (UnityEngine.Rendering.RenderPipelineAsset)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+
+[./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/Textures/RTHandleSystem.cs line 909]
+
+RenderTexture.Create failed
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Graphics:ExecuteCommandBuffer (UnityEngine.Rendering.CommandBuffer)
+UnityEngine.Rendering.RenderGraphModule.RenderGraphDefaultResources:InitDefaultResourcesIfNeeded () (at ./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/RenderGraph/RenderGraphDefaultResources.cs:58)
+UnityEngine.Rendering.RenderGraphModule.RenderGraphDefaultResources:.ctor () (at ./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/RenderGraph/RenderGraphDefaultResources.cs:39)
+UnityEngine.Rendering.RenderGraphModule.RenderGraph:.ctor (string) (at ./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/RenderGraph/RenderGraph.cs:364)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:.ctor (UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:393)
+UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline () (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/Data/UniversalRenderPipelineAsset.cs:802)
+UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline ()
+UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline (UnityEngine.Rendering.RenderPipelineAsset)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+
+[./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/RenderGraph/RenderGraphDefaultResources.cs line 58]
+
+Failed to set the active render target, ensure that it is a valid render target.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Graphics:ExecuteCommandBuffer (UnityEngine.Rendering.CommandBuffer)
+UnityEngine.Rendering.RenderGraphModule.RenderGraphDefaultResources:InitDefaultResourcesIfNeeded () (at ./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/RenderGraph/RenderGraphDefaultResources.cs:58)
+UnityEngine.Rendering.RenderGraphModule.RenderGraphDefaultResources:.ctor () (at ./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/RenderGraph/RenderGraphDefaultResources.cs:39)
+UnityEngine.Rendering.RenderGraphModule.RenderGraph:.ctor (string) (at ./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/RenderGraph/RenderGraph.cs:364)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:.ctor (UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:393)
+UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset:CreatePipeline () (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/Data/UniversalRenderPipelineAsset.cs:802)
+UnityEngine.Rendering.RenderPipelineAsset:InternalCreatePipeline ()
+UnityEngine.Rendering.RenderPipelineManager:TryPrepareRenderPipeline (UnityEngine.Rendering.RenderPipelineAsset)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+
+[./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/RenderGraph/RenderGraphDefaultResources.cs line 58]
+
+RenderTexture.Create failed
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.RenderTexture:Create ()
+UnityEngine.Rendering.RTHandleSystem:CreateRenderTexture (int,int,UnityEngine.Experimental.Rendering.GraphicsFormat,int,UnityEngine.FilterMode,UnityEngine.TextureWrapMode,UnityEngine.TextureWrapMode,UnityEngine.TextureWrapMode,UnityEngine.Rendering.TextureDimension,bool,bool,bool,bool,int,single,UnityEngine.Rendering.MSAASamples,bool,bool,bool,UnityEngine.RenderTextureMemoryless,UnityEngine.VRTextureUsage,bool,string) (at ./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/Textures/RTHandleSystem.cs:909)
+UnityEngine.Rendering.RTHandleSystem:Alloc (int,int,UnityEngine.Rendering.RTHandleAllocInfo) (at ./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/Textures/RTHandleSystem.cs:926)
+UnityEngine.Rendering.RTHandles:Alloc (int,int,UnityEngine.Rendering.RTHandleAllocInfo) (at ./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/Textures/RTHandles.cs:282)
+UnityEngine.Rendering.Universal.RenderingUtils:ReAllocateHandleIfNeeded (UnityEngine.Rendering.RTHandle&,UnityEngine.RenderTextureDescriptor&,UnityEngine.FilterMode,UnityEngine.TextureWrapMode,int,single,string) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/RenderingUtils.cs:562)
+UnityEngine.Rendering.Universal.Renderer2D:CreateResources (UnityEngine.Rendering.RenderGraphModule.RenderGraph) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/2D/Rendergraph/Renderer2DRendergraph.cs:507)
+UnityEngine.Rendering.Universal.Renderer2D:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/2D/Rendergraph/Renderer2DRendergraph.cs:767)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/ScriptableRenderer.cs:936)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipelineRenderGraph.cs:27)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:1003)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderCameraStack (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:1207)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:611)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+
+[./Library/PackageCache/com.unity.render-pipelines.core@b19a46951e65/Runtime/Textures/RTHandleSystem.cs line 909]
+
+RenderTexture.Create failed
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit ()
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:1012)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderCameraStack (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:1207)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:611)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs line 1012]
+
+RenderTexture.Create failed
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit ()
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:1012)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderCameraStack (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:1207)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:611)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs line 1012]
+
+RenderTexture.Create failed
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit ()
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:1012)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderCameraStack (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:1207)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:611)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs line 1012]
+
+Renderer2D Pass: Unable to find surface for attachment 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit ()
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:1012)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderCameraStack (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:1207)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs:611)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+
+[./Library/PackageCache/com.unity.render-pipelines.universal@040461d037aa/Runtime/UniversalRenderPipeline.cs line 1012]
+
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Crash!!!
+SymInit: Symbol-SearchPath: 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/Mono;.;C:\Users\gehbd\Downloads\Paradox_Zero;C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT;C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor;C:\WINDOWS;C:\WINDOWS\system32;', symOptions: 534, UserName: 'gehbd'
+OS-Version: 10.0.0
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Unity.exe:Unity.exe (00007FF718910000), size: 290816 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6000.5.5.28167
+C:\WINDOWS\SYSTEM32\ntdll.dll:ntdll.dll (00007FFB08D80000), size: 2523136 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\KERNEL32.DLL:KERNEL32.DLL (00007FFB07D70000), size: 831488 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\KERNELBASE.dll:KERNELBASE.dll (00007FFB06100000), size: 4198400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\USER32.dll:USER32.dll (00007FFB08220000), size: 1929216 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\System32\win32u.dll:win32u.dll (00007FFB069D0000), size: 159744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\GDI32.dll:GDI32.dll (00007FFB07760000), size: 176128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8328
+C:\WINDOWS\System32\gdi32full.dll:gdi32full.dll (00007FFB065C0000), size: 1220608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\msvcp_win.dll:msvcp_win.dll (00007FFB06510000), size: 667648 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\ucrtbase.dll:ucrtbase.dll (00007FFB067B0000), size: 1359872 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\IMM32.DLL:IMM32.DLL (00007FFB089A0000), size: 200704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9278
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Unity.dll:Unity.dll (00007FFA01430000), size: 98902016 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6000.5.5.28167
+C:\WINDOWS\System32\ADVAPI32.dll:ADVAPI32.dll (00007FFB07C00000), size: 770048 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\msvcrt.dll:msvcrt.dll (00007FFB08BB0000), size: 692224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.26100.9711
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\OpenRL.dll:OpenRL.dll (0000000180000000), size: 12779520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.0.2907
+C:\WINDOWS\System32\sechost.dll:sechost.dll (00007FFB07960000), size: 688128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\RPCRT4.dll:RPCRT4.dll (00007FFB06B00000), size: 1146880 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\ole32.dll:ole32.dll (00007FFB077C0000), size: 1679360 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\System32\SETUPAPI.dll:SETUPAPI.dll (00007FFB08450000), size: 4747264 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\System32\combase.dll:combase.dll (00007FFB06C20000), size: 3715072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\SHELL32.dll:SHELL32.dll (00007FFB06FB0000), size: 7979008 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\shcore.dll:shcore.dll (00007FFB07E40000), size: 1019904 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\s3tcompress.dll:s3tcompress.dll (00007FFA6A970000), size: 180224 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\SketchUpAPI.dll:SketchUpAPI.dll (00007FFA38110000), size: 24559616 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 26.0.0.0
+C:\WINDOWS\System32\SHLWAPI.dll:SHLWAPI.dll (00007FFB06A90000), size: 417792 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\CRYPT32.dll:CRYPT32.dll (00007FFB05F70000), size: 1568768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\libfbxsdk.dll:libfbxsdk.dll (00007FFA37960000), size: 8019968 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.3.7.0
+C:\WINDOWS\System32\WS2_32.dll:WS2_32.dll (00007FFB07CE0000), size: 528384 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\etccompress.dll:etccompress.dll (00007FFA4FC40000), size: 5070848 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\System32\WINTRUST.dll:WINTRUST.dll (00007FFB06A00000), size: 532480 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\OLEAUT32.dll:OLEAUT32.dll (00007FFB08C60000), size: 888832 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\ispc_texcomp.dll:ispc_texcomp.dll (00007FFA50410000), size: 1826816 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\compress_bc7e.dll:compress_bc7e.dll (00007FFA56220000), size: 1433600 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\WinPixEventRuntime.dll:WinPixEventRuntime.dll (00007FFAEF040000), size: 57344 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.0.2403.8001
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\umbraoptimizer64.dll:umbraoptimizer64.dll (00007FFA502E0000), size: 1187840 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\SYSTEM32\bcrypt.dll:bcrypt.dll (00007FFB05E50000), size: 172032 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\dwmapi.dll:dwmapi.dll (00007FFB03170000), size: 188416 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.9711_none_3e07b8b0e334e825\COMCTL32.dll:COMCTL32.dll (00007FFAE1930000), size: 2691072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.10.26100.9711
+C:\WINDOWS\SYSTEM32\d3d12.dll:d3d12.dll (00007FFA62600000), size: 143360 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\SYSTEM32\d3d11.dll:d3d11.dll (00007FFAFDF90000), size: 2486272 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\dxgi.dll:dxgi.dll (00007FFB02DB0000), size: 1290240 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL:IPHLPAPI.DLL (00007FFB04590000), size: 208896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9278
+C:\WINDOWS\SYSTEM32\HID.DLL:HID.DLL (00007FFB04240000), size: 61440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1150
+C:\WINDOWS\SYSTEM32\VERSION.dll:VERSION.dll (00007FFAFA160000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1150
+C:\WINDOWS\SYSTEM32\MSVCP100.dll:MSVCP100.dll (000000005A960000), size: 622592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
+C:\WINDOWS\SYSTEM32\OPENGL32.dll:OPENGL32.dll (00007FFA6A750000), size: 1097728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9278
+C:\WINDOWS\SYSTEM32\MSVCR100.dll:MSVCR100.dll (000000005A880000), size: 860160 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\embree.dll:embree.dll (00007FFA18BB0000), size: 16711680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.14.0.0
+C:\WINDOWS\SYSTEM32\WINHTTP.dll:WINHTTP.dll (00007FFAFC080000), size: 1220608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\SYSTEM32\WINMM.dll:WINMM.dll (00007FFAF1EE0000), size: 225280 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\SYSTEM32\GLU32.dll:GLU32.dll (00007FFA734E0000), size: 233472 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\SYSTEM32\WSOCK32.dll:WSOCK32.dll (00007FFADBC50000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\NativeProxyHelper.dll:NativeProxyHelper.dll (00007FFA4F230000), size: 1789952 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\SYSTEM32\MSVCP140.dll:MSVCP140.dll (00007FFADFED0000), size: 643072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.51.36247.0
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\SketchUpCommonPreferences.dll:SketchUpCommonPreferences.dll (00007FFA5B100000), size: 708608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 26.0.0.0
+C:\WINDOWS\SYSTEM32\VCRUNTIME140.dll:VCRUNTIME140.dll (00007FFAE1390000), size: 180224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.51.36247.0
+C:\WINDOWS\SYSTEM32\MSVCP140_CODECVT_IDS.dll:MSVCP140_CODECVT_IDS.dll (00007FFAEE620000), size: 28672 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.51.36247.0
+C:\WINDOWS\SYSTEM32\VCRUNTIME140_1.dll:VCRUNTIME140_1.dll (00007FFADFEC0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.51.36247.0
+C:\WINDOWS\SYSTEM32\dbghelp.dll:dbghelp.dll (00007FFB02EF0000), size: 2408448 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\SYSTEM32\powrprof.dll:powrprof.dll (00007FFB05700000), size: 385024 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.3912
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\tbb.dll:tbb.dll (00007FFA629A0000), size: 303104 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.3.2022.1111
+C:\WINDOWS\SYSTEM32\dxcore.dll:dxcore.dll (00007FFB02D60000), size: 278528 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\FreeImage.dll:FreeImage.dll (000001AF5C6F0000), size: 5332992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.18.0.0
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\OpenRL_pthread.dll:OpenRL_pthread.dll (000001AF5B020000), size: 61440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.9.0.0
+C:\WINDOWS\SYSTEM32\cfgmgr32.DLL:cfgmgr32.DLL (00007FFB05BA0000), size: 335872 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\SYSTEM32\MSWSOCK.DLL:MSWSOCK.DLL (00007FFB051D0000), size: 442368 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\SYSTEM32\UMPDC.dll:UMPDC.dll (00007FFB056E0000), size: 86016 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8972
+C:\WINDOWS\SYSTEM32\MSASN1.dll:MSASN1.dll (00007FFB056A0000), size: 77824 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\bcryptprimitives.dll:bcryptprimitives.dll (00007FFB06910000), size: 704512 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\kernel.appcore.dll:kernel.appcore.dll (00007FFB04C10000), size: 110592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9278
+C:\WINDOWS\system32\uxtheme.dll:uxtheme.dll (00007FFB02B60000), size: 684032 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\windows.storage.dll:windows.storage.dll (00007FFB03980000), size: 9101312 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\profapi.dll:profapi.dll (00007FFB05E80000), size: 167936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\SYSTEM32\secur32.dll:secur32.dll (00007FFB00230000), size: 53248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.7705
+C:\WINDOWS\SYSTEM32\SSPICLI.DLL:SSPICLI.DLL (00007FFB04ED0000), size: 303104 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\clbcatq.dll:clbcatq.dll (00007FFB088E0000), size: 716800 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2001.12.10941.16384
+C:\WINDOWS\SYSTEM32\CRYPTSP.dll:CRYPTSP.dll (00007FFB05530000), size: 110592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\system32\IconCodecService.dll:IconCodecService.dll (00007FFAC09B0000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1
+C:\WINDOWS\SYSTEM32\WindowsCodecs.dll:WindowsCodecs.dll (00007FFAFD710000), size: 2326528 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\system32\rsaenh.dll:rsaenh.dll (00007FFB04B70000), size: 233472 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.7705
+C:\WINDOWS\system32\wbem\wbemprox.dll:wbemprox.dll (00007FFAEE170000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\wbemcomn.dll:wbemcomn.dll (00007FFAEE0E0000), size: 548864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\CRYPTBASE.dll:CRYPTBASE.dll (00007FFB05550000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\netprofm.dll:netprofm.dll (00007FFAFF490000), size: 450560 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\imagehlp.dll:imagehlp.dll (00007FFB07790000), size: 131072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.4202
+C:\WINDOWS\System32\npmproxy.dll:npmproxy.dll (00007FFAFAF80000), size: 102400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\system32\wbem\wbemsvc.dll:wbemsvc.dll (00007FFAED120000), size: 86016 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\system32\wbem\fastprox.dll:fastprox.dll (00007FFAED7A0000), size: 1007616 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\amsi.dll:amsi.dll (00007FFAD9140000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.7309
+C:\WINDOWS\SYSTEM32\USERENV.dll:USERENV.dll (00007FFB05280000), size: 212992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.26090.9-0\MpOav.dll:MpOav.dll (00007FFAD89A0000), size: 675840 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 4.18.26090.9
+C:\WINDOWS\SYSTEM32\gpapi.dll:gpapi.dll (00007FFB05250000), size: 151552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\Windows\System32\cryptnet.dll:cryptnet.dll (00007FFAF9EB0000), size: 241664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\SYSTEM32\WINNSI.DLL:WINNSI.DLL (00007FFB02C70000), size: 57344 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\NSI.dll:NSI.dll (00007FFB08B90000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL:dhcpcsvc6.DLL (00007FFAFC370000), size: 122880 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL:dhcpcsvc.DLL (00007FFAFC310000), size: 151552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\DNSAPI.dll:DNSAPI.dll (00007FFB04620000), size: 1409024 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\SYSTEM32\DSPARSE.dll:DSPARSE.dll (00007FFB04F60000), size: 53248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1
+C:\WINDOWS\system32\napinsp.dll:napinsp.dll (00007FFAD0E00000), size: 98304 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1150
+C:\WINDOWS\System32\winrnr.dll:winrnr.dll (00007FFAD06D0000), size: 77824 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9278
+C:\WINDOWS\system32\nlansp_c.dll:nlansp_c.dll (00007FFACFD20000), size: 159744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\system32\wshbth.dll:wshbth.dll (00007FFAFA390000), size: 90112 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\System32\fwpuclnt.dll:fwpuclnt.dll (00007FFAFC7D0000), size: 548864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\Windows\System32\rasadhlp.dll:rasadhlp.dll (00007FFAFAF70000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\AMDUnityPlugin.DLL:AMDUnityPlugin.DLL (00007FFA34740000), size: 8843264 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\NVUnityPlugin.DLL:NVUnityPlugin.DLL (00007FFA4F090000), size: 1646592 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Data\Tools\astcenc-avx2.dll:astcenc-avx2.dll (00007FFA5C0A0000), size: 352256 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\SYSTEM32\mfplat.dll:mfplat.dll (00007FFAFB040000), size: 2256896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\RTWorkQ.DLL:RTWorkQ.DLL (00007FFAFAF30000), size: 241664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8972
+C:\WINDOWS\SYSTEM32\mfreadwrite.dll:mfreadwrite.dll (00007FFADF8E0000), size: 872448 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\SYSTEM32\Mf.dll:Mf.dll (00007FFAFB830000), size: 622592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\MFCORE.DLL:MFCORE.DLL (00007FFA64030000), size: 4304896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\CompPkgSup.DLL:CompPkgSup.DLL (00007FFAF67E0000), size: 204800 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8521
+C:\Windows\System32\Windows.Media.dll:Windows.Media.dll (00007FFAB6C10000), size: 6922240 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\Windows\System32\Windows.ApplicationModel.dll:Windows.ApplicationModel.dll (00007FFAC8A00000), size: 880640 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\SYSTEM32\wintypes.dll:wintypes.dll (00007FFAFD0B0000), size: 1482752 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\Windows\System32\Windows.StateRepositoryPS.dll:Windows.StateRepositoryPS.dll (00007FFABCA90000), size: 802816 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\Windows\System32\AppXDeploymentClient.dll:AppXDeploymentClient.dll (00007FFAFA850000), size: 1515520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\windows.staterepositoryclient.dll:windows.staterepositoryclient.dll (00007FFAD0760000), size: 286720 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\windows.staterepositorycore.dll:windows.staterepositorycore.dll (00007FFAE44E0000), size: 122880 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\MMDevApi.dll:MMDevApi.dll (00007FFAFAA60000), size: 679936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\System32\DEVOBJ.dll:DEVOBJ.dll (00007FFB05C00000), size: 192512 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\SYSTEM32\AUDIOSES.DLL:AUDIOSES.DLL (00007FFAF38B0000), size: 1810432 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\SYSTEM32\resourcepolicyclient.dll:resourcepolicyclient.dll (00007FFB035B0000), size: 81920 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.8115
+C:\WINDOWS\SYSTEM32\opencl.dll:opencl.dll (00007FFA5ADB0000), size: 540672 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.0.6.0
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\radeonrays.dll:radeonrays.dll (00007FFA5B4E0000), size: 344064 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Data\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll:mono-2.0-bdwgc.dll (00007FFA09070000), size: 10760192 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.burst@6bb9aca3ef38\.Runtime\MonoDebuggerHandling.dll:MonoDebuggerHandling.dll (00007FFA3FEC0000), size: 368640 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\system32\apphelp.dll:apphelp.dll (00007FFAFF510000), size: 651264 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\PackageCache\com.unity.burst@6bb9aca3ef38\.Runtime\burst-llvm-19.dll:burst-llvm-19.dll (00007FF9F3800000), size: 59863040 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\System32\MSCTF.dll:MSCTF.dll (00007FFB07A10000), size: 1425408 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\system32\explorerframe.dll:explorerframe.dll (00007FFAB21F0000), size: 3289088 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9549
+C:\WINDOWS\SYSTEM32\TextShaping.dll:TextShaping.dll (00007FFAA4950000), size: 1040384 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\SYSTEM32\textinputframework.dll:textinputframework.dll (00007FFAEE680000), size: 1335296 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.9711
+C:\WINDOWS\system32\Oleacc.dll:Oleacc.dll (00007FFAFACE0000), size: 479232 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.2.26100.9549
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\31f9a1f95db3fc8bf118c19d1f0d1a0d.dll:31f9a1f95db3fc8bf118c19d1f0d1a0d.dll (00007FFAAD700000), size: 20480 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\84f3b110e97838d3acceb5a9010b8fa6.dll:84f3b110e97838d3acceb5a9010b8fa6.dll (00007FFAAD320000), size: 53248 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\a53f6d355a3e0bf75e2ce48f718606d8.dll:a53f6d355a3e0bf75e2ce48f718606d8.dll (00007FFAAB7E0000), size: 36864 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\f0cc061dfcba9702cdbbd7f4b071877c.dll:f0cc061dfcba9702cdbbd7f4b071877c.dll (00007FFA491C0000), size: 192512 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\310de686acbfb1d69b08b94b47c31863.dll:310de686acbfb1d69b08b94b47c31863.dll (00007FFAAB510000), size: 57344 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\592990ca291d0c4ed9a7b11f6076a954.dll:592990ca291d0c4ed9a7b11f6076a954.dll (00007FFA42630000), size: 135168 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\30ac820f4e0b3bd6f8a220357ed8c9ac.dll:30ac820f4e0b3bd6f8a220357ed8c9ac.dll (00007FFA48EC0000), size: 77824 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\9f907c523c7459cb11a56fa05f301b55.dll:9f907c523c7459cb11a56fa05f301b55.dll (00007FFAA90B0000), size: 53248 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\dcd6e0740d32f55df0be048671d71a1a.dll:dcd6e0740d32f55df0be048671d71a1a.dll (00007FFAA61D0000), size: 40960 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\1e7cd9dfe4ac44e8df56f546ff2fb5e6.dll:1e7cd9dfe4ac44e8df56f546ff2fb5e6.dll (00007FFA3FE90000), size: 180224 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\63cda9c358f54cf0fb9fd9c4a9316c77.dll:63cda9c358f54cf0fb9fd9c4a9316c77.dll (00007FFAA59A0000), size: 53248 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\47735bf7d95cdfe084660b241167ae70.dll:47735bf7d95cdfe084660b241167ae70.dll (00007FFAA4300000), size: 24576 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\2104e309aa2c281dd8510869868e82db.dll:2104e309aa2c281dd8510869868e82db.dll (00007FFAA41F0000), size: 32768 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\053bb38ed438f1690235156bd18bbefa.dll:053bb38ed438f1690235156bd18bbefa.dll (00007FFAA41A0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\5359513e7d6b640a90a127ecaa5c744a.dll:5359513e7d6b640a90a127ecaa5c744a.dll (00007FFAA3B10000), size: 28672 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\a7d05fb18eb4a926b731deb5818d74e8.dll:a7d05fb18eb4a926b731deb5818d74e8.dll (00007FFAA3A70000), size: 40960 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\15553b24674996ab02372d72d3db3452.dll:15553b24674996ab02372d72d3db3452.dll (00007FFAA2940000), size: 28672 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\d569ae96eafbe70a379c6deca1ac9276.dll:d569ae96eafbe70a379c6deca1ac9276.dll (00007FFAA25E0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\6b21735d2b842e227f13bb636bf7d22b.dll:6b21735d2b842e227f13bb636bf7d22b.dll (00007FFA3FE60000), size: 151552 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Users\gehbd\Downloads\Paradox_Zero\Library\BurstCache\JIT\87ace2c09bf9081e17e842f4fe5c689c.dll:87ace2c09bf9081e17e842f4fe5c689c.dll (00007FFA42610000), size: 102400 (result: 0), SymType: '-deferred-', PDB: ''
+
+========== OUTPUTTING STACK TRACE ==================
+
+0x00007FFA044856AF (Unity) GfxDevice::DrawSharedGeometryJobs
+0x00007FFA041D5B71 (Unity) GfxDeviceClient::DrawSharedGeometryJobs
+0x00007FFA04AEAB16 (Unity) RenderDynamicBatchSprite
+0x00007FFA04AE8C85 (Unity) DrawSpriteBatchedFromNodeQueue
+0x00007FFA04985749 (Unity) BatchRenderer::RenderBatch
+0x00007FFA049812A5 (Unity) BatchRenderer::Flush
+0x00007FFA049811EE (Unity) BatchRenderer::EndLoopFlush
+0x00007FFA04756993 (Unity) ScriptableRenderLoopDraw
+0x00007FFA047579C2 (Unity) ScriptableRenderLoopJob
+0x00007FFA044865D3 (Unity) GfxDevice::ExecuteAsync
+0x00007FFA041D75D9 (Unity) GfxDeviceClient::ExecuteAsync
+0x00007FFA047545B3 (Unity) ScheduleRenderJobs
+0x00007FFA0474A614 (Unity) ExecuteDrawRenderersCommand
+0x00007FFA0475DD7F (Unity) ScriptableRenderContext::ExecuteRendererList
+0x00007FFA0480D4CB (Unity) RenderingCommandBuffer::ExecuteCommandBufferWithState
+0x00007FFA0480CBAA (Unity) RenderingCommandBuffer::ExecuteCommandBuffer
+0x00007FFA0475EAC0 (Unity) ScriptableRenderContext::ExecuteScriptableRenderLoop
+0x00007FFA04027A38 (Unity) ScriptableRenderContext_CUSTOM_Submit_Internal
+0x000001B258252CB3 (Mono JIT Code) (wrapper managed-to-native) UnityEngine.Rendering.ScriptableRenderContext:Submit_Internal (UnityEngine.Rendering.ScriptableRenderContext&)
+0x000001B258252BF3 (Mono JIT Code) UnityEngine.Rendering.ScriptableRenderContext:Submit ()
+0x000001B2581ACA83 (Mono JIT Code) [.\Library\PackageCache\com.unity.render-pipelines.universal@040461d037aa\Runtime\UniversalRenderPipeline.cs:1013] UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) 
+0x000001B25818A95B (Mono JIT Code) [.\Library\PackageCache\com.unity.render-pipelines.universal@040461d037aa\Runtime\UniversalRenderPipeline.cs:1208] UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderCameraStack (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) 
+0x000001B258184DB3 (Mono JIT Code) [.\Library\PackageCache\com.unity.render-pipelines.universal@040461d037aa\Runtime\UniversalRenderPipeline.cs:611] UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) 
+0x000001B2581848D8 (Mono JIT Code) UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+0x000001B25026CC43 (Mono JIT Code) UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+0x000001B25026CFD8 (Mono JIT Code) (wrapper runtime-invoke) <Module>:runtime_invoke_void_object_intptr_object_AtomicSafetyHandle (object,intptr,intptr,intptr)
+0x00007FFA092F755E (mono-2.0-bdwgc) [C:\build\output\Unity-Technologies\mono\mono\mini\mini-runtime.c:3445] mono_jit_runtime_invoke 
+0x00007FFA092391D4 (mono-2.0-bdwgc) [C:\build\output\Unity-Technologies\mono\mono\metadata\object.c:3068] do_runtime_invoke 
+0x00007FFA092392C0 (mono-2.0-bdwgc) [C:\build\output\Unity-Technologies\mono\mono\metadata\object.c:3115] mono_runtime_invoke 
+0x00007FFA0439C3B5 (Unity) scripting_method_invoke
+0x00007FFA043C4AA6 (Unity) ScriptingInvocation::Invoke
+0x00007FFA043BF865 (Unity) ScriptingInvocation::Invoke<void>
+0x00007FFA03F1F845 (Unity) Scripting::UnityEngine::Rendering::RenderPipelineManagerProxy::DoRenderLoop_Internal
+0x00007FFA04760526 (Unity) ScriptableRenderContext::ExtractAndExecuteRenderPipeline
+0x00007FFA049FCCC8 (Unity) RenderManager::RenderOffscreenCameras
+0x00007FFA02A529CA (Unity) PlayerLoopController::InternalUpdateScene
+0x00007FFA02A54C2A (Unity) PlayerLoopController::UpdateSceneIfNeededFromMainLoop
+0x00007FFA02A6C724 (Unity) Application::TickTimer
+0x00007FFA0234D68C (Unity) MainMessageLoop
+0x00007FFA023562B1 (Unity) UnityMain
+0x00007FF718912F2A (Unity) __scrt_common_main_seh
+0x00007FFB07D9DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FFB08DFEE4C (ntdll) RtlUserThreadStart
+
+========== END OF STACKTRACE ===========
+
+A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
+ * C:/Users/gehbd/AppData/Local/Temp/Unity/Editor/Crashes

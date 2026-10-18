@@ -1,0 +1,469 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.5/staging' branch; Version is '6000.5.5f1 (d16e074b49fd) revision 13725191'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26300) Core' Language: 'en' Physical Memory: 24216 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gehbd" at "2026-10-18T22:07:05.588204Z"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-18T22:07:05Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 27976, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              ee17dfdf0c29419780c465c4173677d6
+  Correlation Id:          e87e60bffd9edcb8d22daf0f2bef7f59
+  External correlation Id: 3316997202628714538
+  Machine Id:              YnZeAC56/NzUixr0l3qI1HeCN9g=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-gehbd" (connect: 0.00s, validation: 0.00s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gehbd-notifications" at "2026-10-18T22:07:05.6386539Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 4673054916575-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.07s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Unity.exe
+-batchmode
+-force-d3d11
+-projectPath
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox
+-executeMethod
+OneMoreTime.Editor.BossGuardValidation.Run
+-logFile
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\boss-guard-final.log
+Successfully changed project path to: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox
+C:/Users/gehbd/Downloads/Paradox_Zero/Verification/BossGuardSandbox
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=0"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.Player connection [13028]  Target information:
+
+Player connection [13028]  * "[IP] 192.168.26.2 [Port] 55505 [Flags] 2 [Guid] 3697239986 [EditorId] 3697239986 [Version] 1048832 [Id] WindowsEditor(7,Victus_FacundoR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [13028] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [13028] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-17888" after 0.3 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Artifact Garbage Collection - Removed 1 unused hashed content files
+Initialize engine version: 6000.5.5f1 (d16e074b49fd)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/gehbd/Downloads/Paradox_Zero/Verification/BossGuardSandbox/Assets
+Forcing GfxDevice: Direct3D 11
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4050 Laptop GPU (ID=0x28a1)
+    Vendor:   NVIDIA
+    VRAM:     5920 MB
+    Driver:   32.0.16.1742
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56888
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002946 seconds.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.448 seconds
+Domain Reload Profiling: 1031ms
+	BeginReloadAssembly (175ms)
+		CreateAndSetChildDomain (13ms)
+	RebuildCommonClasses (5ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (74ms)
+	LoadAllAssembliesAndSetupDomain (312ms)
+		LoadAssemblies (158ms)
+		AnalyzeDomain (224ms)
+			TypeCache.Refresh (223ms)
+				TypeCache.ScanAssembly (208ms)
+	FinalizeReload (451ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (114ms)
+			ProcessInitializeOnLoadAttributes (113ms)
+			ProcessInitializeOnLoadMethodAttributes (135ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 65 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.2d.animation@15.1.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.2d.animation@6d5a363ae647)
+    com.unity.2d.aseprite@5.0.3 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.2d.aseprite@d13865913efa)
+    com.unity.2d.psdimporter@14.0.3 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.2d.psdimporter@5d82044f9e43)
+    com.unity.2d.spriteshape@15.0.3 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.2d.spriteshape@fcb7ec61a58b)
+    com.unity.2d.tilemap.extras@8.0.3 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.2d.tilemap.extras@a80140457adc)
+    com.unity.2d.tooling@3.0.1 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.2d.tooling@6f06ffb033c0)
+    com.unity.collab-proxy@2.13.3 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.collab-proxy@4f3be89e8675)
+    com.unity.ide.rider@3.0.38 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.19.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.inputsystem@21a28c3a6c83)
+    com.unity.timeline@1.8.12 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.timeline@8cd8509afae5)
+    com.unity.visualscripting@1.9.11 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.visualscripting@8bed5ad90189)
+    com.unity.2d.common@14.0.1 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.2d.common@73badf92ba8b)
+    com.unity.searcher@4.9.4 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.searcher@d45a78918735)
+    com.unity.burst@1.8.29 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.burst@6bb9aca3ef38)
+    com.unity.nuget.mono-cecil@1.11.6 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.test-framework.performance@3.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.test-framework.performance@8b56083ec0f0)
+  Built-in packages:
+    com.unity.2d.sprite@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.2d.sprite@053a968eab56)
+    com.unity.2d.tilemap@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.2d.tilemap@b959501fd678)
+    com.unity.multiplayer.center@1.0.1 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.multiplayer.center@b860850997d0)
+    com.unity.render-pipelines.universal@17.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.render-pipelines.universal@040461d037aa)
+    com.unity.test-framework@1.7.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.test-framework@1405238725ab)
+    com.unity.ugui@2.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.ugui@f2d87ebaaa32)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.1.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.ext.nunit@44f7d31723bd)
+    com.unity.render-pipelines.core@17.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.render-pipelines.core@b19a46951e65)
+    com.unity.shadergraph@17.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.shadergraph@8d7376ec43ee)
+    com.unity.render-pipelines.universal-config@17.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.render-pipelines.universal-config@fdda01c80fe3)
+    com.unity.collections@6.5.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.collections@a43cabe808ca)
+    com.unity.mathematics@1.4.0 (location: C:\Users\gehbd\Downloads\Paradox_Zero\Verification\BossGuardSandbox\Library\PackageCache\com.unity.mathematics@981956d94fb6)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.05 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/gehbd/Downloads/Paradox_Zero/Verification/BossGuardSandbox
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 5s619ms
+[ 869/1121  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[1113/1121  1s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+[1114/1121  0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[1115/1121  0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 143 defines and 354 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1116/1121  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[1117/1121  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+[1118/1121  0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 141 defines and 376 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1119/1121  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[1120/1121  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (5.55 seconds), 9 items updated, 1121 evaluated
+Total cache size 120888632
+Total cache size after purge 120888632, took 00:00:00.1520859
+AssetDatabase: script compilation time: 7.603812s
+Begin MonoManager ReloadAssembly
+Refreshing native plugins compatible for Editor in 2.73 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.29 ms, found 5 plugins.
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.466 seconds
+Domain Reload Profiling: 4551ms
+	BeginReloadAssembly (221ms)
+		DisableScriptedObjects (17ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (10ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (773ms)
+		LoadAssemblies (453ms)
+		AnalyzeDomain (291ms)
+			TypeCache.Refresh (194ms)
+				TypeCache.ScanAssembly (179ms)
+			BuildScriptInfoCaches (86ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (3467ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (94ms)
+			ProcessInitializeOnLoadAttributes (2765ms)
+			ProcessInitializeOnLoadMethodAttributes (342ms)
+			AfterProcessingInitializeOnLoad (7ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Starting new worker id: 0 with log in C:/Users/gehbd/Downloads/Paradox_Zero/Verification/BossGuardSandbox/Logs/AssetImportWorkerHW0.log
+Refreshing native plugins compatible for Editor in 2.53 ms, found 5 plugins.
+
+Asset Pipeline Refresh (id=a5e7bc09d4eff2640bdfb4c1e759bc93): Total: 13.301 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=4107 ms
+		Asset DB Callback time: managed=293 ms, native=61 ms
+		Scripting: domain reloads=1, domain reload time=1147 ms, compile time=7606 ms, other=83 ms
+		Project Asset Count: scripts=1621, non-scripts=3627
+		Asset File Changes: new=0, changed=2, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 56.196ms
+	ApplyChangesToAssetFolders: 0.656ms
+	Scan: 184.657ms
+	Collect global state as custom dependencies: 4.224ms
+	OnSourceAssetsModified: 0.844ms
+	CategorizeScriptCompilationAssets: 60.356ms
+	ProcessAssetsWithTransientArtifactChanges: 84.555ms
+	CategorizeAssets: 60.425ms
+	CompileScripts: 7606.492ms
+	ImportOutOfDateAssets: 3547.958ms (3488.903ms without children)
+		UnloadImportedAssets: 0.664ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.687ms
+		ImportSchedulerStart: 57.665ms
+	PostProcessAllAssets: 295.942ms
+		VCAutoAddAssetPostprocess 1.085ms
+		XRBuildSystem.XRAssetImported 1.078ms
+		PostProcessCallbackCreateDeferredMaterials 0.058ms
+		MonoPostProcessAllAssets: 293.132ms
+			AssetPostprocessor.OnPostprocessAllAssets 179.945ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 27.019ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 19.551ms
+			SyncVS.PostprocessSyncProject 7.623ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 5.931ms
+			SpriteSlicePostprocessor.OnPostprocessAllAssets 5.079ms
+			AssetChangedListener.OnPostprocessAllAssets 3.880ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 2.981ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 2.902ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 2.242ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 2.061ms
+			MaterialPostprocessor.OnPostprocessAllAssets 1.578ms
+			AssetProcessor.OnPostprocessAllAssets 1.195ms
+			SpriteEditorTexturePostprocessor.OnPostprocessAllAssets 1.189ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.929ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.909ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.903ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.868ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.747ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.650ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.637ms
+			SpriteShapeAssetPostProcessor.OnPostprocessAllAssets 0.546ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.520ms
+			SamplePostprocessor.OnPostprocessAllAssets 0.442ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.376ms
+			PostProcessor.OnPostprocessAllAssets 0.362ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.360ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.360ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.357ms
+			PSDImportPostProcessor.OnPostprocessAllAssets 0.331ms
+			SampleDependencyImporterPostProcessor.OnPostprocessAllAssets 0.322ms
+			SpriteLibraryAssetPostprocessor.OnPostprocessAllAssets 0.303ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.267ms
+			AssetEvents.OnPostprocessAllAssets 0.250ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.235ms
+			PSDImporterAssetPostProcessor.OnPostprocessAllAssets 0.194ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.163ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.128ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.120ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.110ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.089ms
+	PostAssetChangesProfiler: 4.884ms
+	UnloadStreamsBegin: 3.242ms
+	PersistCurrentRevisions: 0.191ms
+	GenerateScriptTypeHashes: 2.328ms
+	GenerateScriptTypeSerializationHashes: 3.541ms
+	Untracked: 1384.713ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Scanning for USB devices : 1.442ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-My project (2)
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7409 unused Assets / (12.2 MB). Loaded Objects now: 8315.
+Memory consumption went from 439.9 MB to 427.8 MB.
+Total: 27.643000 ms (FindLiveObjects: 0.714600 ms CreateObjectMapping: 2.417300 ms MarkObjects: 7.838100 ms  DeleteObjects: 16.669100 ms)
+
+[Project] Loading completed in 16.765 seconds
+	Project init time: 				16.109 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.253 seconds
+		Asset Database init time: 		0.512 seconds
+		Global illumination init time: 	0.003 seconds
+		Assemblies load time: 			1.085 seconds
+		Unity extensions init time: 	0.023 seconds
+		Asset Database refresh time: 	13.301 seconds
+	Scene opening time: 			0.245 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1792361242264,"processId":17888,"projectLoad":16.7647591,"projectInit":16.10866,"templateInit":0.0,"packageManagerInit":0.2529016,"assetDatabaseInit":0.5116789,"globalIlluminationInit":0.0028128,"assembliesLoad":1.0845693,"unityExtensionsInit":0.0232711,"assetDatabaseRefresh":13.3008533,"sceneOpening":0.2445416}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1792361242264,"processId":17888,"editorVersion":"6000.5.5f1 (d16e074b49fd)","branch":"6000.5/staging","buildType":"Release","platform":"Windows"}
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Start Indexing on Editor startup
+[Indexing] Starting Initial Indexing for Assets
+Opening scene 'Assets/OneMoreTime/Generated_Hacha_Final 2/Scenes/OneMoreTime_Demo.unity'
+Unloading 160 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/OneMoreTime/Generated_Hacha_Final 2/Scenes/OneMoreTime_Demo.unity'
+	Deserialize:            47.093 ms
+	Integration:            204.771 ms
+	Integration of assets:  47.156 ms
+	Thread Wait Time:       0.182 ms
+	Total Operation Time:   299.202 ms
+Unloading 245 unused Assets / (267.0 KB). Loaded Objects now: 9553.
+Memory consumption went from 471.8 MB to 471.6 MB.
+Total: 9.571600 ms (FindLiveObjects: 0.673900 ms CreateObjectMapping: 0.997800 ms MarkObjects: 7.377600 ms  DeleteObjects: 0.519900 ms)
+
+SpriteAtlasPacking completed in 0.008224 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            11.262 ms
+	Integration:            262.093 ms
+	Integration of assets:  2.704 ms
+	Thread Wait Time:       0.021 ms
+	Total Operation Time:   276.080 ms
+Created GICache directory at C:/Users/gehbd/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.020s, timestamps: [16.768 - 16.789]
+Worker ready: AssetImportWorkerHW0 0
+Prueba del jefe: fase 6 con estadísticas iniciales. Los récords de esta prueba no se guardan.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.BossShortcut:TryStart () (at Assets/OneMoreTime/Editor/BossShortcut.cs:60)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/OneMoreTime/Editor/BossShortcut.cs Line: 60)
+
+Prueba del jefe: fase 6 con estadísticas iniciales. Los récords de esta prueba no se guardan.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.BossShortcut:TryStart () (at Assets/OneMoreTime/Editor/BossShortcut.cs:60)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: Assets/OneMoreTime/Editor/BossShortcut.cs Line: 60)
+
+OMT_BOSS_GUARD_PASS
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.BossGuardValidationRunner/<Start>d__6:MoveNext () (at Assets/OneMoreTime/Editor/BossGuardValidation.cs:71)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/BossGuardValidation.cs Line: 71)
+
+Unloading 202 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.654 ms
+	Integration:            183.083 ms
+	Integration of assets:  0.004 ms
+	Thread Wait Time:       0.012 ms
+	Total Operation Time:   186.753 ms
+Unloading 1 unused Assets / (189.4 KB). Loaded Objects now: 10547.
+Memory consumption went from 0.59 GB to 0.59 GB.
+Total: 12.311200 ms (FindLiveObjects: 0.495800 ms CreateObjectMapping: 1.548000 ms MarkObjects: 10.202200 ms  DeleteObjects: 0.063900 ms)
+
+MonoPathRemapper: Attempts to remap: 50037; Successful remaps: 23434
+Serialized file version minimum: 23, current 23
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-gehbd-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-gehbd channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+[Package Manager] Server process was shutdown
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1792361250293,"processId":17888,"allocatedMemory":51012162,"memoryLabels":[{"Default":221850},{"Permanent":15516},{"NewDelete":66635},{"Thread":4197560},{"Manager":819461},{"VertexData":680},{"Geometry":816},{"Texture":24},{"Shader":852961},{"Material":24},{"GfxDevice":55832},{"Animation":66680},{"Audio":1544},{"FreeType":8},{"FontEngine":736},{"Physics":2146},{"Physics2D":16},{"Serialization":21072},{"Input":42840},{"JobScheduler":256},{"TextLib":7414},{"Mono":48},{"MonoCode":64},{"ScriptingNativeRuntime":1583180},{"BaseObject":1661689},{"Resource":1208},{"Renderer":3080},{"Transform":4685},{"File":4009},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":25390},{"StaticString":3808},{"Utility":2673238},{"Curl":2579},{"PoolAlloc":2360},{"AI":80},{"TypeTree":14869},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"CloudService":10840},{"WebRequest":552},{"VR":47114},{"SceneManager":608},{"Video":208},{"LazyScriptCache":32},{"NativeArray":33005840},{"Camera":17},{"Secure":2377},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":728},{"Hierarchy":1176},{"UIElements":16496},{"CoreStats":13688},{"Identifiers":6768},{"Gui":189},{"EditorUtility":155759},{"VersionControl":8},{"Undo":931},{"AssetDatabase":5026490},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":38929},{"Upm":1912},{"UpmDiagnostics":8},{"AssetCompliance":64},{"DrivenProperties":72},{"LocalIPC":260},{"ProfilerEditor":9778},{"CoreBusinessMetrics":3480},{"Windowing":456},{"Licensing":776},{"AssetReference":32},{"IPCStream":32}]}

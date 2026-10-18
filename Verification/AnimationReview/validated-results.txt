@@ -1,0 +1,54 @@
+PASS: Scene initializes into the main menu
+PASS: Play always uses the configured game scene without running Tools
+Menu player=(2.00, 2.07, 0.00) camera=(4.00, 5.27, -10.00)
+PASS: Player is framed immediately while menu time is paused
+PASS: Archer: prefab Animator owns the runtime pose
+PASS: Archer: an edited clip key survives runtime LateUpdate (head=37.00)
+PASS: Archer: attachment positions do not inherit a previous walk frame
+PASS: Archer: edited Attack clip follows the anticipation clock
+PASS: Archer: release/hit uses the authored active frame
+PASS: Archer: canceled attack returns to locomotion
+PASS: Mage: prefab Animator owns the runtime pose
+PASS: Mage: an edited clip key survives runtime LateUpdate (head=37.00)
+PASS: Mage: attachment positions do not inherit a previous walk frame
+PASS: Mage: edited Attack clip follows the anticipation clock
+PASS: Mage: release/hit uses the authored active frame
+PASS: Mage: canceled attack returns to locomotion
+PASS: WhiteWolf: prefab Animator owns the runtime pose
+PASS: WhiteWolf: an edited clip key survives runtime LateUpdate (head=37.00)
+PASS: WhiteWolf: attachment positions do not inherit a previous walk frame
+PASS: WhiteWolf: edited Attack clip follows the anticipation clock
+PASS: WhiteWolf: release/hit uses the authored active frame
+PASS: WhiteWolf: canceled attack returns to locomotion
+PASS: BlueWolf: prefab Animator owns the runtime pose
+PASS: BlueWolf: an edited clip key survives runtime LateUpdate (head=37.00)
+PASS: BlueWolf: attachment positions do not inherit a previous walk frame
+PASS: BlueWolf: edited Attack clip follows the anticipation clock
+PASS: BlueWolf: release/hit uses the authored active frame
+PASS: BlueWolf: canceled attack returns to locomotion
+PASS: Player: prefab Animator owns the runtime pose
+PASS: Player: an edited clip key survives runtime LateUpdate (head=37.00)
+PASS: Player: attachment positions do not inherit a previous walk frame
+PASS: Game window (1390.00, 580.00): 1.7x zoom and panning reset to fit ((1.00, 1.00))
+PASS: Game window (640.00, 360.00): 1.7x zoom and panning reset to fit ((1.00, 1.00))
+PASS: Game window (400.00, 900.00): 1.7x zoom and panning reset to fit ((1.00, 1.00))
+PASS: JUGAR starts phase 1 and resumes gameplay time
+PASS: Player is visible after arrival
+Playing player=(2.14, 2.06, 0.00) camera=(5.35, 4.10, -10.00)
+PASS: (1280, 720): whole player is inside viewport ((0.11, 0.17, 10.00) to (0.15, 0.37, 10.00))
+PASS: game (1280, 720): visible UI labels fit entirely inside rendered screen
+PASS: (1024, 768): whole player is inside viewport ((0.11, 0.25, 10.00) to (0.15, 0.40, 10.00))
+PASS: game (1024, 768): visible UI labels fit entirely inside rendered screen
+PASS: (2560, 1080): whole player is inside viewport ((0.08, 0.17, 10.00) to (0.11, 0.37, 10.00))
+PASS: game (2560, 1080): visible UI labels fit entirely inside rendered screen
+PASS: (720, 1280): whole player is inside viewport ((0.19, 0.38, 10.00) to (0.26, 0.49, 10.00))
+PASS: game (720, 1280): visible UI labels fit entirely inside rendered screen
+PASS: Canvas retains the full 1280x720 layout on narrow and wide displays
+PASS: Camera sees the teleported player immediately, before another physics step
+PASS: Pause works
+PASS: Returning to menu and starting again restores gameplay
+PASS: Upgrade cards open while gameplay is paused
+PASS: upgrades (1390, 550): visible UI labels fit entirely inside rendered screen
+PASS: upgrades (640, 360): visible UI labels fit entirely inside rendered screen
+PASS: upgrades (400, 900): visible UI labels fit entirely inside rendered screen
+PASS: All startup and screen checks pass without runtime errors

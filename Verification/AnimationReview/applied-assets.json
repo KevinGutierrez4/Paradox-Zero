@@ -1,0 +1,186 @@
+[
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Actor.controller",
+    "Delete": false
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Crouch.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Crouch.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\CrouchAttack.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\CrouchAttack.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Jump.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Jump.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Special.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Special.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Actor.controller",
+    "Delete": false
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Crouch.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Crouch.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\CrouchAttack.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\CrouchAttack.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Jump.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Jump.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Special.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Special.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Actor.controller",
+    "Delete": false
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Crouch.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Crouch.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\CrouchAttack.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\CrouchAttack.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Jump.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Jump.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Walk.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Walk.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Actor.controller",
+    "Delete": false
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Crouch.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Crouch.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\CrouchAttack.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\CrouchAttack.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Jump.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Jump.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Special.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Special.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Actor.controller",
+    "Delete": false
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Crouch.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Crouch.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\CrouchAttack.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\CrouchAttack.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Jump.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Jump.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Special.anim",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Special.anim.meta",
+    "Delete": true
+  },
+  {
+    "Relative": "Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Player\\Actor.controller",
+    "Delete": false
+  }
+]

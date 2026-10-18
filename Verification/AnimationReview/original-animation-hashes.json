@@ -1,0 +1,426 @@
+[
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Actor.controller",
+    "Hash": "E9909A300EFF883F975C01941450831927FF481038A825E88494F9B9C817C895"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Actor.controller.meta",
+    "Hash": "7F26DC68A75D3AF38C07329ACF78CA45F64A4ECC81D7E550BFBC36D9BEB1E2A6"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Attack.anim",
+    "Hash": "5E0C13D291B9EBE888CA262434D150555476908375DC33B6B1795667B8117ADA"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Attack.anim.meta",
+    "Hash": "698B2E18C0CDC35EC2D46A9D638D1DF3981A8FE6D48D0792D5A506C87D0B1D73"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Crouch.anim",
+    "Hash": "3F100640397FB9679AEFF5DD5016594365686CA9152C0B20C727B3E7FD4E125D"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Crouch.anim.meta",
+    "Hash": "5E47CABB30C50B50FD91AACBF12E9064FF02A4F9330386906A14F1FBE85005FF"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\CrouchAttack.anim",
+    "Hash": "91E4F8EE72E713584D0F8C389473C7FDD0B397A6AFA8F09C35BA30199F0CF87D"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\CrouchAttack.anim.meta",
+    "Hash": "CDC3A68A0AF93392D0F8FA863175C780E9D59B3272EC5BF841B4DD7195145AFF"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Die.anim",
+    "Hash": "0C376A5EDD515E5106711D78DD63E806B8C88F8E1F1A5F96FE10CDB2EF975DAE"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Die.anim.meta",
+    "Hash": "BAE992ED86B2E2E0A725B457E4C8AB35BD87394C222B462F0FF34A59E0B83F10"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Idle.anim",
+    "Hash": "B4A560D1C6A59B0EA8F65303470FF2CFF8CE2FA969A35434C0C4F2CF0415D3CC"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Idle.anim.meta",
+    "Hash": "2EF077248B958B00CB79214A68C691CDFC65826E5ACF4B418CAABB87F14436AF"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Jump.anim",
+    "Hash": "B3F71AA44B58EE74F5F7C88B2F05C23C778EB7A2B311E276C388488234791F4D"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Jump.anim.meta",
+    "Hash": "57CFB1F0E95AEB8E6487819A9E9579A8CD548F1E71779CCCFEB9FC043E3D6625"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Special.anim",
+    "Hash": "8ED3B6E0A881AA5FE43D218A30E0DFDBC8D3AF712FC7457A4C949BEF1E2EF1A7"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Special.anim.meta",
+    "Hash": "13B04ED79775748F032F362F055A4DA5FC942DCAEC38E0B0C5171FC81C96DF14"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Walk.anim",
+    "Hash": "E5EC3AA13BAAF6DDF41303AA45DC64B62CAA3B72861EBA50ACAFDBBEA92108E1"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Archer\\Walk.anim.meta",
+    "Hash": "A3D18F6B0005EDA88CD4E515089B9D2BC2272619CEF0E0008A47F6373C6F7CD8"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Actor.controller",
+    "Hash": "4899C95820F289C398FBC1FBE97AAD98D786E082ED377F96F4247705C84DD1B6"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Actor.controller.meta",
+    "Hash": "2E5F98449F0544D66EC5D7A23CBD7AFFF2E1AA97442BBF6407FD7EF346DB7086"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Attack.anim",
+    "Hash": "F5E1E7B58BEFB8CFD10E537F2327ADE8504F6E064EA299A0D5013E8218034A35"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Attack.anim.meta",
+    "Hash": "5319DE684DEB172F2E6319497A6AEB7BD8C3EE595236B08667AEF0B98EED3807"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Crouch.anim",
+    "Hash": "71B49A25EEBE0BA77E95EE95889D5A9B61EA9EA3D1CBCC317F2F3AC7528616FE"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Crouch.anim.meta",
+    "Hash": "ECD7756DD92387AAB45634AB2EF7C513D215E12D7980C0AA6988B782E181B3BE"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\CrouchAttack.anim",
+    "Hash": "7D0A2A578E7B4A53F0E2110502D4999A71C57B62CC253A72E488430A3C04A430"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\CrouchAttack.anim.meta",
+    "Hash": "6248658889506701396F55199D4BF47B8AFDA29744929361F6F22577308C05B4"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Die.anim",
+    "Hash": "D855868A392A909C980D64F7F97D7AE5C9FE2224B06D1C36498A53A1205CF7DF"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Die.anim.meta",
+    "Hash": "D1882CCDED02A228E1664E7453F39E482A47255146DA582D1D477519FDCB619A"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Idle.anim",
+    "Hash": "C83A48EDE24B46CFC20784C4F2221D4392276D39C73C3BC890C9A76EE8116446"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Idle.anim.meta",
+    "Hash": "34227DCAEC4A0EA63C6E5725F4BCBA7B73EDA069B22254DC8E8467F04E526364"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Jump.anim",
+    "Hash": "2E3D873EB96641CECF5BCFE228131090AE9FC8DC5A5F4F38675EFB24F3A667A7"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Jump.anim.meta",
+    "Hash": "E51EF9A5672EBAF73E21A48691874AD443380BC4E3FBC1CC10166D39C1D09AEE"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Special.anim",
+    "Hash": "4C52837786181B7FECE3AB7595CDEBACE7D8EF4D31B3777E50F92459B62DC7DF"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Special.anim.meta",
+    "Hash": "F3B448001D78D1B419CDB611F54CEB1BB92F9D5CB6F71AB10C390C05976A5434"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Walk.anim",
+    "Hash": "371947C4A620A98640A5978D9B4905C87007035502B69F96FBD621DDD677C01C"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\BlueWolf\\Walk.anim.meta",
+    "Hash": "8DA3F60B770B62825C9C642567780D2CDC6DA03A99F07D5CD0BE4811820234CE"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Actor.controller",
+    "Hash": "A89242D2A433CE7914CCF1CAD77A981B859E3AF925EB7D45886FA57207F9226F"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Actor.controller.meta",
+    "Hash": "AC3EDCD2B5D1BDBE46A93B44CAD908530CEBE7F43DF616DCBF504F1C1A01491D"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Attack.anim",
+    "Hash": "D271FE05B61C4B5C4AB219C9A5C5D8FCD987ECA6968CAC2A1E91418D102579B5"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Attack.anim.meta",
+    "Hash": "B85CF1B907AB8EBA0A7A453AAC21259F1706826913878F37085FEC4C3565A605"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Crouch.anim",
+    "Hash": "A8F18EFE91AEF0711E552432BCE426A54F91E5B660BDDA833F66F822818090C0"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Crouch.anim.meta",
+    "Hash": "5123BB22998E513369DA11E5231434E742E9D99E89EF8C1560538E1582536934"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\CrouchAttack.anim",
+    "Hash": "68F45ABFCBDCC917593E3E7F1B7092A9B1D6E1A9F2AFC65BF78CDECD8BBB10A1"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\CrouchAttack.anim.meta",
+    "Hash": "BAB44D3240F04575B29D61C23B5757963650F92B654B555020F1F58E35857D5D"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Die.anim",
+    "Hash": "09D71A8ED8F68A276D358D24A2CBC5D97C71CBC8FDF2E2FFFF3FBE77A0070AB5"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Die.anim.meta",
+    "Hash": "3D8BEF90FFBA984A3A9AC8C2650CA7D76CD1F115E8A7A682660245F55E47F3C1"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Idle.anim",
+    "Hash": "E4AC495F52E722578B943D4225DB33F1C203DCA460D8E6531C07F4A8532BBEE7"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Idle.anim.meta",
+    "Hash": "1FD5CDB38C770144BF2F3238776E94F7A77C7208DDCAA692BFE441A0F908223F"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Jump.anim",
+    "Hash": "7966EC985FB44FAFE59C1515174EAA00E46535BF267C66F13F91598CF5F14253"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Jump.anim.meta",
+    "Hash": "31FA0566C51B22A6128806C1ACEDDC272E090FFD69B1B0C542BC5051B3625CD9"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Special.anim",
+    "Hash": "A4D907CA53296F2EE593EEBC02C22FAC7B7CEB5527AFAE3AC8F5CEAEE0ADFC56"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Special.anim.meta",
+    "Hash": "D788A65D947958D36977279734C2EC639C2E0360F5D5F9BC51A3EE753858301C"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Walk.anim",
+    "Hash": "4C8517D199D349FA1F4DDF25F092C568959A309DF16525CC0948476D47E994C4"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Boss\\Walk.anim.meta",
+    "Hash": "7E109F191E9F542D165B8001BA6938A8E00449B23B5D4178D23787F986E81329"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Actor.controller",
+    "Hash": "DCAA39CD5A503BBAB3F32B93959068325E5586C172F934969433A7D79C11E50D"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Actor.controller.meta",
+    "Hash": "BE587ADAF0D5767FF17A12C985069736422A19E60E8C569D95CD6650C5A59DBD"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Attack.anim",
+    "Hash": "BF9B97AF00E9E63A173CF8CD1DF146C5D47A7D576C5B61516B9F6A538BE89289"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Attack.anim.meta",
+    "Hash": "F7F99961F1F19805DC1DEDA2DFD403358749DA699A82A5710D8859004294DAB0"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Crouch.anim",
+    "Hash": "04429C2F30EACB07F8BFC485EC8A2AF3FD620F5448DE51360AF2D5F8DD3FC385"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Crouch.anim.meta",
+    "Hash": "EC379F777356CC9A5CFFFEF6908E53E2004BC9A203A557D49AFE60E4BEE6AF75"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\CrouchAttack.anim",
+    "Hash": "94D4055AD23E3E690D1AFA3A24970F83A370A1A98E2AB1B1B95F22B78AF11E1D"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\CrouchAttack.anim.meta",
+    "Hash": "4980870C22C950F4C1D2C9A41B3EAF06684D2E3A946B154BC51B5550B763FF23"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Die.anim",
+    "Hash": "0646F8124D2DF8F8EF7618D6A71FDDFF308AD0BB883A372EB600E45423B1C405"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Die.anim.meta",
+    "Hash": "E806648AB8B4EB79A07BB4BFF4C4969717B543DD689ED7633D87D8FF821DB045"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Idle.anim",
+    "Hash": "0664F7BC97951CFF98F52FA24E05D5B237640300B47DC00F5942F535CE5A680D"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Idle.anim.meta",
+    "Hash": "DC0341DD97C6944F0CFBD78E01818B38D11E7C7A0985BF3706914EAB8363FF74"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Jump.anim",
+    "Hash": "4DA2DA4B70D6A4ED8F26D4E03A0E4D89EE1FB38584F9277F324FE2A4C04E36C1"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Jump.anim.meta",
+    "Hash": "875F05E7ACD3CC74F7D7BEA72137D195D175E6FB39A5915CBB916819A2D828FA"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Special.anim",
+    "Hash": "BB479A77D4127136D2A95A240E313D3BC18EB335A2210DFFC4874FE3D827C6D3"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Special.anim.meta",
+    "Hash": "90D91EA1475D6F199E62DC66E0C24A588C0491C6FF499F80A031B9D8520AAC95"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Walk.anim",
+    "Hash": "41D3537AB363B60F86D4AA8A8C53407B7690AE4CB31084D2C1D2DD2074CB591E"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Mage\\Walk.anim.meta",
+    "Hash": "667D4C284D9A6D06BFA915333002F3C44C89047DD22810EDEAEA8181B03878CB"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Actor.controller",
+    "Hash": "9600C6D3BD92C572F0288A885D7112935911C593B24776A7379549A73E351477"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Actor.controller.meta",
+    "Hash": "5C32DE386DA4554A55807884136139FD430356A163A3BC0CE6557258001935BE"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Attack.anim",
+    "Hash": "0F3DCCA482862A067E5AD06B5B34797B69E3DBD1F6226EB7B14B13867E506EF1"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Attack.anim.meta",
+    "Hash": "989E0911491008BA88A7E009A064AFC6E9B39F56347FD20B7EDAB581AEFBA509"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Crouch.anim",
+    "Hash": "71B49A25EEBE0BA77E95EE95889D5A9B61EA9EA3D1CBCC317F2F3AC7528616FE"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Crouch.anim.meta",
+    "Hash": "8FD3112B7AB371011A483E3F1456F31182B2138163E22F0A3F1C5AEBBFDA4DE8"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\CrouchAttack.anim",
+    "Hash": "7D0A2A578E7B4A53F0E2110502D4999A71C57B62CC253A72E488430A3C04A430"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\CrouchAttack.anim.meta",
+    "Hash": "6C600BD1E21323923C7976973BBC666B376404499D67A04A2FDB8F3C08B65314"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Die.anim",
+    "Hash": "D855868A392A909C980D64F7F97D7AE5C9FE2224B06D1C36498A53A1205CF7DF"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Die.anim.meta",
+    "Hash": "3BCE589E245A72F4131FD8A05F1752F51690A173D9C2E8CA48D482B344B74CF8"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Idle.anim",
+    "Hash": "C83A48EDE24B46CFC20784C4F2221D4392276D39C73C3BC890C9A76EE8116446"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Idle.anim.meta",
+    "Hash": "5A89636EF6C6A7829DF9EA9AB5D1ECA7E3B62B5FA877C02D20C2B2C2EEBFB9A5"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Jump.anim",
+    "Hash": "2E3D873EB96641CECF5BCFE228131090AE9FC8DC5A5F4F38675EFB24F3A667A7"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Jump.anim.meta",
+    "Hash": "C02A1BD032F56D2FF418FDF742BA1E2FF6AE8C544DBC25F2610F3F16878F023B"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Special.anim",
+    "Hash": "4C52837786181B7FECE3AB7595CDEBACE7D8EF4D31B3777E50F92459B62DC7DF"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Special.anim.meta",
+    "Hash": "AEEBC27E3A9B2EE6BCED41DAA3DF094CDC5A4D644152F91C61588B9BB369880A"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Walk.anim",
+    "Hash": "A8E5A1626493B402F7A1EE46DBAF4F98C5C7E38B1052032D2D1597EFC9325FDE"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\WhiteWolf\\Walk.anim.meta",
+    "Hash": "3E851DCDC2225123FF2047A9249BFEB8EE63168208678FA438554FAF5A4783EF"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Prefabs\\Archer.prefab",
+    "Hash": "1F6A59FE9611DC7E17630C91DFDF6037E666E8226CC019D45B8FE98E874910BC"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Prefabs\\Archer.prefab.meta",
+    "Hash": "4BAA1B2AE48C159082178BF93AFDE93B04ABD2ADE8F3600F5E2BF0AE979A0112"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Prefabs\\BlueWolf.prefab",
+    "Hash": "41D9861220A44F3372CEE375C9277362575197E2E9C56C4E4F901EC75FC02B12"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Prefabs\\BlueWolf.prefab.meta",
+    "Hash": "9B19D20278EFEB5E05FAC8998B36920DB4FDEA0817EF53E83DD5EB891C3F92AB"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Prefabs\\Boss.prefab",
+    "Hash": "B89D3A93F9955E8A3D3120838E69CB87B29B876633323BB9BDFFBE6626C235E7"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Prefabs\\Boss.prefab.meta",
+    "Hash": "03F4E5BCBBF060788E9C768AAB2B9EBC7350D551492050BC4F73A0CD37C107CE"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Prefabs\\Mage.prefab",
+    "Hash": "8FA57A282C6B82E9BBB999322ECBD892D3664D25A915CB773732139A3362FD04"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Prefabs\\Mage.prefab.meta",
+    "Hash": "9D321CE34B8927395EFDDA24FC94C4177555DD29A6593C42634F35251458DAB8"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Prefabs\\Player.prefab",
+    "Hash": "217DC2377D1378473CCB9548F5C3A35015BA184222A2C7C1D9CB5FCE17D7600E"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Prefabs\\Player.prefab.meta",
+    "Hash": "C6B725DAE74591241E9819D2BAD345CE95E4B73FC3C35584140C78B1AFFCBE68"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Prefabs\\Projectile.prefab",
+    "Hash": "737D6555BDBC7EE165877D0EAEA0F51738A0DC2C665714E818E8CE7E6CCE5720"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Prefabs\\Projectile.prefab.meta",
+    "Hash": "A00E39287BE812F3D01ADFF9CEA2D50D238BD002856D1CB914F38B0050D6D9B0"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Prefabs\\WhiteWolf.prefab",
+    "Hash": "D5B0283A7D2A93C519596312DD33254749D33D247AC51C6174ED7327EF9472E9"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Prefabs\\WhiteWolf.prefab.meta",
+    "Hash": "D1AFAD3C0F13E8E06BC396758A109B297D6321DC2E16B542EE25F268EC2C70D2"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Player\\Actor.controller",
+    "Hash": "37CA96D584F7BD44B539B9DB3B8F2DBF9A962CDB660C2DEE7922A9E8657D49AC"
+  },
+  {
+    "Path": "C:\\Users\\gehbd\\Downloads\\Paradox_Zero\\Assets\\OneMoreTime\\Generated_Hacha_Final 2\\Animations\\Player\\Actor.controller.meta",
+    "Hash": "8AE9D5294EDDA3F301610F16819929205F1755C059A39703B80C0DFA42CD447E"
+  }
+]

@@ -1,0 +1,46 @@
+C:\Users\gehbd\Downloads\Paradox_Zero\Assets\OneMoreTime\Generated
+C:\Users\gehbd\Downloads\Paradox_Zero\Assets\OneMoreTime\Generated 1
+C:\Users\gehbd\Downloads\Paradox_Zero\Assets\OneMoreTime\Generated 2
+C:\Users\gehbd\Downloads\Paradox_Zero\Assets\OneMoreTime\Generated 3
+C:\Users\gehbd\Downloads\Paradox_Zero\Assets\OneMoreTime\Generated_Hacha_Final
+C:\Users\gehbd\Downloads\Paradox_Zero\Assets\OneMoreTime\Generated_Hacha_Final 1
+C:\Users\gehbd\Downloads\Paradox_Zero\Assets\OneMoreTime\Generated_Hacha_Final 3
+C:\Users\gehbd\Downloads\Paradox_Zero\Assets\_Recovery
+C:\Users\gehbd\Downloads\Paradox_Zero\Assets\Scenes
+C:\Users\gehbd\Downloads\Paradox_Zero\Assembly-CSharp.csproj
+C:\Users\gehbd\Downloads\Paradox_Zero\Assembly-CSharp-Editor.csproj
+C:\Users\gehbd\Downloads\Paradox_Zero\My project_3.slnx
+C:\Users\gehbd\Downloads\Paradox_Zero\OMT_V5_test.slnx
+C:\Users\gehbd\Downloads\Paradox_Zero\LEEME_HACHA.md
+C:\Users\gehbd\Downloads\Paradox_Zero\LEEME_V5_JORMUNGANDR.md
+C:\Users\gehbd\Downloads\Paradox_Zero\LEEME_V6_AUDITORIA.md
+C:\Users\gehbd\Downloads\Paradox_Zero\LEEME_V7_MEJORAS.md
+C:\Users\gehbd\Downloads\Paradox_Zero\LEEME_V8_AUDITORIA.md
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\Directions
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\Motion
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\Poses
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\V5
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\V5Play
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\V6Play
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\axe-play-mode.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\boss-play-mode.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\play-results.txt
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\ranged-diagnostic.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\remote_md5.txt
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\shield-death-play-mode.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\upgrade-berserker.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\upgrade-card-robovida-level1.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\upgrade-card-robovida-level2.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\upgrade-card-robovida-level5.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\upgrade-cards.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\upgrade-damage.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\upgrade-devastador.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\upgrade-guerrero.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\upgrade-hacha.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\upgrade-health.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\upgrade-midgard.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\upgrade-rate.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\upgrade-robovida.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\upgrade-speed.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\upgrade-stone.png
+C:\Users\gehbd\Downloads\Paradox_Zero\Verification\upgrade-vampire.png
