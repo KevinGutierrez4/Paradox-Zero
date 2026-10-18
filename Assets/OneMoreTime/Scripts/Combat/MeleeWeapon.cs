@@ -29,6 +29,10 @@ namespace OneMoreTime
         public float Progress => IsAttacking ? Mathf.Clamp01(elapsed / duration) : -1f;
         public int SwingIndex => swingIndex;
         public int SwingFacing => facing;
+        /// <summary>Increases with every swing (player or AI): lets listeners act once per attack.</summary>
+        public int SwingSerial { get; private set; }
+        /// <summary>Raised once per target per swing when the hit really dealt damage (alive, not invulnerable).</summary>
+        public event System.Action<Health, int> HitConfirmed;
 
         private void Awake() { owner = GetComponent<Health>(); driver = GetComponent<AnimationDriver>(); }
         public void Initialize(GameManager manager)
@@ -59,7 +63,7 @@ namespace OneMoreTime
         {
             damage = Mathf.Max(0, hitDamage); duration = 1f / Mathf.Clamp(rate, 0.5f, 4f);
             elapsed = 0; crouching = crouch; facing = driver.Facing;
-            IsAttacking = true; swingIndex = (swingIndex + 1) % 2; hitThisSwing.Clear();
+            IsAttacking = true; swingIndex = (swingIndex + 1) % 2; hitThisSwing.Clear(); SwingSerial++;
             queuedUntil = -1; driver.LockFacing(true); driver.PlayAttack();
         }
 
@@ -93,12 +97,13 @@ namespace OneMoreTime
                 Vector2 contact = overlaps[i].ClosestPoint(origin);
                 if (Physics2D.Linecast(origin, contact, obstacleMask).collider != null) continue;
                 hitThisSwing.Add(target);
-                target.TakeDamage(new DamageInfo(damage, owner.Team, new Vector2(facing * knockbackSpeed, knockbackLift)));
+                if (target.TakeDamage(new DamageInfo(damage, owner.Team, new Vector2(facing * knockbackSpeed, knockbackLift))))
+                    HitConfirmed?.Invoke(target, SwingSerial);
             }
         }
 
         /// <summary>Starts an AI-driven swing whose timing is owned by an <see cref="IAttackClock"/>.</summary>
-        public void BeginExternalSwing() { hitThisSwing.Clear(); }
+        public void BeginExternalSwing() { hitThisSwing.Clear(); SwingSerial++; }
 
         /// <summary>
         /// Resolves one frame of an AI-driven active window at a moving point (e.g. the jaw).

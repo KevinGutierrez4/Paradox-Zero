@@ -19,6 +19,9 @@ namespace OneMoreTime
         QuebrantoGlacial, EclipseCarmesi
     }
 
+    /// <summary>Combat state machine of the boss (the boss exhaustion is NOT the roar stun of the player).</summary>
+    public enum BossCombatState { Intro, Attack, Recovery, Exhausted, Recovering, Transition, Defeated }
+
     public enum BossTransitionStep { None, Cancel, MorphBody, MorphNeck, MorphHead, Roar, Stun, Recover, Warning, Special }
 
     /// <summary>
@@ -84,6 +87,12 @@ namespace OneMoreTime
         [SerializeField, Min(0.3f)] private float fangWarning = 0.8f;
         [SerializeField, Min(0.3f)] private float fangLifetime = 0.8f;
 
+        [Header("Agotamiento tras N ataques")]
+        [Tooltip("Ataques completados seguidos antes de quedar agotado.")]
+        [SerializeField, Min(1)] private int attacksBeforeExhaustion = 5;
+        [Tooltip("Duración exacta del agotamiento (segundos de juego).")]
+        [SerializeField, Min(0.5f)] private float exhaustionDuration = 2.5f;
+
         [Header("Arte")]
         [SerializeField] private Sprite iceFangSprite;
         [SerializeField] private Sprite breathPuffSprite;
@@ -129,6 +138,13 @@ namespace OneMoreTime
         public float Phase2Threshold => phase2Threshold;
         public float Phase3Threshold => phase3Threshold;
         public int TransitionsCompleted { get; private set; }
+        public BossCombatState CombatState { get; private set; } = BossCombatState.Intro;
+        /// <summary>Attacks completed since the last rest; only increases when an attack ends normally.</summary>
+        public int AttacksSinceRest { get; private set; }
+        public int ExhaustionCount { get; private set; }
+        public float LastExhaustionDuration { get; private set; }
+        public int AttacksBeforeExhaustion => attacksBeforeExhaustion;
+        public float ExhaustionDuration => exhaustionDuration;
         public int SpecialsExecuted { get; private set; }
         public readonly List<string> AttackLog = new List<string>();
         /// <summary>QA hook: when false the fight loop waits (attacks can then be run one by one with <see cref="Run"/>).</summary>
@@ -184,6 +200,7 @@ namespace OneMoreTime
             ClearHazards(); readyAt.Clear(); AttackLog.Clear(); TransitionTrace.Clear(); AutoAttack = true;
             Stage = 1; IntroFinished = false; transitioning = false; lastAttack = BossAttack.None; TransitionStep = BossTransitionStep.None;
             TransitionsCompleted = 0; SpecialsExecuted = 0; bodyTintRed = 0;
+            AttacksSinceRest = 0; ExhaustionCount = 0; LastExhaustionDuration = 0; CombatState = BossCombatState.Intro;
             SetStage(BossAttack.None, AttackStage.None, 0);
             Health.Invulnerable = true;
             player.SetExtraMaxX(frontX - 0.3f);
@@ -247,7 +264,8 @@ namespace OneMoreTime
             {
                 bodyTintRed = Mathf.MoveTowards(bodyTintRed, d, Time.deltaTime);
                 var c = Color.Lerp(Color.white, new Color(1f, 0.68f, 0.66f), bodyTintRed);
-                body2.SetPlateTint(c); body2.SetBodyTint(Color.Lerp(Color.white, new Color(1f, 0.82f, 0.8f), bodyTintRed));
+                body2.SetPlateTint(c);
+                if (CombatState != BossCombatState.Exhausted) body2.SetBodyTint(Color.Lerp(Color.white, new Color(1f, 0.82f, 0.8f), bodyTintRed));
             }
         }
 
@@ -287,7 +305,7 @@ namespace OneMoreTime
                 head = Vector2.Lerp(a.head, b.head, t), tilt = Mathf.Lerp(a.tilt, b.tilt, t), jaw = Mathf.Lerp(a.jaw, b.jaw, t),
                 open = Mathf.Lerp(a.open, b.open, t), roar = Mathf.Lerp(a.roar, b.roar, t), snarl = Mathf.Lerp(a.snarl, b.snarl, t),
                 tremble = Mathf.Lerp(a.tremble, b.tremble, t), glow = Mathf.Lerp(a.glow, b.glow, t), rise = Mathf.Lerp(a.rise, b.rise, t),
-                contract = Mathf.Lerp(a.contract, b.contract, t)
+                contract = Mathf.Lerp(a.contract, b.contract, t), sway = Mathf.Lerp(a.sway, b.sway, t)
             };
         }
 
@@ -415,20 +433,41 @@ namespace OneMoreTime
             fightRoutine = StartCoroutine(Fight());
         }
 
+        /// <summary>Camera framing that keeps the whole serpent (head, neck and mound) inside the view.</summary>
+        private Vector2 RevealFocus(float size)
+        {
+            var bounds = body2.VisualBounds;
+            float cx = Mathf.Min(bounds.center.x, neckBaseX - 3.2f);
+            float cy = Mathf.Max(BaseGround + size * 0.55f, bounds.center.y);
+            return new Vector2(cx, cy);
+        }
+
         private IEnumerator Intro()
         {
+            CombatState = BossCombatState.Intro;
             game.SetPlayerControlLocked(true);
             float groundY = BaseGround;
-            var p = P; p.rise = 0; p.glow = 0; p.head = new Vector2(2.4f, 3.6f); P = p;
-            // A — the awakening: the floor (its back) trembles, plates shiver, ice falls; nothing has appeared yet.
+            var p = P; p.rise = 0; p.glow = 0; p.head = new Vector2(2.4f, 3.6f); p.sway = 0; P = p;
+            // Etapa 1 — El despertar: combat is held, the camera sweeps over the floor (its back), soft tremor,
+            // snow and ice, scales of the terrain light up one after another. Nothing has risen yet.
             PatternName = "El despertar";
-            Cam?.SetFocusOverride(new Vector2(neckBaseX - 6f, groundY + 3.0f), introCameraSize, 0.9f);
+            int n = body2.PlateCount;
+            Vector2 sweepFrom = new Vector2(Mathf.Max(game.PhaseStart + 9f, frontX - 12f), groundY + 2.6f);
+            Vector2 sweepTo = new Vector2(neckBaseX - 4.5f, groundY + 3.0f);
             StartCoroutine(ShadeTo(0.32f, awakenDuration));
-            yield return Wait(awakenDuration, k =>
+            yield return Wait(awakenDuration * 1.3f, k =>
             {
-                Cam?.Shake(0.08f + 0.06f * k, 0.12f);
-                if (Random.value < 0.5f) IceRain(2);
-                for (int i = 0; i < body2.PlateCount; i++) body2.SetPlateLift(i, Mathf.Sin(Time.time * 30f + i) * 0.05f * k);
+                Cam?.SetFocusOverride(Vector2.Lerp(sweepFrom, sweepTo, Mathf.SmoothStep(0, 1, k)), introCameraSize, 0.8f);
+                Cam?.Shake(0.05f + 0.05f * k, 0.12f);
+                if (Random.value < 0.6f) IceRain(2);
+                for (int i = 0; i < n; i++)
+                {
+                    // Glow travels from the far plates towards the boss: the whole floor is one creature.
+                    float wave = Mathf.Clamp01(1f - Mathf.Abs(k * (n + 1) - (n - i)) * 0.6f);
+                    body2.SetPlateTint(i, Color.Lerp(Color.white, new Color(0.62f, 0.95f, 1f), wave));
+                    body2.SetPlateLift(i, Mathf.Sin(Time.time * 28f + i) * 0.04f * k);
+                    if (wave > 0.8f && Random.value < 0.15f) PixelFx.Emit(body2.PlateTop(i), new Vector2(0, 0.8f), new Color(0.7f, 0.95f, 1f, 0.9f), 0.6f, 0, 0.08f, 31);
+                }
                 if (Random.value < 0.3f)
                 {
                     float x = neckBaseX + Random.Range(-3f, 1f);
@@ -436,31 +475,39 @@ namespace OneMoreTime
                         1.1f, -0.2f, Random.Range(0.4f, 0.8f), 20, PixelFx.SoftDot, 0, 0.8f, true);
                 }
             });
-            for (int i = 0; i < body2.PlateCount; i++) body2.SetPlateLift(i, 0);
-            // B — the reveal: the neck rises out of the snow mound, the eyes ignite, the jaw parts.
+            for (int i = 0; i < n; i++) { body2.SetPlateLift(i, 0); body2.SetPlateTint(i, Color.white); }
+            // Etapa 2 — La aparición: the camera travels to the head while the neck rises slowly out of the mound,
+            // with an organic sway; the eyes ignite, the jaw opens, the head settles into a threatening pose.
             PatternName = "Jörmungandr";
-            var b = Rest(); b.rise = 1; b.glow = 1; b.jaw = 0.5f; b.head = new Vector2(2.4f, 5.2f); b.tilt = 8;
-            yield return Blend(b, revealDuration, k =>
+            var rising = Rest(); rising.rise = 1; rising.glow = 0.6f; rising.jaw = 0.15f; rising.head = new Vector2(2.2f, 5.3f); rising.tilt = 12; rising.sway = 1f;
+            yield return Blend(rising, revealDuration * 1.3f, k =>
             {
-                Cam?.SetFocusOverride(Vector2.Lerp(new Vector2(neckBaseX - 6f, groundY + 3f), body2.HeadWorld + new Vector2(-2.5f, -1f), k), introCameraSize, 0.7f);
+                Cam?.SetFocusOverride(Vector2.Lerp(sweepTo, RevealFocus(introCameraSize), Mathf.SmoothStep(0, 1, k)), introCameraSize, 0.6f);
                 if (Random.value < 0.4f) { float x = neckBaseX + Random.Range(-2f, 1f); PixelFx.Burst(new Vector2(x, Ground(x) + 0.1f), 2, Color.white, 2.5f, 0.6f, 5f, 0.07f, 31, Vector2.zero, 120, 90); }
             });
-            // C — the silent roar: head thrown back, drawn roar head, tremble, shake, ice and mist. No sound exists.
+            var threat = P; threat.glow = 1; threat.jaw = 0.75f; threat.snarl = 1; threat.tilt = -8; threat.head = new Vector2(2.9f, 4.9f); threat.sway = 0.4f;
+            yield return Blend(threat, revealDuration * 0.45f, k => Cam?.SetFocusOverride(RevealFocus(introCameraSize), introCameraSize, 0.5f));
+            // Etapa 3 — Rugido de presentación (silencioso: no existe ningún AudioSource ni AudioClip).
             PatternName = "...";
-            var lean = P; lean.tilt = 22; lean.jaw = 1; lean.head = new Vector2(2.0f, 5.5f);
-            yield return Blend(lean, roarDuration * 0.3f);
-            var climax = P; climax.roar = 1; climax.tremble = 1; climax.glow = 1;
+            var lean = P; lean.snarl = 0; lean.tilt = 22; lean.jaw = 1; lean.head = new Vector2(2.1f, 5.5f);
+            yield return Blend(lean, roarDuration * 0.3f, k => Cam?.SetFocusOverride(RevealFocus(introCameraSize), introCameraSize, 0.5f));
+            var climax = P; climax.roar = 1; climax.tremble = 1; climax.glow = 1; climax.sway = 0.9f;
             yield return Blend(climax, roarDuration * 0.15f);
-            Cam?.Shake(0.38f, roarDuration * 0.35f);
-            IceRain(28);
+            Cam?.Shake(0.3f, roarDuration * 0.35f);
+            IceRain(26);
             Mist(Mouth, new Vector2(F * 2.2f, 1.6f), 10, new Color(0.9f, 0.97f, 1f, 0.55f));
-            PixelFx.Burst(Mouth, 22, IceColor, 6f, 0.9f, 4f, 0.09f, 31, Vector2.zero, 120, 150);
+            PixelFx.Burst(Mouth, 20, IceColor, 6f, 0.9f, 4f, 0.09f, 31, Vector2.zero, 120, 150);
             StartCoroutine(ShadeTo(0.12f, 0.08f));
-            yield return Wait(roarDuration * 0.35f, k => { if (Random.value < 0.35f) Mist(Mouth, new Vector2(F * 1.5f, 1.1f), 1, new Color(0.9f, 0.97f, 1f, 0.45f)); });
+            yield return Wait(roarDuration * 0.35f, k =>
+            {
+                Cam?.SetFocusOverride(RevealFocus(introCameraSize), introCameraSize, 0.5f);
+                if (Random.value < 0.35f) Mist(Mouth, new Vector2(F * 1.5f, 1.1f), 1, new Color(0.9f, 0.97f, 1f, 0.45f));
+                if (Random.value < 0.5f) PixelFx.Emit(Mouth + Random.insideUnitCircle * 0.6f, new Vector2(F * Random.Range(1f, 3f), Random.Range(-1f, 2f)), IceColor, 0.6f, 4f, 0.07f, 31);
+            });
             StartCoroutine(ShadeTo(0.3f, 0.3f));
-            var close = P; close.roar = 0; close.tremble = 0; close.jaw = 0.15f; close.tilt = 4;
+            var close = P; close.roar = 0; close.tremble = 0; close.jaw = 0.15f; close.tilt = 4; close.sway = 0.2f;
             yield return Blend(close, roarDuration * 0.2f);
-            // D — the battle begins.
+            // Etapa 4 — Comienzo de la batalla: combat camera, health bar, player control, first pattern.
             PatternName = "Preparando ataque";
             Cam?.ClearFocusOverride();
             Cam?.SetCombatSize(combatCameraSize);
@@ -468,25 +515,82 @@ namespace OneMoreTime
             yield return Blend(Rest(), settleDuration);
             Health.Invulnerable = false;
             IntroFinished = true;
+            CombatState = BossCombatState.Recovery;
             game.SetPlayerControlLocked(false);
         }
 
         private IEnumerator Fight()
         {
-            yield return Wait(0.5f);
+            CombatState = BossCombatState.Recovery;
+            yield return Wait(0.3f);
             while (IsAlive)
             {
                 while (!AutoAttack && IsAlive && TargetStage() <= Stage) yield return null;
                 if (TargetStage() > Stage) { BeginTransition(); yield break; }
                 var next = Choose();
+                CombatState = BossCombatState.Attack;
                 yield return Run(next);
+                // Reached only when the attack ended normally (a transition stops this coroutine first).
+                AttacksSinceRest++;
                 lastAttack = next;
                 readyAt[next] = Time.time + (next == BossAttack.JuicioDeLaSerpiente ? judgementCooldown : attackCooldown / Tempo);
                 SetStage(BossAttack.None, AttackStage.None, 0);
+                CombatState = BossCombatState.Recovery;
                 PatternName = "Recuperación";
                 yield return Blend(Rest(), 0.35f);
+                if (AttacksSinceRest >= attacksBeforeExhaustion && IsAlive && TargetStage() <= Stage) { yield return Exhaustion(); continue; }
                 yield return Wait(Stage == 1 ? restPhase1 : Stage == 2 ? restPhase2 : restPhase3);
             }
+        }
+
+        /// <summary>
+        /// Boss exhaustion after N completed attacks: exactly <see cref="exhaustionDuration"/> seconds of game time with
+        /// a tired animation (head down, jaw half open, dim eyes, laboured breathing, relaxed scales) and a clear
+        /// vulnerability cue. No attack can start; the boss takes damage normally. Different from the player's roar stun.
+        /// </summary>
+        private IEnumerator Exhaustion()
+        {
+            CombatState = BossCombatState.Exhausted;
+            ExhaustionCount++;
+            ClearHazards(); // every attack window has ended: nothing keeps hurting while it rests
+            PatternName = "¡Agotado! · ¡Golpéalo!";
+            float start = Time.time;
+            var from = P;
+            Vector2 low = HeadFor(frontX - 2.4f, 1.55f);
+            Cam?.Shake(0.08f, 0.2f);
+            while (IsAlive && Time.time - start < exhaustionDuration)
+            {
+                float t = Time.time - start;
+                float k = Mathf.SmoothStep(0, 1, Mathf.Clamp01(t / 0.45f));
+                float breath = Mathf.Sin(t * 2.6f);
+                var q = Rest();
+                q.head = Vector2.Lerp(from.head, low + new Vector2(0, 0.16f * breath), k);
+                q.tilt = Mathf.Lerp(from.tilt, -16f + 3f * breath, k);
+                q.jaw = Mathf.Lerp(from.jaw, 0.45f + 0.12f * breath, k);
+                q.glow = Mathf.Lerp(from.glow, 0.12f, k);
+                q.contract = 0.12f + 0.12f * (breath * 0.5f + 0.5f);
+                q.sway = 0.35f;
+                P = q;
+                StageProgress = t / exhaustionDuration;
+                // Relaxed scales and a pale pulsing aura: the opening is obvious.
+                float pulse = 0.5f + 0.5f * Mathf.Sin(t * 9f);
+                for (int i = 0; i < body2.PlateCount; i++) body2.SetPlateLift(i, -0.04f * k);
+                body2.SetBodyTint(Color.Lerp(Color.white, new Color(0.78f, 0.9f, 1f), 0.5f * pulse * k));
+                if (Random.value < 0.35f)
+                {
+                    Vector2 headCenter = body2.Head.TransformPoint(new Vector2(1.2f, 0.9f));
+                    PixelFx.Emit(headCenter + Random.insideUnitCircle * 0.9f, new Vector2(0, Random.Range(0.4f, 0.9f)), new Color(0.85f, 0.95f, 1f, 0.9f), 0.7f, -0.2f, 0.09f, 150);
+                }
+                yield return null;
+            }
+            LastExhaustionDuration = Time.time - start;
+            body2.SetBodyTint(Color.white);
+            for (int i = 0; i < body2.PlateCount; i++) body2.SetPlateLift(i, 0);
+            CombatState = BossCombatState.Recovering;
+            PatternName = "Se recupera";
+            AttacksSinceRest = 0;
+            yield return Blend(Rest(), 0.6f);
+            CombatState = BossCombatState.Recovery;
         }
 
         private bool Ready(BossAttack a) => !readyAt.TryGetValue(a, out float t) || Time.time >= t;
@@ -561,6 +665,9 @@ namespace OneMoreTime
         {
             if (transitioning || !IsAlive) return;
             transitioning = true; attackEpoch++; judging = false;
+            // Transitions take priority over exhaustion: the counter restarts and no rest is pending.
+            AttacksSinceRest = 0; CombatState = BossCombatState.Transition;
+            body2?.SetBodyTint(Color.white);
             Health.Invulnerable = true; // immediately: the hit that crossed the threshold is the last one until the special
             ClearHazards();
             if (fightRoutine != null) { StopCoroutine(fightRoutine); fightRoutine = null; }
@@ -573,6 +680,7 @@ namespace OneMoreTime
             // A single hit may cross two thresholds: transitions are queued and run one after the other.
             while (IsAlive && TargetStage() > Stage) yield return Transition(Stage + 1);
             transitioning = false; TransitionStep = BossTransitionStep.None;
+            AttacksSinceRest = 0;
             if (IsAlive) fightRoutine = StartCoroutine(Fight());
         }
 
@@ -1066,6 +1174,7 @@ namespace OneMoreTime
         {
             base.OnDeath(ignored); // stops every coroutine (intro, attacks, transition)
             routine = null; fightRoutine = null; transitioning = false;
+            AttacksSinceRest = 0; CombatState = BossCombatState.Defeated;
             ClearHazards();
             stun?.Close();
             if (headCollider != null) headCollider.enabled = false;

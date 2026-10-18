@@ -11,6 +11,8 @@ namespace OneMoreTime
     public sealed class JormungandrPhaseArt
     {
         public Sprite skull, jaw, mouth, headOpen, headRoar, headBite, segment, tail, cone;
+        [Tooltip("Textura continua del cuello (se repite a lo largo de la curva: sin uniones visibles).")]
+        public Sprite neckTile;
         public Sprite[] fins = new Sprite[0];
     }
 
@@ -28,6 +30,8 @@ namespace OneMoreTime
             /// <summary>Head joint relative to the neck base (art space, units).</summary>
             public Vector2 head;
             public float tilt, jaw, open, roar, snarl, tremble, glow, rise;
+            /// <summary>Organic side-to-side motion of the neck (0 = still, 1 = strong).</summary>
+            public float sway;
             /// <summary>0 = relaxed curve, 1 = neck pulled tight (contraction).</summary>
             public float contract;
         }
@@ -56,6 +60,44 @@ namespace OneMoreTime
         [SerializeField, Min(0.3f)] private float segmentSpacing = 0.62f;
         [SerializeField, Min(4)] private int maxSegments = 18;
         [SerializeField, Min(2)] private int bodyPlates = 8;
+        [Header("Cuello continuo")]
+        [SerializeField, Min(0.3f)] private float neckHalfWidth = 0.8f;
+        [SerializeField, Range(0f, 0.5f)] private float neckTaper = 0.16f;
+        [SerializeField, Min(8)] private int neckSamples = 40;
+        [SerializeField, Min(0.3f)] private float finSpacing = 0.72f;
+
+        private sealed class Tube { public Transform t; public MeshRenderer r; public Mesh mesh; public Material mat; public int phase; }
+        private Tube tubeA, tubeB;
+        private float neckBlend, neckProgress = -1; // progress ≥ 0: morph advances from the base towards the head
+        private Vector2[] neckPts;
+        private float neckLength;
+        public bool UsesContinuousNeck => tubeA != null;
+        public float NeckLength => neckLength;
+        public Vector2 NeckStartWorld => neckPts != null && neckPts.Length > 0 ? ArtToWorld(neckPts[0]) : (Vector2)transform.position;
+        public Vector2 NeckEndWorld => neckPts != null && neckPts.Length > 0 ? ArtToWorld(neckPts[neckPts.Length - 1]) : HeadWorld;
+        /// <summary>Largest gap between consecutive neck samples (world units): continuity check for QA.</summary>
+        public float NeckMaxGap { get; private set; }
+        /// <summary>World bounds of every visible boss renderer (head, neck, mound) for camera checks.</summary>
+        public Bounds VisualBounds
+        {
+            get
+            {
+                var b = new Bounds(HeadWorld, Vector3.zero);
+                if (root == null) return b;
+                foreach (var r in root.GetComponentsInChildren<Renderer>()) if (r.enabled && r.gameObject.activeInHierarchy && r.bounds.size.sqrMagnitude > 0) b.Encapsulate(r.bounds);
+                return b;
+            }
+        }
+        public Bounds HeadBounds
+        {
+            get
+            {
+                var b = new Bounds(HeadWorld, Vector3.zero);
+                if (head == null) return b;
+                foreach (var r in head.GetComponentsInChildren<SpriteRenderer>()) if (r.enabled && r.sprite != null && r.color.a > 0.05f) b.Encapsulate(r.bounds);
+                return b;
+            }
+        }
 
         private Transform root, neckRoot, head, jawPivot, plateRoot;
         private readonly List<Morph> segments = new List<Morph>();
@@ -70,7 +112,7 @@ namespace OneMoreTime
         private float baseX, flash;
         private int facing = -1;
         private bool built;
-        public Pose pose;
+        [NonSerialized] public Pose pose; // runtime pose, rebuilt every frame (not saved)
         public bool Built => built;
         public float BaseX => baseX;
         public int Facing => facing;
@@ -108,6 +150,12 @@ namespace OneMoreTime
                 segments.Add(MakeMorph("Segment_" + i, neckRoot, 20 + (maxSegments - i), material));
                 fins.Add(MakeMorph("Fin_" + i, neckRoot, 2 + i % 3, material));
             }
+            if (HasArt && phases[0].neckTile != null)
+            {
+                tubeA = MakeTube("NeckTubeA", neckRoot, 40, material);
+                tubeB = MakeTube("NeckTubeB", neckRoot, 41, material);
+                foreach (var seg in segments) seg.t.gameObject.SetActive(false);
+            }
             head = new GameObject("Head").transform; head.SetParent(root, false);
             mouth = MakeMorph("Mouth", head, 60, material);
             jawPivot = new GameObject("JawPivot").transform; jawPivot.SetParent(head, false); jawPivot.localPosition = jawHinge;
@@ -142,6 +190,28 @@ namespace OneMoreTime
             Apply();
         }
 
+        private static Tube MakeTube(string name, Transform parent, int order, Material material)
+        {
+            var t = new GameObject(name).transform; t.SetParent(parent, false);
+            var mf = t.gameObject.AddComponent<MeshFilter>();
+            var r = t.gameObject.AddComponent<MeshRenderer>();
+            var mesh = new Mesh { name = name }; mesh.MarkDynamic(); mf.sharedMesh = mesh;
+            var mat = material != null ? new Material(material) : new Material(Shader.Find("Sprites/Default"));
+            r.sharedMaterial = mat; r.sortingOrder = order;
+            r.shadowCastingMode = ShadowCastingMode.Off; r.receiveShadows = false;
+            return new Tube { t = t, r = r, mesh = mesh, mat = mat, phase = 0 };
+        }
+
+        private void SetTubePhase(Tube tube, int phase)
+        {
+            if (tube == null || tube.phase == phase) return;
+            var tile = Art(phase).neckTile;
+            if (tile == null) return;
+            tube.phase = phase;
+            tube.mat.mainTexture = tile.texture;
+            if (tube.mat.HasProperty("_MainTex")) tube.mat.SetTexture("_MainTex", tile.texture);
+        }
+
         private static Morph MakeMorph(string name, Transform parent, int order, Material material)
         {
             var t = new GameObject(name).transform; t.SetParent(parent, false);
@@ -153,6 +223,9 @@ namespace OneMoreTime
 
         public void Clear()
         {
+            if (tubeA != null) { Destroy(tubeA.mesh); Destroy(tubeA.mat); }
+            if (tubeB != null) { Destroy(tubeB.mesh); Destroy(tubeB.mat); }
+            tubeA = tubeB = null;
             if (root != null) Destroy(root.gameObject);
             if (plateRoot != null) Destroy(plateRoot.gameObject);
             segments.Clear(); fins.Clear(); plates.Clear(); plateX.Clear(); plateLift.Clear();
@@ -239,6 +312,9 @@ namespace OneMoreTime
         public void SetNeckMorph(float value)
         {
             NeckMorph = value;
+            int lo = Mathf.FloorToInt(Mathf.Clamp(value, 1, 3)), hi = Mathf.Min(3, lo + 1);
+            SetTubePhase(tubeA, lo); SetTubePhase(tubeB, hi);
+            neckBlend = Mathf.Clamp(value, 1, 3) - lo; neckProgress = -1;
             for (int i = 0; i < segments.Count; i++)
             {
                 SetMorph(segments[i], a => a.segment, value);
@@ -251,6 +327,8 @@ namespace OneMoreTime
         public void SetNeckMorphProgress(int fromPhase, float fraction)
         {
             int n = Mathf.Max(1, segments.Count);
+            SetTubePhase(tubeA, fromPhase); SetTubePhase(tubeB, Mathf.Min(3, fromPhase + 1));
+            neckProgress = Mathf.Clamp01(fraction);
             for (int i = 0; i < segments.Count; i++)
             {
                 float k = Mathf.Clamp01(fraction * n - i);
@@ -275,6 +353,7 @@ namespace OneMoreTime
         public void SetPlateTint(int index, Color c) { if (index >= 0 && index < plates.Count) plates[index].tint = c; }
         public void SetBodyTint(Color c)
         {
+            neckTint = c;
             foreach (var s in segments) s.tint = c;
             foreach (var f in fins) f.tint = c;
             foreach (var m in new[] { skull, jaw, mouth, headOpen, headRoar, headBite }) if (m != null) m.tint = c;
@@ -300,23 +379,37 @@ namespace OneMoreTime
         {
             float time = Time.time;
             float rise = Mathf.Clamp01(pose.rise);
-            // Emergence: the whole neck slides up out of the mound (never above it before it is revealed).
-            Vector2 sink = new Vector2(0, -(1 - rise) * 7.5f);
+            // Emergence: the head starts hidden behind the snow mound and rises; the neck always grows out of the
+            // mound (its first point never leaves the base), so the body stays attached to the scenery.
             Vector2 shake = pose.tremble > 0 ? new Vector2(Mathf.Sin(time * 61f), Mathf.Cos(time * 53f)) * 0.06f * pose.tremble : Vector2.zero;
-            Vector2 headJoint = pose.head + sink + shake;
-            Vector2 p0 = new Vector2(0, -1.6f) + sink * 0.2f;
+            Vector2 headJoint = Vector2.Lerp(new Vector2(0.45f, 0.35f), pose.head, Mathf.SmoothStep(0, 1, rise)) + shake;
+            float sway = 0.18f + Mathf.Clamp01(pose.sway);
+            Vector2 p0 = new Vector2(0, -0.3f);
             float slack = 1 - Mathf.Clamp01(pose.contract);
-            Vector2 p1 = new Vector2(-0.9f * slack + 0.2f, 2.0f + 0.4f * pose.contract) + sink * 0.6f;
-            Vector2 p2 = new Vector2(headJoint.x - 2.3f * (0.6f + 0.4f * slack), headJoint.y + 0.45f * slack);
-            // Length → number of visible rings, so stretching never opens gaps.
-            float length = 0; Vector2 prev = p0;
-            for (int i = 1; i <= 16; i++) { var q = Bezier(p0, p1, p2, headJoint, i / 16f); length += Vector2.Distance(prev, q); prev = q; }
-            int count = Mathf.Clamp(Mathf.CeilToInt(length / segmentSpacing) + 1, 3, segments.Count);
+            Vector2 p1 = new Vector2(-0.9f * slack + 0.2f + Mathf.Sin(time * 1.25f) * 0.32f * sway, (2.0f + 0.4f * pose.contract) * Mathf.Lerp(0.3f, 1f, rise));
+            Vector2 p2 = new Vector2(headJoint.x - 2.3f * (0.6f + 0.4f * slack) + Mathf.Sin(time * 1.25f + 1.4f) * 0.22f * sway,
+                headJoint.y + 0.45f * slack + Mathf.Cos(time * 1.1f) * 0.18f * sway);
+            int samples = Mathf.Max(8, neckSamples);
+            if (neckPts == null || neckPts.Length != samples) neckPts = new Vector2[samples];
+            neckLength = 0; NeckMaxGap = 0;
+            for (int i = 0; i < samples; i++)
+            {
+                neckPts[i] = Bezier(p0, p1, p2, headJoint, (float)i / (samples - 1));
+                if (i > 0) { float d = Vector2.Distance(neckPts[i - 1], neckPts[i]); neckLength += d; NeckMaxGap = Mathf.Max(NeckMaxGap, d); }
+            }
+            float length = neckLength;
+            if (tubeA != null)
+            {
+                BuildTube(tubeA, 1f, false);
+                BuildTube(tubeB, neckProgress >= 0 ? 1f : neckBlend, neckProgress >= 0);
+                tubeB.r.enabled = neckProgress >= 0 ? neckProgress > 0.001f : neckBlend > 0.001f;
+            }
+            int count = Mathf.Clamp(Mathf.CeilToInt(length / (tubeA != null ? finSpacing : segmentSpacing)) + 1, 3, segments.Count);
             for (int i = 0; i < segments.Count; i++)
             {
                 var s = segments[i]; var f = fins[i];
                 bool on = i < count;
-                s.t.gameObject.SetActive(on); f.t.gameObject.SetActive(on && i < count - 1);
+                s.t.gameObject.SetActive(on && tubeA == null); f.t.gameObject.SetActive(on && i < count - 1);
                 if (!on) continue;
                 float t = (float)i / (count - 1) * 0.965f;
                 Vector2 p = Bezier(p0, p1, p2, headJoint, t), q = Bezier(p0, p1, p2, headJoint, Mathf.Min(1, t + 0.01f));
@@ -324,9 +417,10 @@ namespace OneMoreTime
                 float scale = 1f - 0.18f * t;
                 s.t.localPosition = p; s.t.localRotation = Quaternion.Euler(0, 0, ang); s.t.localScale = Vector3.one * scale;
                 Vector2 normal = new Vector2(-Mathf.Sin(ang * Mathf.Deg2Rad), Mathf.Cos(ang * Mathf.Deg2Rad));
-                float sway = Mathf.Sin(time * 2.2f + i * 0.7f) * 4f;
-                f.t.localPosition = p + normal * 0.48f * scale;
-                f.t.localRotation = Quaternion.Euler(0, 0, ang - 48f + sway);
+                float finSway = Mathf.Sin(time * 2.2f + i * 0.7f) * 4f;
+                float hw = neckHalfWidth * (1 - neckTaper * t);
+                f.t.localPosition = p + normal * (tubeA != null ? hw * 0.62f : 0.48f * scale);
+                f.t.localRotation = Quaternion.Euler(0, 0, ang - 48f + finSway);
                 f.t.localScale = Vector3.one * scale * 0.72f;
             }
             float breathe = Mathf.Sin(time * 1.6f) * 1.5f;
@@ -371,6 +465,47 @@ namespace OneMoreTime
                 RefreshColor(tail);
             }
             RefreshColor(mound); RefreshColor(moundSide);
+        }
+
+        private Color neckTint = Color.white;
+
+        /// <summary>Builds the neck as one continuous strip along the curve: the tile texture repeats along the length,
+        /// dorsal scales on the back side, belly on the front. No sprite stretching and no seams between pieces.</summary>
+        private void BuildTube(Tube tube, float alpha, bool progressive)
+        {
+            int n = neckPts.Length;
+            var tile = Art(Mathf.Max(1, tube.phase)).neckTile;
+            float texRatio = tile != null ? tile.rect.width / Mathf.Max(1f, tile.rect.height) : 1.5f;
+            var verts = new Vector3[n * 2]; var uvs = new Vector2[n * 2]; var cols = new Color[n * 2];
+            var tris = new int[(n - 1) * 6];
+            float s = 0;
+            Color baseColor = Color.Lerp(neckTint, new Color(1f, 0.45f, 0.4f), flash);
+            for (int i = 0; i < n; i++)
+            {
+                Vector2 a = neckPts[Mathf.Max(0, i - 1)], b = neckPts[Mathf.Min(n - 1, i + 1)];
+                Vector2 tan = (b - a).sqrMagnitude > 1e-6f ? (b - a).normalized : Vector2.up;
+                Vector2 normal = new Vector2(-tan.y, tan.x);
+                float t = (float)i / (n - 1);
+                float hw = neckHalfWidth * (1 - neckTaper * t);
+                if (i > 0) s += Vector2.Distance(neckPts[i - 1], neckPts[i]);
+                float tileLen = 2 * neckHalfWidth * texRatio;
+                verts[i * 2] = neckPts[i] + normal * hw;      // back: dorsal scales and spines (top of the tile)
+                verts[i * 2 + 1] = neckPts[i] - normal * hw;  // front: pale belly plates
+                uvs[i * 2] = new Vector2(s / tileLen, 1); uvs[i * 2 + 1] = new Vector2(s / tileLen, 0);
+                float va = alpha;
+                if (progressive) va = Mathf.Clamp01((neckProgress * 1.15f - t) * 6f); // the change climbs from the base
+                var c = baseColor; c.a = va;
+                cols[i * 2] = c; cols[i * 2 + 1] = c;
+                if (i < n - 1)
+                {
+                    int k = i * 6, v = i * 2;
+                    tris[k] = v; tris[k + 1] = v + 2; tris[k + 2] = v + 1;
+                    tris[k + 3] = v + 1; tris[k + 4] = v + 2; tris[k + 5] = v + 3;
+                }
+            }
+            tube.mesh.Clear();
+            tube.mesh.vertices = verts; tube.mesh.uv = uvs; tube.mesh.colors = cols; tube.mesh.triangles = tris;
+            tube.mesh.RecalculateBounds();
         }
 
         private void RefreshColor(Morph m)

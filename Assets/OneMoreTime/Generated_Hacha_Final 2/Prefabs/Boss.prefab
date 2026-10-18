@@ -586,6 +586,7 @@ MonoBehaviour:
     segment: {fileID: 21300000, guid: 0a5f2aa8c2631ae0ecf08e96957da589, type: 3}
     tail: {fileID: 21300000, guid: 0996a1a41130375e6e91e41766d8ae25, type: 3}
     cone: {fileID: 0}
+    neckTile: {fileID: 21300000, guid: c32efd185e2fb2c691506e4c42009036, type: 3}
     fins:
       - {fileID: 21300000, guid: e54af73fd3970ef59cd93f56df2c9b75, type: 3}
       - {fileID: 21300000, guid: a315b62c1bd9636a4a67a89858ab2752, type: 3}
@@ -602,6 +603,7 @@ MonoBehaviour:
     segment: {fileID: 21300000, guid: 47ac4978fad15bb69d2063a653ab7477, type: 3}
     tail: {fileID: 21300000, guid: e312d493a92ba1b5e4dbc60c7bdf793f, type: 3}
     cone: {fileID: 21300000, guid: ff39e78ec29f98658c6e9e9e9e7ac57a, type: 3}
+    neckTile: {fileID: 21300000, guid: 5f695202a3de7f1e7fe031905bc90e9d, type: 3}
     fins:
       - {fileID: 21300000, guid: 25f3c8d5cc5aeda861d2e2d623b31d23, type: 3}
       - {fileID: 21300000, guid: cbc40d2d218075c7d298744f4675407c, type: 3}
@@ -618,6 +620,7 @@ MonoBehaviour:
     segment: {fileID: 21300000, guid: 3378797ab04c5b0bbb5fbf2776e79314, type: 3}
     tail: {fileID: 21300000, guid: d76528a658749e07edbb873465d89294, type: 3}
     cone: {fileID: 21300000, guid: 21dfbb8597ed8933a4dceefcd7235f0a, type: 3}
+    neckTile: {fileID: 21300000, guid: 01a44fa21bcb1a7d4a30dd31b0f04f55, type: 3}
     fins:
       - {fileID: 21300000, guid: 4133139457ac4de09cf19e049ea2ad46, type: 3}
       - {fileID: 21300000, guid: aebbc9f750ebaaeae37f42c4f44045b6, type: 3}

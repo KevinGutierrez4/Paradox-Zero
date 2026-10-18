@@ -54,12 +54,15 @@ namespace OneMoreTime
             var l = new List<Placement>();
             if (boss)
             {
-                // Only what the fight needs: covers against wind/breath and platforms above the low hazards.
-                l.Add(new Placement("SerpentScalePlatform", 0.10f, 2.2f));
-                l.Add(new Placement("StoneCover", 0.24f));
-                l.Add(new Placement("IcePlatform", 0.40f, 2.2f));
-                l.Add(new Placement("StoneCover", 0.55f));
-                l.Add(new Placement("SerpentScalePlatform", 0.70f, 2.2f));
+                // Only what the fight needs: covers against wind/breath, platforms above the low hazards and ONE extra
+                // slab of scales near the serpent that breaks after 2 s under the player and returns 3 s later
+                // (reachable with a normal jump, a temporary refuge, never a permanent shelter). Nothing here moves.
+                l.Add(new Placement("SerpentScalePlatform", 0.08f, 2.2f));
+                l.Add(new Placement("StoneCover", 0.22f));
+                l.Add(new Placement("IcePlatform", 0.36f, 2.2f));
+                l.Add(new Placement("StoneCover", 0.52f));
+                l.Add(new Placement("SerpentScalePlatform", 0.66f, 2.2f));
+                l.Add(new Placement("SerpentCrumblingPlatform", 0.86f, 2.3f));
                 return l;
             }
             switch (phase)
@@ -145,7 +148,7 @@ namespace OneMoreTime
                     y = gy + p.height - (box.offset.y + box.size.y * 0.5f);
                 }
                 go.transform.position = new Vector3(x, y, 0);
-                if (p.kind == "MovingPlatform") go.GetComponent<MovingPlatform>()?.Configure(new Vector2(p.travel, 0), 4.2f);
+                if (p.kind == "MovingPlatform") go.GetComponent<MovingPlatform>()?.Configure(new Vector2(p.travel, 0), 1.0f, 0.5f);
                 spawned.Add(go);
                 if (go.GetComponent<ArenaCover>() != null || go.GetComponent<ArenaTrap>() != null && p.height <= 0)
                     blocked.Add(new Bounds(new Vector3(x, gy + 1), new Vector3(2.2f, 2, 1)));

@@ -63,6 +63,7 @@ namespace OneMoreTime
         public static KeyCode DodgeKey => KeyCode.L;
         public Vector2 LastKnockback { get; private set; }
         public PlayerStats Stats { get; private set; }
+        public PlayerLifeSteal LifeSteal { get; private set; }
         public Health Health { get; private set; }
         internal float DeathFloorY => game != null ? game.GroundHeight(transform.position.x) : transform.position.y;
         public Vector2 AimPosition => (Vector2)transform.position + hitbox.offset;
@@ -77,6 +78,8 @@ namespace OneMoreTime
             body.constraints = RigidbodyConstraints2D.FreezeRotation;
             Health.HitReceived += OnHitReceived;
             groundMask |= PropLayers.PropMask; // stand on solid cover too
+            LifeSteal = GetComponent<PlayerLifeSteal>();
+            if (LifeSteal == null) LifeSteal = gameObject.AddComponent<PlayerLifeSteal>();
         }
 
         private void OnDestroy() { if (Health != null) Health.HitReceived -= OnHitReceived; }
@@ -118,6 +121,7 @@ namespace OneMoreTime
             coyoteRemaining = bufferedJump = 0;
             knockTimer = 0; knockVelocity = Vector2.zero; extraMaxX = float.PositiveInfinity;
             EndDodge(); dodgeCooldownTimer = 0; RestoreDrop();
+            LifeSteal?.ResetRun();
             ControlLocked = false;
             animationDriver.ResetPose();
             SuppressUntilRelease();

@@ -75,6 +75,7 @@ namespace OneMoreTime
             tutorial.transform.SetParent(transform, false);
             projectiles.Initialize(this); player.Initialize(this, projectiles);
             portals.Initialize(this, player);
+            LifeStealProgression.Configure(config.lifeStealBonusPerLevel, config.lifeStealDefensePenaltyPerLevel);
             player.Stats.ResetStats(InitialStats());
             player.Health.Died += OnPlayerDied;
             upgrades.Offered += ui.ShowUpgradeCards;
@@ -95,6 +96,7 @@ namespace OneMoreTime
             cameraFollow?.ResetFraming();
             Seed = config.fixedSeed == 0 ? Guid.NewGuid().GetHashCode() : config.fixedSeed;
             Score = Kills = 0; RunTime = phaseTime = 0;
+            LifeStealProgression.Configure(config.lifeStealBonusPerLevel, config.lifeStealDefensePenaltyPerLevel);
             upgrades.ResetRun(unchecked(Seed ^ 0x51F15E));
             spawner.Initialize(this, player, projectiles, Seed);
             player.ResetForRun(InitialStats());

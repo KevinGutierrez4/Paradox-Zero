@@ -141,7 +141,7 @@ namespace OneMoreTime
             healthText.text = $"VIDA {Mathf.CeilToInt(hp.Current - 0.0001f)}/{Mathf.CeilToInt(hp.Maximum - 0.0001f)}";
             phaseText.text = game.Phase == 6 ? "FASE 6/6 · JÖRMUNGANDR" : $"FASE {game.Phase}/6 · {game.WinterName}";
             statsText.fontSize = 20;
-            statsText.text = $"Daño {stats.damage:0.#}   Vel. {stats.moveSpeed:0.#}   Ataques {stats.fireRate:0.#}/s   Resiste {(1 - stats.damageTaken) * 100:0.#}%   Cura/baja {stats.killHealing:0.#}";
+            statsText.text = $"Daño {stats.damage:0.#}   Vel. {stats.moveSpeed:0.#}   Ataques {stats.fireRate:0.#}/s   Resiste {(1 - stats.damageTaken) * 100:0.#}%   Cura/baja {stats.killHealing:0.#}" + (stats.lifeStealLevel > 0 ? "   Robo " + (stats.lifeSteal * 100).ToString("0.0#", System.Globalization.CultureInfo.InvariantCulture).Replace('.', ',') + "%" : "");
             var portals = game.Portals;
             if (game.Phase == 6) progressText.text = "Derrota a la Serpiente de Midgard";
             else if (portals != null && portals.Busy) progressText.text = "Atravesando el portal...";
@@ -178,7 +178,9 @@ namespace OneMoreTime
         private void ShowUpgradeNotice(UpgradeDefinition upgrade)
         {
             upgradeNoticeText.supportRichText = true;
-            upgradeNoticeText.text = upgrade.Title + "\n<color=" + UpgradeDefinition.BuffColor + ">[+] " + UpgradeDefinition.Label(upgrade.Stat) + "</color>   "
+            var now = game.Player.Stats.Current;
+            string name = upgrade.Leveled ? "Robo de Vida — Nivel " + now.lifeStealLevel + " (" + (now.lifeSteal * 100).ToString("0.0#", System.Globalization.CultureInfo.InvariantCulture).Replace('.', ',') + " % por golpe)" : upgrade.Title;
+            upgradeNoticeText.text = name + "\n<color=" + UpgradeDefinition.BuffColor + ">[+] " + UpgradeDefinition.Label(upgrade.Stat) + "</color>   "
                 + (upgrade.HasTradeoff ? "<color=" + UpgradeDefinition.DebuffColor + ">[-] " + UpgradeDefinition.Label(upgrade.TradeoffStat) + "</color>" : "");
             upgradeNoticeText.color = new Color(1f, 0.9f, 0.7f);
             upgradeNotice.gameObject.SetActive(true); upgradeNotice.transform.SetAsLastSibling();

@@ -115,6 +115,22 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 0c8bdbeddb06cc9923b733ed5090a429, type: 3}
   - id: RuneStoneBurst
     sprite: {fileID: 21300000, guid: 8094368ff24c4827249ebc04509b16ae, type: 3}
+  - id: SerpentScaleCrack1
+    sprite: {fileID: 21300000, guid: 416bcf3ea54045ffa93f8f7411c6d482, type: 3}
+  - id: SerpentScaleCrack2
+    sprite: {fileID: 21300000, guid: 3c5c7df98a8f40c384c0071ff8f80a13, type: 3}
+  - id: SerpentScaleCrack3
+    sprite: {fileID: 21300000, guid: 7226571b91434e469b830bfb2382f9b6, type: 3}
+  - id: SerpentScaleShard0
+    sprite: {fileID: 21300000, guid: d3a01264ca3e4269a271161bf0fc6da0, type: 3}
+  - id: SerpentScaleShard1
+    sprite: {fileID: 21300000, guid: 48864fa2d90e41f6a9f7b5aec06ef333, type: 3}
+  - id: SerpentScaleShard2
+    sprite: {fileID: 21300000, guid: 0760ba7bee6846cf84d27ab192c7e57e, type: 3}
+  - id: SerpentScaleShard3
+    sprite: {fileID: 21300000, guid: 8485f79c8aa4499aa68fab5fa1ea1206, type: 3}
+  - id: SerpentScaleShard4
+    sprite: {fileID: 21300000, guid: d7aaac8999354d95a73b3135a31948c5, type: 3}
   prefabs:
   - id: IcePlatform
     prefab: {fileID: 6134024963888260521, guid: 97e3d711d83fe8e4ca51e617310d18e1, type: 3}
@@ -148,3 +164,5 @@ MonoBehaviour:
     prefab: {fileID: 6538775411959574761, guid: 92ce6f0c292d04a4eb75a8f9874f9998, type: 3}
   - id: IcicleTrap
     prefab: {fileID: 4442195341585908835, guid: a1ef9132d6d4c1b4ab44060d422a76f5, type: 3}
+  - id: SerpentCrumblingPlatform
+    prefab: {fileID: 7232140620183688640, guid: 61f9ef4380add12479e0a0f562553831, type: 3}

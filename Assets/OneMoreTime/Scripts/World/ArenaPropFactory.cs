@@ -6,7 +6,7 @@ namespace OneMoreTime
     /// Builds every functional scenery piece from the atlas sprites with its collider and behaviour.
     /// The same code is used by the editor tool that saves the reusable prefabs and, as a fallback, at runtime.
     /// Kinds: IcePlatform, SerpentScalePlatform, StoneCover, WoodenBarricade, BreakableCover, ArcherPost, IceSpikes,
-    /// BoneSpikes, VenomVent, JawTrap, IceGeyser, DangerousIce, Crack, UnstablePlatform, MovingPlatform, IcicleTrap,
+    /// BoneSpikes, VenomVent, JawTrap, IceGeyser, DangerousIce, Crack, UnstablePlatform, MovingPlatform, IcicleTrap, SerpentCrumblingPlatform,
     /// and "Deco:SpriteId" for purely decorative props (no collider, no gameplay).
     /// </summary>
     public static class ArenaPropFactory
@@ -15,7 +15,7 @@ namespace OneMoreTime
         {
             "IcePlatform", "SerpentScalePlatform", "StoneCover", "WoodenBarricade", "BreakableCover", "ArcherPost",
             "IceSpikes", "BoneSpikes", "VenomVent", "JawTrap", "IceGeyser", "DangerousIce", "Crack", "UnstablePlatform",
-            "MovingPlatform", "IcicleTrap"
+            "MovingPlatform", "IcicleTrap", "SerpentCrumblingPlatform"
         };
 
         private const int PropOrder = -3;
@@ -63,6 +63,29 @@ namespace OneMoreTime
                     Platform(go, lib, "FloatingIceTiny", material, 0.8f);
                     var rb = go.AddComponent<Rigidbody2D>(); rb.bodyType = RigidbodyType2D.Kinematic;
                     go.AddComponent<MovingPlatform>();
+                    break;
+                }
+                case "SerpentCrumblingPlatform":
+                {
+                    // The single extra platform of the final arena: a raised slab of the serpent's scales with snow and
+                    // ice that cracks under the player, breaks into its own five pieces and comes back 3 s later. Fixed.
+                    Platform(go, lib, "SerpentScalePlatform", material, 0.85f);
+                    var slab = go.transform.Find("Art").GetComponent<SpriteRenderer>();
+                    var crack = Art(go, lib, "SerpentScaleCrack1", PropOrder + 1, material, "Cracks");
+                    crack.enabled = false;
+                    var stages = new[] { lib?.Sprite("SerpentScaleCrack1"), lib?.Sprite("SerpentScaleCrack2"), lib?.Sprite("SerpentScaleCrack3") };
+                    var pieces = new SpriteRenderer[5];
+                    for (int i = 0; i < pieces.Length; i++)
+                    {
+                        pieces[i] = Art(go, lib, "SerpentScaleShard" + i, PropOrder, material, "Shard" + i);
+                        var sp = pieces[i].sprite;
+                        // Each piece pivots on its own centre; place it so it lines up with the whole slab.
+                        if (sp != null) pieces[i].transform.localPosition = (Vector3)((sp.pivot - sp.rect.size * 0.5f) / sp.pixelsPerUnit);
+                        pieces[i].enabled = false;
+                    }
+                    var crumble = go.AddComponent<CrumblingPlatform>();
+                    crumble.ConfigureArt(slab, crack, stages, pieces);
+                    crumble.ConfigureTiming(2f, 0.6f, 3f);
                     break;
                 }
                 case "StoneCover": Cover(go, lib, "StoneCover", material, true, true, false, 1.18f); break;

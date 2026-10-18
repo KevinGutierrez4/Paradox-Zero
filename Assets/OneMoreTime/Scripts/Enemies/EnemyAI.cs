@@ -34,7 +34,9 @@ namespace OneMoreTime
         private EnemyArchetype kind;
         private EnemyState state = EnemyState.Idle;
         private float spawnX, direction = -1f, nextAttack, stateUntil;
-        private bool preparing; // true from Anticipation to the end of Recovery (kept for diagnostics)
+        private bool preparing; // true from Anticipation to the end of Recovery
+        /// <summary>Diagnostics/QA: the enemy is inside an attack (Anticipation → Recovery).</summary>
+        public bool Preparing => preparing;
         private MeleeWeapon melee;
         private ArticulatedRig rig;
         private Transform biteAnchor;

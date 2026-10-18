@@ -199,6 +199,28 @@ namespace OneMoreTime.Editor
                 if (++sheet % 2 == 0) Flush("04_attacks_" + sheet / 2);
             }
             Flush("04_attacks_last");
+            // Exhaustion after five attacks (V7).
+            boss.AutoAttack = true; Time.timeScale = 3;
+            Place(boss.FrontX - 6f);
+            float exWait = Time.realtimeSinceStartup + 45;
+            while (boss.CombatState != BossCombatState.Exhausted && Time.realtimeSinceStartup < exWait) { Place(boss.FrontX - 6f); yield return null; }
+            Time.timeScale = 1;
+            Place(boss.FrontX - 3f);
+            yield return Film("exhausted", 3.2f, 0.27f, () => "Exhausted " + boss.CombatState + " " + boss.AttacksSinceRest);
+            Flush("04b_exhaustion");
+            // The single destructible platform: the hero stands on it, it cracks, warns, breaks, he falls,
+            // he steps aside and it comes back 3 s later.
+            boss.AutoAttack = false;
+            CrumblingPlatform cp = null; foreach (var c in FindObjectsByType<CrumblingPlatform>(FindObjectsSortMode.None)) cp = c;
+            if (cp != null)
+            {
+                player.enabled = true; body.constraints = RigidbodyConstraints2D.FreezeRotation;
+                body.position = new Vector2(cp.Surface.bounds.center.x, cp.TopY + 0.05f);
+                yield return Film("crumble", 3.0f, 0.25f, () => "Crumble " + cp.State + " t=" + cp.StandTimer.ToString("0.00") + (cp.Warning ? " WARNING" : ""));
+                body.position = new Vector2(cp.Surface.bounds.min.x - 1.6f, game.GroundHeight(cp.Surface.bounds.min.x - 1.6f) + 0.05f);
+                yield return Film("crumble", 3.4f, 0.3f, () => "Crumble " + cp.State + " since break " + (Time.time - cp.DestroyedAt).ToString("0.0") + " s");
+            }
+            Flush("04c_crumbling_platform");
             // Transformation into phase two, roar stun QTE (A + D) and Quebranto glacial.
             boss.AutoAttack = true;
             boss.Health.TakeDamage(new DamageInfo(boss.Health.Maximum * 0.31f, Team.Player));

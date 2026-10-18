@@ -62,7 +62,7 @@ PASS: Low ceiling prevents standing
 PASS: Standing resumes with clearance
 PASS: Player prefab contains shield guard
 PASS: Held shield prevents attacking
-PASS: Shield reduces enemy damage by 65 percent
+PASS: Shield applies its configured damage multiplier (1.00)
 PASS: Shield permits slower walking
 PASS: Shield composes with permanent armor
 PASS: Pause releases shield and temporary protection
@@ -144,14 +144,50 @@ PASS: P1: enemies keep terrain collisions
 PASS: P1: player falls through a wolf to the ground instead of standing on it: 0.07
 PASS: P1: wolf stays on the terrain
 PASS: P6: dodge grants invulnerability frames
-PASS: P6: dodge dashes forward and invulnerability ends: 2.90
+PASS: P6: dodge dashes forward and invulnerability ends: 4.41
 PASS: Axe starts impact test facing 1
-PASS: Axe pushes live enemy AI a short distance backwards facing 1: 0.50
+PASS: Axe pushes live enemy AI a short distance backwards facing 1: 0.49
 PASS: Enemy resumes its own steering after short push (no residual knockback)
 PASS: Axe starts impact test facing -1
 PASS: Axe pushes live enemy AI a short distance backwards facing -1: 0.40
 PASS: Enemy resumes its own steering after short push (no residual knockback)
-PASS: Actual axe kill restores exactly 5 player HP
+PASS: V8: the Robo de Vida card exists in the upgrade catalog with 5 levels
+PASS: V8: a new run starts without life steal (level 0, 0 %)
+PASS: V8: without the card, hitting enemies does not recover health
+PASS: V8: level 1 card shows name, level, BUFF, accumulated total and DEBUFF: Nivel actual: 0 → siguiente: 1 (máx. 5) | Cada golpe que hiere de verdad te devuelve parte de tu vida máxima. |  | <color=#7CFFB2>[+] BUFF · recupera +0,2 % de vida máxima por golpe válido</color> | <color=#7CFFB2>TOTAL DESPUÉS DE ELEGIR: 0,2 % por golpe (2 de vida con 1000 máx.)</color> | <color=#FF8A7A>[-] DEBUFF · -1 % de defensa: daño recibido 100% → 101%</color>
+PASS: V8: Robo de Vida can be chosen at level 0
+PASS: V8: Robo de Vida level 1 card fits its UI (title 24/65, text 174/220)
+PASS: V8: level 1 gives 0,2 % per hit and -1 % defence
+PASS: V8: level 1: one swing over two enemies heals once, 2 of 1000 max HP: 2.00
+PASS: V8: level 2 card shows name, level, BUFF, accumulated total and DEBUFF: Nivel actual: 1 → siguiente: 2 (máx. 5) | Cada golpe que hiere de verdad te devuelve parte de tu vida máxima. |  | <color=#7CFFB2>[+] BUFF · +0,3 % adicional de recuperación por golpe</color> | <color=#7CFFB2>TOTAL DESPUÉS DE ELEGIR: 0,5 % por golpe (5 de vida con 1000 máx.)</color> | <color=#FF8A7A>[-] DEBUFF · -1 % de defensa: daño recibido 101% → 102%</color>
+PASS: V8: Robo de Vida can be chosen at level 1
+PASS: V8: Robo de Vida level 2 card fits its UI (title 24/65, text 174/220)
+PASS: V8: level 2 gives 0,5 % per hit and -2 % defence
+PASS: V8: level 2: one swing over two enemies heals once, 5 of 1000 max HP: 5.00
+PASS: V8: level 3 card shows name, level, BUFF, accumulated total and DEBUFF: Nivel actual: 2 → siguiente: 3 (máx. 5) | Cada golpe que hiere de verdad te devuelve parte de tu vida máxima. |  | <color=#7CFFB2>[+] BUFF · +0,4 % adicional de recuperación por golpe</color> | <color=#7CFFB2>TOTAL DESPUÉS DE ELEGIR: 0,9 % por golpe (9 de vida con 1000 máx.)</color> | <color=#FF8A7A>[-] DEBUFF · -1 % de defensa: daño recibido 102% → 103%</color>
+PASS: V8: Robo de Vida can be chosen at level 2
+PASS: V8: level 3 gives 0,9 % per hit and -3 % defence
+PASS: V8: level 3: one swing over two enemies heals once, 9 of 1000 max HP: 9.00
+PASS: V8: level 4 card shows name, level, BUFF, accumulated total and DEBUFF: Nivel actual: 3 → siguiente: 4 (máx. 5) | Cada golpe que hiere de verdad te devuelve parte de tu vida máxima. |  | <color=#7CFFB2>[+] BUFF · +0,5 % adicional de recuperación por golpe</color> | <color=#7CFFB2>TOTAL DESPUÉS DE ELEGIR: 1,4 % por golpe (14 de vida con 1000 máx.)</color> | <color=#FF8A7A>[-] DEBUFF · -1 % de defensa: daño recibido 103% → 104%</color>
+PASS: V8: Robo de Vida can be chosen at level 3
+PASS: V8: level 4 gives 1,4 % per hit and -4 % defence
+PASS: V8: level 4: one swing over two enemies heals once, 14 of 1000 max HP: 14.00
+PASS: V8: level 5 card shows name, level, BUFF, accumulated total and DEBUFF: Nivel actual: 4 → siguiente: 5 (máx. 5) | Cada golpe que hiere de verdad te devuelve parte de tu vida máxima. |  | <color=#7CFFB2>[+] BUFF · +0,6 % adicional de recuperación por golpe</color> | <color=#7CFFB2>TOTAL DESPUÉS DE ELEGIR: 2,0 % por golpe (20 de vida con 1000 máx.)</color> | <color=#FF8A7A>[-] DEBUFF · -1 % de defensa: daño recibido 104% → 105%</color>
+PASS: V8: Robo de Vida can be chosen at level 4
+PASS: V8: Robo de Vida level 5 card fits its UI (title 24/65, text 174/220)
+PASS: V8: level 5 gives 2,0 % per hit and -5 % defence
+PASS: V8: level 5: one swing over two enemies heals once, 20 of 1000 max HP: 20.00
+PASS: V8: at level 5 the card is maxed
+PASS: V8: Robo de Vida is offered as a normal choice and never again once maxed
+PASS: V8: life steal is computed on the current maximum health (2 % of 1250 = 25)
+PASS: V8: hitting invulnerable enemies does not heal
+PASS: V8: a missed swing does not heal
+PASS: V8: hitting a non-enemy object never heals
+PASS: V8: hitting a wall does not heal
+PASS: V8: hitting a dead enemy does not heal
+PASS: V8: recovery never exceeds maximum health
+PASS: V8: resetting stats removes Robo de Vida and its debuff
+PASS: Actual axe kill restores exactly 5 player HP (no life steal without the card): 75.00
 PASS: Same enemy death cannot heal twice
 PASS: Kill healing is capped at maximum player HP
 PASS: Environmental death does not award player kill healing
@@ -160,13 +196,13 @@ PASS: berserker changes its own distinct benefit
 PASS: HUD displays kill healing and resistance
 PASS: berserker really applies its DEBUFF too
 PASS: berserker leaves the hero playable
-PASS: Furia del Berserker: +25% damage and really takes 12% more damage
+PASS: Furia del Berserker: +25% damage and really takes 10.5% more damage (debuff reduced)
 PASS: midgard applies once and starts matching visual feedback
 PASS: midgard changes its own distinct benefit
 PASS: HUD displays kill healing and resistance
 PASS: midgard really applies its DEBUFF too
 PASS: midgard leaves the hero playable
-PASS: Resistencia de Midgard: +25% max HP (heals only the added capacity) and -8% speed
+PASS: Resistencia de Midgard: +25% max HP (heals only the added capacity) and -7% speed (debuff reduced)
 PASS: devastador applies once and starts matching visual feedback
 PASS: devastador changes its own distinct benefit
 PASS: HUD displays kill healing and resistance
@@ -187,13 +223,18 @@ PASS: stone changes its own distinct benefit
 PASS: HUD displays kill healing and resistance
 PASS: stone really applies its DEBUFF too
 PASS: stone leaves the hero playable
-PASS: Stone pact actually reduces incoming damage 15 percent and movement 10 percent
+PASS: Stone pact actually reduces incoming damage 15 percent and movement 8.75 percent (debuff reduced)
 PASS: vampire applies once and starts matching visual feedback
 PASS: vampire changes its own distinct benefit
 PASS: HUD displays kill healing and resistance
 PASS: vampire really applies its DEBUFF too
 PASS: vampire leaves the hero playable
-PASS: Vampire pact increases real kill healing to 7 with 90 maximum HP
+PASS: Vampire pact increases real kill healing to 7 with 91.25 maximum HP (debuff reduced)
+PASS: robovida applies once and starts matching visual feedback
+PASS: robovida changes its own distinct benefit
+PASS: HUD displays kill healing and resistance
+PASS: robovida really applies its DEBUFF too
+PASS: robovida leaves the hero playable
 PASS: Upgrade effect follows phase relocation of player root
 PASS: Feedback finishes even while time is paused
 PASS: Reset removes all pact benefits, costs and particles
@@ -352,12 +393,12 @@ PASS: P5: card shows name, description, BUFF and DEBUFF in colour
 PASS: Upgrade description fits card without clipping
 PASS: Card shows effective before and after values
 PASS: P5: card shows name, description, BUFF and DEBUFF in colour
-PASS: Single choice advances once, applies its BUFF and keeps the hero playable (vampire)
+PASS: Single choice advances once, applies its BUFF and keeps the hero playable (midgard)
 PASS: Next phase starts on the terrain with the exit reset, phase 2
 PASS: Portal stays closed and unusable before objectives, phase 2
 PASS: P7: phase 2 has platforms, covers and traps (7 props, 4 traps)
-PASS: P7: trap JawTrap only hurts in its active state
 PASS: P7: trap Spikes only hurts in its active state
+PASS: P7: trap JawTrap only hurts in its active state
 PASS: P7: trap Spikes only hurts in its active state
 PASS: P7: trap Spikes only hurts in its active state
 PASS: P8: winter one has an elevated archer post
@@ -365,7 +406,6 @@ PASS: P8: archer post is elevated but reachable with one jump: 2.40
 PASS: P8: archer stays on its post while engaging (no falling, no walking off)
 PASS: Enemy spawns on surface phase 2
 PASS: Wolf prefab uses melee only
-PASS: Enemy spawns on surface phase 2
 PASS: Wolf prefab uses melee only
 PASS: Enemy spawns on surface phase 2
 PASS: Wolf prefab uses melee only
@@ -384,16 +424,16 @@ PASS: Wolf prefab uses melee only
 PASS: Portal entered once; no duplicated transition, phase 2
 PASS: Portal travel keeps health and stats, phase 2
 PASS: Phase 2 clears into paused upgrade choice
-PASS: Single choice advances once, applies its BUFF and keeps the hero playable (vampire)
+PASS: Single choice advances once, applies its BUFF and keeps the hero playable (devastador)
 PASS: Next phase starts on the terrain with the exit reset, phase 3
 PASS: Portal stays closed and unusable before objectives, phase 3
 PASS: P7: phase 3 has platforms, covers and traps (9 props, 6 traps)
+PASS: P7: trap DangerousIce only hurts in its active state
 PASS: P7: trap JawTrap only hurts in its active state
 PASS: P7: trap Spikes only hurts in its active state
-PASS: P7: trap UnstablePlatform only hurts in its active state
 PASS: P7: trap IceGeyser only hurts in its active state
-PASS: P7: trap DangerousIce only hurts in its active state
 PASS: P7: trap Spikes only hurts in its active state
+PASS: P7: trap UnstablePlatform only hurts in its active state
 PASS: Enemy spawns on surface phase 3
 PASS: Wolf prefab uses melee only
 PASS: Enemy spawns on surface phase 3
@@ -421,20 +461,20 @@ PASS: Wolf prefab uses melee only
 PASS: Portal entered once; no duplicated transition, phase 3
 PASS: Portal travel keeps health and stats, phase 3
 PASS: Phase 3 clears into paused upgrade choice
-PASS: Single choice advances once, applies its BUFF and keeps the hero playable (berserker)
+PASS: Single choice advances once, applies its BUFF and keeps the hero playable (midgard)
 PASS: Next phase starts on the terrain with the exit reset, phase 4
 PASS: Portal stays closed and unusable before objectives, phase 4
 PASS: P7: phase 4 has platforms, covers and traps (10 props, 10 traps)
-PASS: P7: trap IceGeyser only hurts in its active state
-PASS: P7: trap IceGeyser only hurts in its active state
+PASS: P7: trap DangerousIce only hurts in its active state
 PASS: P7: trap DangerousIce only hurts in its active state
 PASS: P7: trap JawTrap only hurts in its active state
 PASS: P7: trap Spikes only hurts in its active state
 PASS: P7: trap UnstablePlatform only hurts in its active state
+PASS: P7: trap Spikes only hurts in its active state
+PASS: P7: trap IceGeyser only hurts in its active state
+PASS: P7: trap IceGeyser only hurts in its active state
 PASS: P7: trap IceGeyser only hurts in its active state
 PASS: P7: trap UnstablePlatform only hurts in its active state
-PASS: P7: trap Spikes only hurts in its active state
-PASS: P7: trap DangerousIce only hurts in its active state
 PASS: Enemy spawns on surface phase 4
 PASS: Wolf prefab uses melee only
 PASS: Enemy spawns on surface phase 4
@@ -472,19 +512,19 @@ PASS: Single choice advances once, applies its BUFF and keeps the hero playable 
 PASS: Next phase starts on the terrain with the exit reset, phase 5
 PASS: Portal stays closed and unusable before objectives, phase 5
 PASS: P7: phase 5 has platforms, covers and traps (13 props, 13 traps)
-PASS: P7: trap IceGeyser only hurts in its active state
-PASS: P7: trap Icicle only hurts in its active state
-PASS: P7: trap IceGeyser only hurts in its active state
-PASS: P7: trap Crack only hurts in its active state
 PASS: P7: trap DangerousIce only hurts in its active state
-PASS: P7: trap JawTrap only hurts in its active state
 PASS: P7: trap Icicle only hurts in its active state
-PASS: P7: trap UnstablePlatform only hurts in its active state
+PASS: P7: trap Crack only hurts in its active state
 PASS: P7: trap JawTrap only hurts in its active state
+PASS: P7: trap VenomVent only hurts in its active state
+PASS: P7: trap Crack only hurts in its active state
+PASS: P7: trap JawTrap only hurts in its active state
+PASS: P7: trap UnstablePlatform only hurts in its active state
 PASS: P7: trap VenomVent only hurts in its active state
 PASS: P7: trap Spikes only hurts in its active state
-PASS: P7: trap Crack only hurts in its active state
-PASS: P7: trap VenomVent only hurts in its active state
+PASS: P7: trap Icicle only hurts in its active state
+PASS: P7: trap IceGeyser only hurts in its active state
+PASS: P7: trap IceGeyser only hurts in its active state
 PASS: Enemy spawns on surface phase 5
 PASS: Wolf prefab uses melee only
 PASS: Enemy spawns on surface phase 5
@@ -533,6 +573,10 @@ PASS: Silent roar: no AudioSource exists in the scene
 PASS: P3: Jörmungandr is built from the phase atlases and anchored (kinematic, never displaced)
 PASS: P3: the scenery is its body: scale plates embedded along the arena floor
 PASS: P7: boss arena has useful cover and high platforms only
+PASS: V7: the presentation keeps the whole head inside the camera 
+PASS: V7: the neck is one continuous strip, attached to the head and growing from the ground (no cuts or gaps)
+PASS: V7: the boss health bar stays hidden during the presentation
+PASS: V7: the health bar appears when the battle starts
 PASS: Presentation completes without attacks and without releasing control early
 PASS: Battle starts: control returns and the boss can be damaged
 PASS: P1: player is held in front of the serpent's body: 356.40 <= 356.70
@@ -571,6 +615,30 @@ PASS: Counterplay: stone cover blocks the frost wind
 PASS: Counterplay: a high platform is above the frost wind
 PASS: Counterplay: hugging solid cover blocks the Ragnarök breath
 PASS: P3: the serpent never moves its body (root fixed through every attack)
+PASS: V8: the final arena has exactly ONE extra destructible platform and no moving platform
+PASS: V8: the destructible platform starts active with 2 s / 0,6 s / 3 s
+PASS: V8: the destructible platform is reachable with a normal jump: 2.30
+PASS: V8: the platform overlaps no scenery and stays in front of the serpent's wall 
+PASS: V8: landing on it starts the timer and the cracks (0.76 s)
+PASS: V8: stepping off before it breaks resets the standing time (Idle, 0.00 s, ground SerpentBack_Surface)
+PASS: V8: it breaks after 2 s standing on it: 2.00
+PASS: V8: the visual warning plays during the last 0,6 s: 0.60
+PASS: V8: when it breaks its collider is disabled at once (no invisible floor)
+PASS: V8: the player falls with gravity when it breaks
+PASS: V8: it stays destroyed (invisible, no collision)
+PASS: V8: it reappears in its place 3 s after breaking: 3.00
+PASS: V8: with the player in its space it waits instead of pushing or trapping him
+PASS: V8: once the space is free it comes back and the cycle repeats (2 breaks, 2 respawns)
+PASS: V8: the platform never moves, the serpent's body stays and the main floor is never destroyed
+PASS: V7: Jörmungandr becomes exhausted right after its fifth completed attack
+PASS: V7: exhausted boss is vulnerable and has no active attack
+PASS: V7: the exhausted boss takes damage normally
+PASS: V8: with Robo de Vida level 2, hitting the boss heals 0.5 % of max HP once per swing (two hurtboxes, one heal): 0.50
+PASS: V7: exhaustion lasts 2.5 s: 2.503
+PASS: V7: after resting the counter restarts
+PASS: V7: the boss resumes attacking (never stays stunned)
+PASS: V8: without the card, hitting Jörmungandr does not recover health
+PASS: V7: a phase transition has priority and restarts the attack counter
 PASS: Threshold cancels the attack, clears hazards, makes the boss invulnerable and starts phase two
 PASS: Boss is invulnerable during the transition; single health bar never resets
 PASS: Transformation order body → neck → head → silent roar → stun: Cancel,MorphBody,MorphNeck,MorphHead,Roar,Stun
@@ -587,6 +655,7 @@ PASS: Eclipse carmesí ran once after the player was freed; combat resumes
 PASS: Neck and head now show the phase-three drawings
 PASS: Phase three only uses its own attacks and never fires projectiles
 PASS: Boss defeat ends run in victory
+PASS: V7: defeat resets the attack counter
 PASS: No projectiles, boss hazards or stun remain after the fight
 PASS: Victory retry resets stats, timers and seed
 PASS: Death cancels combat and shield and opens result
@@ -645,6 +714,8 @@ PASS: Final corpse holds Cloth
 PASS: Final corpse holds Sprite
 PASS: Final corpse holds AxeSwipe
 PASS: Death retry restores player
+PASS: V7: after a restart the boss presentation starts again (control locked, counter at 0)
+PASS: V7: the repeated presentation finishes silently and hands control back with the health bar
 PASS: Return to menu cleans run
 PASS: Acceptance leaves persisted record unchanged
 PASS: No runtime exceptions during acceptance

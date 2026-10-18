@@ -20,19 +20,19 @@ namespace OneMoreTime
         {
             if (button == null) button = GetComponent<Button>();
             index = cardIndex; callback = selected;
-            title.text = upgrade.Title;
+            title.text = upgrade.TitleFor(current);
             var rect = (RectTransform)transform;
             rect.sizeDelta = new Vector2(rect.sizeDelta.x, 330);
             title.rectTransform.anchoredPosition = new Vector2(0, 115);
             title.rectTransform.sizeDelta = new Vector2(320, 65);
-            title.fontSize = 26;
+            title.fontSize = upgrade.Leveled ? 22 : 26;
             description.rectTransform.anchoredPosition = new Vector2(0, -35);
             description.rectTransform.sizeDelta = new Vector2(315, 220);
             title.color = new Color(1f, 0.86f, 0.55f);
             // Name, description, BUFF (green, +) and DEBUFF (red, -) with the effective before → after values.
             description.supportRichText = true;
             description.text = upgrade.Describe(current);
-            description.fontSize = 18;
+            description.fontSize = upgrade.Leveled ? 16 : 18;
             button.interactable = true;
         }
 
