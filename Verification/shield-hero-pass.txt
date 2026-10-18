@@ -1,0 +1,3 @@
+PASS: 96 transparent frames, 384x384 grid, 96 PPU, fixed feet pivot (0.5,0.1875), eight clips, attached axe/shield sockets and no clipped frames.
+Active scene: Assets/OneMoreTime/Generated_Hacha_Final 1/Scenes/OneMoreTime_Demo.unity
+Updated canonical and active player prefabs.

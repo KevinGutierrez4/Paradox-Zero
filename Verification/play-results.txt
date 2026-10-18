@@ -1,0 +1,299 @@
+PASS: Scene starts at main menu
+PASS: Options button works
+PASS: Play button starts phase one
+PASS: Player has no projectile weapon
+PASS: Player drawing faces movement 1 with parent scale 1 after Animator evaluation
+PASS: Axe and shield follow their own wrists facing 1 under parent scale 1 (0.0000/0.0000)
+PASS: Live hero has a single procedural pose writer
+PASS: Player drawing faces movement -1 with parent scale 1 after Animator evaluation
+PASS: Axe and shield follow their own wrists facing -1 under parent scale 1 (0.0000/0.0000)
+PASS: Live hero has a single procedural pose writer
+PASS: Player drawing faces movement 1 with parent scale -1 after Animator evaluation
+PASS: Axe and shield follow their own wrists facing 1 under parent scale -1 (0.0000/0.0000)
+PASS: Live hero has a single procedural pose writer
+PASS: Player drawing faces movement -1 with parent scale -1 after Animator evaluation
+PASS: Axe and shield follow their own wrists facing -1 under parent scale -1 (0.0000/0.0000)
+PASS: Live hero has a single procedural pose writer
+PASS: Player plants the backwards-moving foot and lifts the forwards return
+PASS: Player FrontArm FrontArm artwork pivots at the joint with original inclination corrected
+PASS: Player FrontArm Lower artwork pivots at the joint with original inclination corrected
+PASS: Player BackArm BackArm artwork pivots at the joint with original inclination corrected
+PASS: Player BackArm Lower artwork pivots at the joint with original inclination corrected
+PASS: Archer drawing faces movement 1 with parent scale 1 after Animator evaluation
+PASS: Archer drawing faces movement -1 with parent scale 1 after Animator evaluation
+PASS: Archer drawing faces movement 1 with parent scale -1 after Animator evaluation
+PASS: Archer drawing faces movement -1 with parent scale -1 after Animator evaluation
+PASS: Archer plants the backwards-moving foot and lifts the forwards return
+PASS: Archer FrontArm FrontArm artwork pivots at the joint with original inclination corrected
+PASS: Archer FrontArm Lower artwork pivots at the joint with original inclination corrected
+PASS: Archer BackArm BackArm artwork pivots at the joint with original inclination corrected
+PASS: Archer BackArm Lower artwork pivots at the joint with original inclination corrected
+PASS: Mage drawing faces movement 1 with parent scale 1 after Animator evaluation
+PASS: Mage drawing faces movement -1 with parent scale 1 after Animator evaluation
+PASS: Mage drawing faces movement 1 with parent scale -1 after Animator evaluation
+PASS: Mage drawing faces movement -1 with parent scale -1 after Animator evaluation
+PASS: Mage plants the backwards-moving foot and lifts the forwards return
+PASS: Mage FrontArm FrontArm artwork pivots at the joint with original inclination corrected
+PASS: Mage FrontArm Lower artwork pivots at the joint with original inclination corrected
+PASS: Mage BackArm BackArm artwork pivots at the joint with original inclination corrected
+PASS: Mage BackArm Lower artwork pivots at the joint with original inclination corrected
+PASS: WhiteWolf drawing faces movement 1 with parent scale 1 after Animator evaluation
+PASS: WhiteWolf drawing faces movement -1 with parent scale 1 after Animator evaluation
+PASS: WhiteWolf drawing faces movement 1 with parent scale -1 after Animator evaluation
+PASS: WhiteWolf drawing faces movement -1 with parent scale -1 after Animator evaluation
+PASS: BlueWolf drawing faces movement 1 with parent scale 1 after Animator evaluation
+PASS: BlueWolf drawing faces movement -1 with parent scale 1 after Animator evaluation
+PASS: BlueWolf drawing faces movement 1 with parent scale -1 after Animator evaluation
+PASS: BlueWolf drawing faces movement -1 with parent scale -1 after Animator evaluation
+PASS: Boss drawing faces movement 1 with parent scale 1 after Animator evaluation
+PASS: Boss drawing faces movement -1 with parent scale 1 after Animator evaluation
+PASS: Boss drawing faces movement 1 with parent scale -1 after Animator evaluation
+PASS: Boss drawing faces movement -1 with parent scale -1 after Animator evaluation
+PASS: Run follows serpent slope
+PASS: Buffered grounded jump launches Rigidbody2D
+PASS: Jump falls and lands on actual surface
+PASS: Crouch collider reduces height with fixed feet
+PASS: Low ceiling prevents standing
+PASS: Standing resumes with clearance
+PASS: Player prefab contains shield guard
+PASS: Held shield prevents attacking
+PASS: Shield reduces enemy damage by 65 percent
+PASS: Shield permits slower walking
+PASS: Shield composes with permanent armor
+PASS: Pause releases shield and temporary protection
+PASS: Releasing shield restores normal armored damage
+PASS: Shield does not protect against environmental damage
+PASS: Melee swing starts
+PASS: Facing remains locked during swing
+PASS: Anticipation deals no damage
+PASS: One damage per enemy per swing despite multiple colliders; sweep hits multiple enemies
+PASS: Melee does not damage self or allies
+PASS: Axe generates no projectiles
+PASS: Left-facing axe deals damage
+PASS: Wall blocks melee hit
+PASS: Pause cancels swing and rejects attacks
+PASS: Resume does not replay cancelled damage
+PASS: Maximum axe cadence preserves single hit window
+PASS: Late input buffer chains exactly one further swing
+PASS: Articulated crouch keeps scale of Visual
+PASS: Articulated crouch keeps scale of Rig
+PASS: Articulated crouch keeps scale of Pelvis
+PASS: Articulated crouch keeps scale of BackLeg
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Lower
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Foot
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of FrontLeg
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Lower
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Foot
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Torso
+PASS: Articulated crouch keeps scale of Body
+PASS: Articulated crouch keeps scale of Head
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of FacingPoint
+PASS: Articulated crouch keeps scale of FrontArm
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Lower
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Hand
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of AxeSocket
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Grip
+PASS: Articulated crouch keeps scale of BladeTip
+PASS: Articulated crouch keeps scale of BackArm
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Lower
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Hand
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of ShieldSocket
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Grip
+PASS: Articulated crouch keeps scale of Cloth
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of AxeSwipe
+PASS: Archer emits its own projectile artwork after preparing attack
+PASS: Mage emits its own projectile artwork after preparing attack
+PASS: Wolf bite applies one damage per swing without projectiles
+PASS: Wolf creates no projectiles
+PASS: Axe starts impact test facing 1
+PASS: Axe pushes live enemy AI a short distance backwards facing 1: 0.29
+PASS: Enemy resumes control after short push
+PASS: Axe starts impact test facing -1
+PASS: Axe pushes live enemy AI a short distance backwards facing -1: 0.19
+PASS: Enemy resumes control after short push
+PASS: Actual axe kill restores exactly 5 player HP
+PASS: Same enemy death cannot heal twice
+PASS: Kill healing is capped at maximum player HP
+PASS: Environmental death does not award player kill healing
+PASS: damage applies once and starts matching visual feedback
+PASS: damage changes its own distinct benefit
+PASS: HUD displays kill healing and resistance
+PASS: speed applies once and starts matching visual feedback
+PASS: speed changes its own distinct benefit
+PASS: HUD displays kill healing and resistance
+PASS: health applies once and starts matching visual feedback
+PASS: health changes its own distinct benefit
+PASS: HUD displays kill healing and resistance
+PASS: Vitality heals only the additional capacity
+PASS: rate applies once and starts matching visual feedback
+PASS: rate changes its own distinct benefit
+PASS: HUD displays kill healing and resistance
+PASS: stone applies once and starts matching visual feedback
+PASS: stone changes its own distinct benefit
+PASS: HUD displays kill healing and resistance
+PASS: Stone pact actually reduces incoming damage 15 percent and movement 10 percent
+PASS: vampire applies once and starts matching visual feedback
+PASS: vampire changes its own distinct benefit
+PASS: HUD displays kill healing and resistance
+PASS: Vampire pact increases real kill healing to 7 with 90 maximum HP
+PASS: Upgrade effect follows phase relocation of player root
+PASS: Feedback finishes even while time is paused
+PASS: Reset removes all pact benefits, costs and particles
+PASS: Surface sampling matches collider phase 1 point 0
+PASS: Surface sampling matches collider phase 1 point 1
+PASS: Surface sampling matches collider phase 1 point 2
+PASS: Surface sampling matches collider phase 1 point 3
+PASS: Surface sampling matches collider phase 1 point 4
+PASS: Surface sampling matches collider phase 1 point 5
+PASS: Surface sampling matches collider phase 1 point 6
+PASS: Surface sampling matches collider phase 1 point 7
+PASS: Surface sampling matches collider phase 1 point 8
+PASS: Surface sampling matches collider phase 1 point 9
+PASS: Surface sampling matches collider phase 1 point 10
+PASS: Surface sampling matches collider phase 1 point 11
+PASS: Surface sampling matches collider phase 1 point 12
+PASS: Surface sampling matches collider phase 1 point 13
+PASS: Surface sampling matches collider phase 1 point 14
+PASS: Surface sampling matches collider phase 1 point 15
+PASS: Surface sampling matches collider phase 1 point 16
+PASS: Surface sampling matches collider phase 1 point 17
+PASS: Surface sampling matches collider phase 1 point 18
+PASS: Surface sampling matches collider phase 1 point 19
+PASS: Surface sampling matches collider phase 1 point 20
+PASS: Surface sampling matches collider phase 2 point 0
+PASS: Surface sampling matches collider phase 2 point 1
+PASS: Surface sampling matches collider phase 2 point 2
+PASS: Surface sampling matches collider phase 2 point 3
+PASS: Surface sampling matches collider phase 2 point 4
+PASS: Surface sampling matches collider phase 2 point 5
+PASS: Surface sampling matches collider phase 2 point 6
+PASS: Surface sampling matches collider phase 2 point 7
+PASS: Surface sampling matches collider phase 2 point 8
+PASS: Surface sampling matches collider phase 2 point 9
+PASS: Surface sampling matches collider phase 2 point 10
+PASS: Surface sampling matches collider phase 2 point 11
+PASS: Surface sampling matches collider phase 2 point 12
+PASS: Surface sampling matches collider phase 2 point 13
+PASS: Surface sampling matches collider phase 2 point 14
+PASS: Surface sampling matches collider phase 2 point 15
+PASS: Surface sampling matches collider phase 2 point 16
+PASS: Surface sampling matches collider phase 2 point 17
+PASS: Surface sampling matches collider phase 2 point 18
+PASS: Surface sampling matches collider phase 2 point 19
+PASS: Surface sampling matches collider phase 2 point 20
+PASS: Surface sampling matches collider phase 3 point 0
+PASS: Surface sampling matches collider phase 3 point 1
+PASS: Surface sampling matches collider phase 3 point 2
+PASS: Surface sampling matches collider phase 3 point 3
+PASS: Surface sampling matches collider phase 3 point 4
+PASS: Surface sampling matches collider phase 3 point 5
+PASS: Surface sampling matches collider phase 3 point 6
+PASS: Surface sampling matches collider phase 3 point 7
+PASS: Surface sampling matches collider phase 3 point 8
+PASS: Surface sampling matches collider phase 3 point 9
+PASS: Surface sampling matches collider phase 3 point 10
+PASS: Surface sampling matches collider phase 3 point 11
+PASS: Surface sampling matches collider phase 3 point 12
+PASS: Surface sampling matches collider phase 3 point 13
+PASS: Surface sampling matches collider phase 3 point 14
+PASS: Surface sampling matches collider phase 3 point 15
+PASS: Surface sampling matches collider phase 3 point 16
+PASS: Surface sampling matches collider phase 3 point 17
+PASS: Surface sampling matches collider phase 3 point 18
+PASS: Surface sampling matches collider phase 3 point 19
+PASS: Surface sampling matches collider phase 3 point 20
+PASS: Surface sampling matches collider phase 4 point 0
+PASS: Surface sampling matches collider phase 4 point 1
+PASS: Surface sampling matches collider phase 4 point 2
+PASS: Surface sampling matches collider phase 4 point 3
+PASS: Surface sampling matches collider phase 4 point 4
+PASS: Surface sampling matches collider phase 4 point 5
+PASS: Surface sampling matches collider phase 4 point 6
+PASS: Surface sampling matches collider phase 4 point 7
+PASS: Surface sampling matches collider phase 4 point 8
+PASS: Surface sampling matches collider phase 4 point 9
+PASS: Surface sampling matches collider phase 4 point 10
+PASS: Surface sampling matches collider phase 4 point 11
+PASS: Surface sampling matches collider phase 4 point 12
+PASS: Surface sampling matches collider phase 4 point 13
+PASS: Surface sampling matches collider phase 4 point 14
+PASS: Surface sampling matches collider phase 4 point 15
+PASS: Surface sampling matches collider phase 4 point 16
+PASS: Surface sampling matches collider phase 4 point 17
+PASS: Surface sampling matches collider phase 4 point 18
+PASS: Surface sampling matches collider phase 4 point 19
+PASS: Surface sampling matches collider phase 4 point 20
+PASS: Surface sampling matches collider phase 5 point 0
+PASS: Surface sampling matches collider phase 5 point 1
+PASS: Surface sampling matches collider phase 5 point 2
+PASS: Surface sampling matches collider phase 5 point 3
+PASS: Surface sampling matches collider phase 5 point 4
+PASS: Surface sampling matches collider phase 5 point 5
+PASS: Surface sampling matches collider phase 5 point 6
+PASS: Surface sampling matches collider phase 5 point 7
+PASS: Surface sampling matches collider phase 5 point 8
+PASS: Surface sampling matches collider phase 5 point 9
+PASS: Surface sampling matches collider phase 5 point 10
+PASS: Surface sampling matches collider phase 5 point 11
+PASS: Surface sampling matches collider phase 5 point 12
+PASS: Surface sampling matches collider phase 5 point 13
+PASS: Surface sampling matches collider phase 5 point 14
+PASS: Surface sampling matches collider phase 5 point 15
+PASS: Surface sampling matches collider phase 5 point 16
+PASS: Surface sampling matches collider phase 5 point 17
+PASS: Surface sampling matches collider phase 5 point 18
+PASS: Surface sampling matches collider phase 5 point 19
+PASS: Surface sampling matches collider phase 5 point 20
+PASS: Surface sampling matches collider phase 6 point 0
+PASS: Surface sampling matches collider phase 6 point 1
+PASS: Surface sampling matches collider phase 6 point 2
+PASS: Surface sampling matches collider phase 6 point 3
+PASS: Surface sampling matches collider phase 6 point 4
+PASS: Surface sampling matches collider phase 6 point 5
+PASS: Surface sampling matches collider phase 6 point 6
+PASS: Surface sampling matches collider phase 6 point 7
+PASS: Surface sampling matches collider phase 6 point 8
+PASS: Surface sampling matches collider phase 6 point 9
+PASS: Surface sampling matches collider phase 6 point 10
+PASS: Surface sampling matches collider phase 6 point 11
+PASS: Surface sampling matches collider phase 6 point 12
+PASS: Surface sampling matches collider phase 6 point 13
+PASS: Surface sampling matches collider phase 6 point 14
+PASS: Surface sampling matches collider phase 6 point 15
+PASS: Surface sampling matches collider phase 6 point 16
+PASS: Surface sampling matches collider phase 6 point 17
+PASS: Surface sampling matches collider phase 6 point 18
+PASS: Surface sampling matches collider phase 6 point 19
+PASS: Surface sampling matches collider phase 6 point 20
+FAIL: System.InvalidOperationException: Phase 1 clears into paused upgrade choice
+  at OneMoreTime.Editor.DemoAcceptanceRunner.Check (System.Boolean condition, System.String message) [0x00030] in C:\Users\gehbd\My project (2)\Assets\OneMoreTime\Editor\DemoPlayValidation.cs:69 
+  at OneMoreTime.Editor.DemoAcceptanceRunner+<Tests>d__20.MoveNext () [0x02fa7] in C:\Users\gehbd\My project (2)\Assets\OneMoreTime\Editor\DemoPlayValidation.cs:427 
+  at OneMoreTime.Editor.DemoAcceptanceRunner+<Start>d__9.MoveNext () [0x0002b] in C:\Users\gehbd\My project (2)\Assets\OneMoreTime\Editor\DemoPlayValidation.cs:55 

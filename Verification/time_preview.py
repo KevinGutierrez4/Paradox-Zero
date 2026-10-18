@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('Verification/animate_preview.py');s=p.read_text(encoding='utf-8-sig').replace('durations.append(40)','durations.append(20)').replace("for p in sorted(Path('Verification/Motion').glob('axe_*.png')):","for i,p in enumerate(sorted(Path('Verification/Motion').glob('axe_*.png'))):").replace('durations.append(30)','durations.append(30 if i % 8 in (0,1,3,5,7) else 20)');p.write_text(s,encoding='utf-8')

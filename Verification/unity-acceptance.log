@@ -1,0 +1,1206 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.5/staging' branch; Version is '6000.5.5f1 (d16e074b49fd) revision 13725191'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gehbd" at "2026-10-17T17:34:31.9567233Z"
+OS: 'Windows 11  (10.0.26300) Core' Language: 'en' Physical Memory: 24216 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-17T17:34:31Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 18792, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              1eac628746f54a3bb1fd67de25ef7dcb
+  Correlation Id:          23c2198a6c9b007ec2361fe1008dd70d
+  External correlation Id: 5437018737206369997
+  Machine Id:              YnZeAC56/NzUixr0l3qI1HeCN9g=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-gehbd" (connect: 0.00s, validation: 0.01s, handshake: 0.08s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gehbd-notifications" at "2026-10-17T17:34:32.0520471Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 4673054916575-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.15s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Unity.exe
+-batchmode
+-projectPath
+C:\Users\gehbd\My project (2)
+-executeMethod
+OneMoreTime.Editor.DemoPlayValidation.Run
+-logFile
+C:\Users\gehbd\My project (2)\Verification\unity-acceptance.log
+Successfully changed project path to: C:\Users\gehbd\My project (2)
+C:/Users/gehbd/My project (2)
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=0"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.Player connection [6896]  Target information:
+
+Player connection [6896]  * "[IP] 10.213.133.155 [Port] 55504 [Flags] 2 [Guid] 1089549638 [EditorId] 1089549638 [Version] 1048832 [Id] WindowsEditor(7,Victus_FacundoR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [6896] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [6896] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-18292" after 0.4 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.5.5f1 (d16e074b49fd)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/gehbd/My project (2)/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 4050 Laptop GPU (ID=0x28a1)
+    Vendor:          NVIDIA
+    VRAM:            5920 MB
+    App VRAM Budget: 5152 MB
+    Driver:          32.0.16.1742
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56292
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002178 seconds.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.724 seconds
+Domain Reload Profiling: 1587ms
+	BeginReloadAssembly (161ms)
+		CreateAndSetChildDomain (6ms)
+	RebuildCommonClasses (8ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (93ms)
+	LoadAllAssembliesAndSetupDomain (581ms)
+		LoadAssemblies (151ms)
+		AnalyzeDomain (424ms)
+			TypeCache.Refresh (422ms)
+				TypeCache.ScanAssembly (398ms)
+	FinalizeReload (728ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			BeforeProcessingInitializeOnLoad (163ms)
+			ProcessInitializeOnLoadAttributes (175ms)
+			ProcessInitializeOnLoadMethodAttributes (232ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 65 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.2d.animation@15.1.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.animation@6d5a363ae647)
+    com.unity.2d.aseprite@5.0.3 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.aseprite@d13865913efa)
+    com.unity.2d.psdimporter@14.0.3 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.psdimporter@5d82044f9e43)
+    com.unity.2d.spriteshape@15.0.3 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.spriteshape@fcb7ec61a58b)
+    com.unity.2d.tilemap.extras@8.0.3 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.tilemap.extras@a80140457adc)
+    com.unity.2d.tooling@3.0.1 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.tooling@6f06ffb033c0)
+    com.unity.collab-proxy@2.13.3 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.collab-proxy@4f3be89e8675)
+    com.unity.ide.rider@3.0.38 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.19.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.inputsystem@21a28c3a6c83)
+    com.unity.timeline@1.8.12 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.timeline@8cd8509afae5)
+    com.unity.visualscripting@1.9.11 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.visualscripting@8bed5ad90189)
+    com.unity.2d.common@14.0.1 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.common@73badf92ba8b)
+    com.unity.searcher@4.9.4 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.searcher@d45a78918735)
+    com.unity.burst@1.8.29 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.burst@6bb9aca3ef38)
+    com.unity.nuget.mono-cecil@1.11.6 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.test-framework.performance@3.5.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.test-framework.performance@8b56083ec0f0)
+  Built-in packages:
+    com.unity.2d.sprite@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.sprite@053a968eab56)
+    com.unity.2d.tilemap@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.tilemap@b959501fd678)
+    com.unity.multiplayer.center@1.0.1 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.multiplayer.center@b860850997d0)
+    com.unity.render-pipelines.universal@17.5.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.render-pipelines.universal@040461d037aa)
+    com.unity.test-framework@1.7.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.test-framework@1405238725ab)
+    com.unity.ugui@2.5.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.ugui@f2d87ebaaa32)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.1.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.ext.nunit@44f7d31723bd)
+    com.unity.render-pipelines.core@17.5.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.render-pipelines.core@b19a46951e65)
+    com.unity.shadergraph@17.5.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.shadergraph@8d7376ec43ee)
+    com.unity.render-pipelines.universal-config@17.5.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.render-pipelines.universal-config@fdda01c80fe3)
+    com.unity.collections@6.5.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.collections@a43cabe808ca)
+    com.unity.mathematics@1.4.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.mathematics@981956d94fb6)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.08 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/gehbd/My project (2)
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 5s215ms
+[             ] Cannot trust contents of `Assets\OneMoreTime\Scripts\World\CollisionRules2D.cs` because its timestamp is in the future. Any node with this file as input will rebuild until the timestamp of the file is no longer newer than local machine time.
+[ 869/1121  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[1113/1121  2s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+[1117/1121  0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+Assets\OneMoreTime\Editor\DemoValidation.cs(16,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoValidation.cs(21,27): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoValidation.cs(23,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoValidation.cs(25,22): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoValidation.cs(32,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoValidation.cs(38,19): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(105,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(106,22): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(144,49): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(144,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(176,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(186,72): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(186,42): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(203,49): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(203,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(226,73): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(226,43): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(245,49): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(245,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+[1118/1121  2s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 141 defines and 376 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1119/1121  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[1120/1121  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (5.14 seconds), 6 items updated, 1121 evaluated
+Assets\OneMoreTime\Editor\DemoValidation.cs(16,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoValidation.cs(21,27): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoValidation.cs(23,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoValidation.cs(25,22): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoValidation.cs(32,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoValidation.cs(38,19): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(105,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(106,22): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(144,49): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(144,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(176,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(186,72): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(186,42): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(203,49): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(203,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(226,73): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(226,43): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(245,49): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(245,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+AssetDatabase: script compilation time: 6.041524s
+Begin MonoManager ReloadAssembly
+Total cache size 120448404
+Total cache size after purge 120448404, took 00:00:00.2779677
+Refreshing native plugins compatible for Editor in 7.51 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 6.64 ms, found 5 plugins.
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  5.679 seconds
+Domain Reload Profiling: 7558ms
+	BeginReloadAssembly (417ms)
+		DisableScriptedObjects (42ms)
+		CreateAndSetChildDomain (88ms)
+	RebuildCommonClasses (13ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (81ms)
+	LoadAllAssembliesAndSetupDomain (1342ms)
+		LoadAssemblies (689ms)
+		AnalyzeDomain (587ms)
+			TypeCache.Refresh (414ms)
+				TypeCache.ScanAssembly (386ms)
+			BuildScriptInfoCaches (149ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (5681ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (203ms)
+			ProcessInitializeOnLoadAttributes (4408ms)
+			ProcessInitializeOnLoadMethodAttributes (548ms)
+			AfterProcessingInitializeOnLoad (12ms)
+		AwakeInstancesAfterBackupRestoration (44ms)
+Starting new worker id: 0 with log in C:/Users/gehbd/My project (2)/Logs/AssetImportWorkerHW0.log
+Refreshing native plugins compatible for Editor in 5.64 ms, found 5 plugins.
+
+Asset Pipeline Refresh (id=c10ed2564d67b704b947947095ec9b84): Total: 15.661 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=6947 ms
+		Asset DB Callback time: managed=437 ms, native=104 ms
+		Scripting: domain reloads=1, domain reload time=2011 ms, compile time=6045 ms, other=114 ms
+		Project Asset Count: scripts=1672, non-scripts=3990
+		Asset File Changes: new=0, changed=3, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 87.628ms
+	ApplyChangesToAssetFolders: 0.956ms
+	Scan: 395.567ms
+	Collect global state as custom dependencies: 9.865ms
+	OnSourceAssetsModified: 2.021ms
+	CategorizeScriptCompilationAssets: 117.084ms
+	ProcessAssetsWithTransientArtifactChanges: 201.759ms
+	CategorizeAssets: 96.403ms
+	CompileScripts: 6044.881ms
+	ImportOutOfDateAssets: 5793.097ms (5717.676ms without children)
+		UnloadImportedAssets: 1.534ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.891ms
+		ImportSchedulerStart: 71.941ms
+	PostProcessAllAssets: 439.416ms
+		VCAutoAddAssetPostprocess 1.526ms
+		XRBuildSystem.XRAssetImported 1.041ms
+		PostProcessCallbackCreateDeferredMaterials 0.075ms
+		MonoPostProcessAllAssets: 435.961ms
+			AssetPostprocessor.OnPostprocessAllAssets 285.172ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 29.721ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 28.491ms
+			SyncVS.PostprocessSyncProject 9.925ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 8.065ms
+			SpriteSlicePostprocessor.OnPostprocessAllAssets 6.643ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 5.309ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 3.627ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 3.415ms
+			AssetChangedListener.OnPostprocessAllAssets 3.342ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 3.257ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 1.749ms
+			AssetProcessor.OnPostprocessAllAssets 1.658ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 1.515ms
+			MaterialPostprocessor.OnPostprocessAllAssets 1.301ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.991ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.937ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.870ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.845ms
+			SpriteEditorTexturePostprocessor.OnPostprocessAllAssets 0.799ms
+			PostProcessor.OnPostprocessAllAssets 0.783ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.747ms
+			SpriteShapeAssetPostProcessor.OnPostprocessAllAssets 0.670ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.646ms
+			AssetEvents.OnPostprocessAllAssets 0.527ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.491ms
+			SampleDependencyImporterPostProcessor.OnPostprocessAllAssets 0.465ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.451ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.446ms
+			PSDImportPostProcessor.OnPostprocessAllAssets 0.428ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.421ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.398ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.274ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.219ms
+			SpriteLibraryAssetPostprocessor.OnPostprocessAllAssets 0.204ms
+			SamplePostprocessor.OnPostprocessAllAssets 0.202ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.146ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.137ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.122ms
+			PSDImporterAssetPostProcessor.OnPostprocessAllAssets 0.097ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.088ms
+	PostAssetChangesProfiler: 16.388ms
+	UnloadStreamsBegin: 1.686ms
+	PersistCurrentRevisions: 0.230ms
+	GenerateScriptTypeHashes: 3.465ms
+	GenerateScriptTypeSerializationHashes: 5.542ms
+	Untracked: 2445.283ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Scanning for USB devices : 2.175ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-My project (2)
+Unloading 70 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7412 unused Assets / (15.5 MB). Loaded Objects now: 8230.
+Memory consumption went from 457.8 MB to 442.3 MB.
+Total: 19.566500 ms (FindLiveObjects: 1.056000 ms CreateObjectMapping: 2.719300 ms MarkObjects: 7.250900 ms  DeleteObjects: 8.536600 ms)
+
+Opening scene 'Assets/OneMoreTime/Generated_Hacha_Final/Scenes/OneMoreTime_Demo.unity'
+Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/OneMoreTime/Generated_Hacha_Final/Scenes/OneMoreTime_Demo.unity'
+	Deserialize:            58.140 ms
+	Integration:            410.976 ms
+	Integration of assets:  89.321 ms
+	Thread Wait Time:       0.310 ms
+	Total Operation Time:   558.748 ms
+Unloading 2 unused Assets / (2.1 KB). Loaded Objects now: 9187.
+Memory consumption went from 436.2 MB to 436.2 MB.
+Total: 10.911300 ms (FindLiveObjects: 0.859700 ms CreateObjectMapping: 1.579800 ms MarkObjects: 8.405700 ms  DeleteObjects: 0.064300 ms)
+
+[Project] Loading completed in 22.143 seconds
+	Project init time: 				20.599 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.434 seconds
+		Asset Database init time: 		1.228 seconds
+		Global illumination init time: 	0.004 seconds
+		Assemblies load time: 			1.711 seconds
+		Unity extensions init time: 	0.026 seconds
+		Asset Database refresh time: 	15.662 seconds
+	Scene opening time: 			0.911 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1792258494082,"processId":18292,"projectLoad":22.1425663,"projectInit":20.5987525,"templateInit":0.0,"packageManagerInit":0.434155,"assetDatabaseInit":1.2281985,"globalIlluminationInit":0.003581,"assembliesLoad":1.7105533,"unityExtensionsInit":0.0256299,"assetDatabaseRefresh":15.6616151,"sceneOpening":0.9113605}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1792258494082,"processId":18292,"editorVersion":"6000.5.5f1 (d16e074b49fd)","branch":"6000.5/staging","buildType":"Release","platform":"Windows"}
+SpriteAtlasPacking completed in 0.025241 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            10.629 ms
+	Integration:            337.467 ms
+	Integration of assets:  4.253 ms
+	Thread Wait Time:       0.043 ms
+	Total Operation Time:   352.392 ms
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Start Indexing on Editor startup
+[Indexing] Starting Initial Indexing for Assets
+Created GICache directory at C:/Users/gehbd/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.022s, timestamps: [22.734 - 22.756]
+OMT_CHECK Scene starts at main menu
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:107)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Options button works
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:108)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Play button starts phase one
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:111)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Player has no projectile weapon
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:112)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Run follows serpent slope
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:118)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Buffered grounded jump launches Rigidbody2D
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:120)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Jump falls and lands on actual surface
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:122)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Crouch collider reduces height with fixed feet
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:125)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Low ceiling prevents standing
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:129)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Standing resumes with clearance
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:131)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Melee swing starts
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:137)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Facing remains locked during swing
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:138)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Anticipation deals no damage
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:139)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK One damage per enemy per swing despite multiple colliders; sweep hits multiple enemies
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:142)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Melee does not damage self or allies
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:143)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Axe generates no projectiles
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:144)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Left-facing axe deals damage
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:147)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Wall blocks melee hit
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:152)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Pause cancels swing and rejects attacks
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:155)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Resume does not replay cancelled damage
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:157)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Maximum axe cadence preserves single hit window
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:160)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Late input buffer chains exactly one further swing
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:165)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Visual
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Rig
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Pelvis
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of BackLeg
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Sprite
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Lower
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Sprite
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of FrontLeg
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Sprite
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Lower
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Sprite
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Torso
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Body
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Head
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Sprite
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of BackArm
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Sprite
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Lower
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Sprite
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of FrontArm
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Sprite
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Lower
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Sprite
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Hand
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Weapon
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Sprite
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Articulated crouch keeps scale of Muzzle
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:172)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_CHECK Archer emits its own projectile artwork after preparing attack
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Check (bool,string) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:69)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Tests>d__19:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:193)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:55)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+InvalidOperationException: Mage emits its own projectile artwork after preparing attack
+  at OneMoreTime.Editor.DemoAcceptanceRunner.Check (System.Boolean condition, System.String message) [0x00030] in C:\Users\gehbd\My project (2)\Assets\OneMoreTime\Editor\DemoPlayValidation.cs:69 
+  at OneMoreTime.Editor.DemoAcceptanceRunner+<Tests>d__19.MoveNext () [0x00f13] in C:\Users\gehbd\My project (2)\Assets\OneMoreTime\Editor\DemoPlayValidation.cs:193 
+  at OneMoreTime.Editor.DemoAcceptanceRunner+<Start>d__9.MoveNext () [0x0002b] in C:\Users\gehbd\My project (2)\Assets\OneMoreTime\Editor\DemoPlayValidation.cs:55 
+UnityEngine.DebugLogHandler:Internal_LogException_Injected(Exception, IntPtr)
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+OneMoreTime.Editor.<Start>d__9:MoveNext() (at Assets\OneMoreTime\Editor\DemoPlayValidation.cs:56)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 69)
+
+OMT_PLAY_FAIL
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoAcceptanceRunner:Finish (bool) (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:65)
+OneMoreTime.Editor.DemoAcceptanceRunner/<Start>d__9:MoveNext () (at Assets/OneMoreTime/Editor/DemoPlayValidation.cs:56)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/OneMoreTime/Editor/DemoPlayValidation.cs Line: 65)
+
+Unloading 91 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            4.135 ms
+	Integration:            281.239 ms
+	Integration of assets:  0.005 ms
+	Thread Wait Time:       0.048 ms
+	Total Operation Time:   285.428 ms
+Unloading 2 unused Assets / (194.9 KB). Loaded Objects now: 9293.
+Memory consumption went from 468.4 MB to 468.2 MB.
+Total: 14.769200 ms (FindLiveObjects: 0.691700 ms CreateObjectMapping: 1.273400 ms MarkObjects: 12.549000 ms  DeleteObjects: 0.252700 ms)
+
+MonoPathRemapper: Attempts to remap: 25524; Successful remaps: 2
+Serialized file version minimum: 23, current 23
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-gehbd-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-gehbd channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+[Package Manager] Server process was shutdown
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1792258506524,"processId":18292,"allocatedMemory":21815198,"memoryLabels":[{"Default":219763},{"Permanent":15516},{"NewDelete":67131},{"Thread":4205176},{"Manager":819461},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":849339},{"Material":24},{"GfxDevice":57488},{"Animation":29632},{"Audio":1544},{"FreeType":8},{"FontEngine":736},{"Physics":2146},{"Physics2D":16},{"Serialization":1880},{"Input":42840},{"JobScheduler":256},{"TextLib":280},{"Mono":48},{"MonoCode":64},{"ScriptingNativeRuntime":1582772},{"BaseObject":1621896},{"Resource":1208},{"Renderer":3080},{"Transform":4685},{"File":4009},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":27411},{"StaticString":3808},{"Utility":2673238},{"Curl":2579},{"PoolAlloc":2360},{"AI":80},{"TypeTree":14869},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"CloudService":10408},{"WebRequest":552},{"VR":47114},{"SceneManager":608},{"Video":208},{"LazyScriptCache":32},{"Camera":17},{"Secure":2377},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":728},{"Hierarchy":1176},{"UIElements":72},{"CoreStats":13688},{"Identifiers":6768},{"Gui":128},{"EditorUtility":112981},{"VersionControl":8},{"Undo":931},{"AssetDatabase":8956180},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":38929},{"Upm":1912},{"UpmDiagnostics":8},{"AssetCompliance":64},{"DrivenProperties":72},{"LocalIPC":260},{"ProfilerEditor":9778},{"CoreBusinessMetrics":3480},{"Windowing":456},{"Licensing":776},{"AssetReference":32},{"IPCStream":32}]}

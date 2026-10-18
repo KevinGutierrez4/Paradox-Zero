@@ -1,0 +1,2 @@
+PASS: Unity 6000.5.5f1, scene generated and references/rules validated.
+Scene: Assets/OneMoreTime/Generated_Hacha_Final/Scenes/OneMoreTime_Demo.unity

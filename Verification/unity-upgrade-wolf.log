@@ -1,0 +1,42 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.5/staging' branch; Version is '6000.5.5f1 (d16e074b49fd) revision 13725191'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gehbd" at "2026-10-17T18:31:15.2613203Z"
+OS: 'Windows 11  (10.0.26300) Core' Language: 'en' Physical Memory: 24216 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-17T18:31:15Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 18792, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              f27756d59e6e4e6f9f60de23c9b464f3
+  Correlation Id:          23c2198a6c9b007ec2361fe1008dd70d
+  External correlation Id: 1675315939031083811
+  Machine Id:              YnZeAC56/NzUixr0l3qI1HeCN9g=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-gehbd" (connect: 0.00s, validation: 0.00s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gehbd-notifications" at "2026-10-17T18:31:15.3118227Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 4673054916575-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.07s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+C:\Users\gehbd\My project (2)
+-executeMethod
+OneMoreTime.Editor.DemoOrientationFix.Apply
+-logFile
+C:\Users\gehbd\My project (2)\Verification\unity-upgrade-wolf.log
+Successfully changed project path to: C:\Users\gehbd\My project (2)
+C:/Users/gehbd/My project (2)
+Exiting without the bug reporter. Application will terminate with return code 1

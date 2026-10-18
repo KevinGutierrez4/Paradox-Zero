@@ -1,0 +1,997 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.5/staging' branch; Version is '6000.5.5f1 (d16e074b49fd) revision 13725191'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gehbd" at "2026-10-17T17:38:11.7383321Z"
+OS: 'Windows 11  (10.0.26300) Core' Language: 'en' Physical Memory: 24216 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-17T17:38:11Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 18792, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              1fe460f545814dbbab260d6423b72b3b
+  Correlation Id:          23c2198a6c9b007ec2361fe1008dd70d
+  External correlation Id: 2718451535756971836
+  Machine Id:              YnZeAC56/NzUixr0l3qI1HeCN9g=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-gehbd" (connect: 0.00s, validation: 0.00s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-gehbd-notifications" at "2026-10-17T17:38:11.7955453Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 4673054916575-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.06
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.27s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+C:\Users\gehbd\My project (2)
+-executeMethod
+OneMoreTime.Editor.DemoBatch.RefreshPresentation
+-logFile
+C:\Users\gehbd\My project (2)\Verification\unity-presentation-final.log
+Successfully changed project path to: C:\Users\gehbd\My project (2)
+C:/Users/gehbd/My project (2)
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=0"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.Player connection [10056]  Target information:
+
+Player connection [10056]  * "[IP] 10.213.133.155 [Port] 55504 [Flags] 2 [Guid] 216131253 [EditorId] 216131253 [Version] 1048832 [Id] WindowsEditor(7,Victus_FacundoR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [10056] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [10056] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-6596" after 0.3 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.5.5f1 (d16e074b49fd)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/gehbd/My project (2)/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 4050 Laptop GPU (ID=0x28a1)
+    Vendor:          NVIDIA
+    VRAM:            5920 MB
+    App VRAM Budget: 5152 MB
+    Driver:          32.0.16.1742
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56596
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002296 seconds.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.421 seconds
+Domain Reload Profiling: 950ms
+	BeginReloadAssembly (136ms)
+		CreateAndSetChildDomain (5ms)
+	RebuildCommonClasses (4ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (304ms)
+		LoadAssemblies (128ms)
+		AnalyzeDomain (222ms)
+			TypeCache.Refresh (221ms)
+				TypeCache.ScanAssembly (207ms)
+	FinalizeReload (424ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (98ms)
+			ProcessInitializeOnLoadMethodAttributes (142ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 65 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.2d.animation@15.1.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.animation@6d5a363ae647)
+    com.unity.2d.aseprite@5.0.3 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.aseprite@d13865913efa)
+    com.unity.2d.psdimporter@14.0.3 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.psdimporter@5d82044f9e43)
+    com.unity.2d.spriteshape@15.0.3 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.spriteshape@fcb7ec61a58b)
+    com.unity.2d.tilemap.extras@8.0.3 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.tilemap.extras@a80140457adc)
+    com.unity.2d.tooling@3.0.1 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.tooling@6f06ffb033c0)
+    com.unity.collab-proxy@2.13.3 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.collab-proxy@4f3be89e8675)
+    com.unity.ide.rider@3.0.38 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.19.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.inputsystem@21a28c3a6c83)
+    com.unity.timeline@1.8.12 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.timeline@8cd8509afae5)
+    com.unity.visualscripting@1.9.11 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.visualscripting@8bed5ad90189)
+    com.unity.2d.common@14.0.1 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.common@73badf92ba8b)
+    com.unity.searcher@4.9.4 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.searcher@d45a78918735)
+    com.unity.burst@1.8.29 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.burst@6bb9aca3ef38)
+    com.unity.nuget.mono-cecil@1.11.6 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.test-framework.performance@3.5.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.test-framework.performance@8b56083ec0f0)
+  Built-in packages:
+    com.unity.2d.sprite@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.sprite@053a968eab56)
+    com.unity.2d.tilemap@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.2d.tilemap@b959501fd678)
+    com.unity.multiplayer.center@1.0.1 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.multiplayer.center@b860850997d0)
+    com.unity.render-pipelines.universal@17.5.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.render-pipelines.universal@040461d037aa)
+    com.unity.test-framework@1.7.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.test-framework@1405238725ab)
+    com.unity.ugui@2.5.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.ugui@f2d87ebaaa32)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.1.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.ext.nunit@44f7d31723bd)
+    com.unity.render-pipelines.core@17.5.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.render-pipelines.core@b19a46951e65)
+    com.unity.shadergraph@17.5.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.shadergraph@8d7376ec43ee)
+    com.unity.render-pipelines.universal-config@17.5.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.render-pipelines.universal-config@fdda01c80fe3)
+    com.unity.collections@6.5.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.collections@a43cabe808ca)
+    com.unity.mathematics@1.4.0 (location: C:\Users\gehbd\My project (2)\Library\PackageCache\com.unity.mathematics@981956d94fb6)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.05 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.5.5f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/gehbd/My project (2)
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 2s932ms
+[             ] Cannot trust contents of `Assets\OneMoreTime\Scripts\World\CollisionRules2D.cs` because its timestamp is in the future. Any node with this file as input will rebuild until the timestamp of the file is no longer newer than local machine time.
+[ 869/1121  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[1113/1121  2s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+[1114/1121  0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+Assets\OneMoreTime\Editor\DemoValidation.cs(16,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoValidation.cs(21,27): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoValidation.cs(23,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoValidation.cs(25,22): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoValidation.cs(32,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoValidation.cs(38,19): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(105,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(106,22): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(146,49): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(146,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(178,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(188,72): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(188,42): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(213,49): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(213,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(236,73): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(236,43): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(255,49): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(255,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+[1115/1121  0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 143 defines and 354 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1116/1121  0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 141 defines and 376 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1117/1121  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+[1118/1121  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[1119/1121  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+[1120/1121  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+*** Tundra build success (2.87 seconds), 9 items updated, 1121 evaluated
+Assets\OneMoreTime\Editor\DemoValidation.cs(16,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoValidation.cs(21,27): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoValidation.cs(23,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoValidation.cs(25,22): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoValidation.cs(32,26): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoValidation.cs(38,19): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(105,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(106,22): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(146,49): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(146,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(178,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(188,72): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(188,42): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(213,49): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(213,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(236,73): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(236,43): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(255,49): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\OneMoreTime\Editor\DemoPlayValidation.cs(255,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+AssetDatabase: script compilation time: 3.413911s
+Begin MonoManager ReloadAssembly
+Total cache size 120448404
+Total cache size after purge 120448404, took 00:00:00.1590116
+Refreshing native plugins compatible for Editor in 3.35 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.10 ms, found 5 plugins.
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.583 seconds
+Domain Reload Profiling: 4822ms
+	BeginReloadAssembly (272ms)
+		DisableScriptedObjects (30ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (9ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (74ms)
+	LoadAllAssembliesAndSetupDomain (866ms)
+		LoadAssemblies (470ms)
+		AnalyzeDomain (341ms)
+			TypeCache.Refresh (238ms)
+				TypeCache.ScanAssembly (223ms)
+			BuildScriptInfoCaches (84ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (3585ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (102ms)
+			ProcessInitializeOnLoadAttributes (2791ms)
+			ProcessInitializeOnLoadMethodAttributes (359ms)
+			AfterProcessingInitializeOnLoad (8ms)
+		AwakeInstancesAfterBackupRestoration (47ms)
+Starting new worker id: 0 with log in C:/Users/gehbd/My project (2)/Logs/AssetImportWorkerHW0.log
+Refreshing native plugins compatible for Editor in 3.31 ms, found 5 plugins.
+
+Asset Pipeline Refresh (id=39aee8d2dcd05704db6233260f4dff3e): Total: 9.584 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=4357 ms
+		Asset DB Callback time: managed=277 ms, native=88 ms
+		Scripting: domain reloads=1, domain reload time=1313 ms, compile time=3469 ms, other=76 ms
+		Project Asset Count: scripts=1628, non-scripts=3526
+		Asset File Changes: new=0, changed=3, moved=0, deleted=508
+		Scan Filter Count: 0
+	InvokePackagesCallback: 57.505ms
+	ApplyChangesToAssetFolders: 0.887ms
+	Scan: 218.901ms
+	Collect global state as custom dependencies: 9.379ms
+	OnSourceAssetsModified: 3.954ms
+	CategorizeScriptCompilationAssets: 61.337ms
+	ProcessAssetsWithTransientArtifactChanges: 118.327ms
+	CategorizeAssets: 66.931ms
+	CompileScripts: 3469.274ms
+	ImportOutOfDateAssets: 3705.623ms (3613.986ms without children)
+		UnloadImportedAssets: 1.424ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.837ms
+		ImportSchedulerStart: 89.334ms
+	PostProcessAllAssets: 296.334ms
+		VCAutoAddAssetPostprocess 1.050ms
+		XRBuildSystem.XRAssetImported 0.858ms
+		LocalizationDatabase.AssetDatabasePostprocessCallback 0.554ms
+		AssemblyValidation.PostprocessAllAssets 0.469ms
+		PostProcessCallbackCreateDeferredMaterials 0.068ms
+		MonoPostProcessAllAssets: 275.348ms
+			AssetPostprocessor.OnPostprocessAllAssets 162.871ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 20.314ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 15.175ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 13.329ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 7.257ms
+			SyncVS.PostprocessSyncProject 5.134ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 3.637ms
+			AssetChangedListener.OnPostprocessAllAssets 3.479ms
+			SpriteSlicePostprocessor.OnPostprocessAllAssets 3.210ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 2.697ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 2.333ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 2.239ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.979ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 1.220ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 1.145ms
+			MaterialPostprocessor.OnPostprocessAllAssets 1.007ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.624ms
+			SpriteEditorTexturePostprocessor.OnPostprocessAllAssets 0.586ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.584ms
+			SampleDependencyImporterPostProcessor.OnPostprocessAllAssets 0.488ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.455ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.447ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.438ms
+			SpriteLibraryAssetPostprocessor.OnPostprocessAllAssets 0.406ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.396ms
+			AssetEvents.OnPostprocessAllAssets 0.390ms
+			AssetProcessor.OnPostprocessAllAssets 0.379ms
+			SpriteShapeAssetPostProcessor.OnPostprocessAllAssets 0.371ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.358ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.345ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.335ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.330ms
+			PostProcessor.OnPostprocessAllAssets 0.318ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.300ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.295ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.292ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.229ms
+			PSDImportPostProcessor.OnPostprocessAllAssets 0.174ms
+			SamplePostprocessor.OnPostprocessAllAssets 0.171ms
+			PSDImporterAssetPostProcessor.OnPostprocessAllAssets 0.106ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.082ms
+	PostAssetChangesProfiler: 11.950ms
+	UnloadStreamsBegin: 1.814ms
+	PersistCurrentRevisions: 1.899ms
+	GenerateScriptTypeHashes: 2.465ms
+	GenerateScriptTypeSerializationHashes: 4.174ms
+	Untracked: 1552.403ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Scanning for USB devices : 1.847ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-My project (2)
+Unloading 70 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7412 unused Assets / (10.3 MB). Loaded Objects now: 8230.
+Memory consumption went from 443.5 MB to 433.2 MB.
+Total: 18.963000 ms (FindLiveObjects: 0.703000 ms CreateObjectMapping: 3.333500 ms MarkObjects: 7.185500 ms  DeleteObjects: 7.736600 ms)
+
+Loaded scene 'Library/Unused/b0b57f75a3865b24ea7986359b184dc9'
+	Deserialize:            2.935 ms
+	Integration:            8.139 ms
+	Integration of assets:  0.006 ms
+	Thread Wait Time:       0.048 ms
+	Total Operation Time:   11.128 ms
+Importing 'GUID: ddf260e310447944ebd0ddd67477ae25 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Prefabs/Player.prefab' with importer (PrefabImporter)
+Imported 'GUID: ddf260e310447944ebd0ddd67477ae25' -> (Import Result ID: '88f2f5402d9f03493f6880073b27c19a') in 0.015 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b06721ba7dbb25111848a86721e72f43 DependenciesID=3f19aeccd707b61536da6e91c0375173 StaticDependenciesID=f4afb13f135275642b466626d628478d 
+Refreshing native plugins compatible for Editor in 3.42 ms, found 5 plugins.
+Asset Pipeline Refresh (id=d05a52236e114a74d882ff22dfd5cad6): Total: 0.178 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Loaded scene 'Library/Unused/92fd7e1197d1ff449a89f757c2b6ffdf'
+	Deserialize:            1.302 ms
+	Integration:            3.463 ms
+	Integration of assets:  0.004 ms
+	Thread Wait Time:       0.039 ms
+	Total Operation Time:   4.808 ms
+Importing 'GUID: 43d9e76fd77b9f74c9cb1b5b517307ff - Path: Assets/OneMoreTime/Generated_Hacha_Final/Prefabs/Archer.prefab' with importer (PrefabImporter)
+Imported 'GUID: 43d9e76fd77b9f74c9cb1b5b517307ff' -> (Import Result ID: '6cb87160bed72a11489687530d33bade') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b71641c3079ed599af836523b6962849 DependenciesID=6a55710b6514b34f3353a6c19e715e70 StaticDependenciesID=a2fa598b0a6569046bac39baf0c76267 
+Refreshing native plugins compatible for Editor in 2.49 ms, found 5 plugins.
+Asset Pipeline Refresh (id=3822f76acfec6434fbba8366d0ea8482): Total: 0.097 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Loaded scene 'Library/Unused/2c99f10993d06bf47b2296f93b5c753c'
+	Deserialize:            1.006 ms
+	Integration:            3.447 ms
+	Integration of assets:  0.003 ms
+	Thread Wait Time:       0.043 ms
+	Total Operation Time:   4.499 ms
+Importing 'GUID: ad21e9d6d0fe4fa48824225cb032109b - Path: Assets/OneMoreTime/Generated_Hacha_Final/Prefabs/Mage.prefab' with importer (PrefabImporter)
+Imported 'GUID: ad21e9d6d0fe4fa48824225cb032109b' -> (Import Result ID: '55cc4581b43ce6de761e8e69406d5dc7') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fa6424fe65b71dae2038fd5227d8b6c6 DependenciesID=fa294d758b8b579bd0ced1f140b3e7a0 StaticDependenciesID=9e43dc226cf968e0a733cad18e49a61f 
+Refreshing native plugins compatible for Editor in 3.31 ms, found 5 plugins.
+Asset Pipeline Refresh (id=b1905d7f21f2b704ca66d74cd4aa47d6): Total: 0.098 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Loaded scene 'Library/Unused/18354795d8d431c47a62f216edd5838d'
+	Deserialize:            1.313 ms
+	Integration:            2.929 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.036 ms
+	Total Operation Time:   4.279 ms
+Asset Pipeline Refresh (id=4b5c2ee1589d02a448ab733e095a7b58): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Loaded scene 'Library/Unused/57faceb27af42a845b0a078b6cc3052b'
+	Deserialize:            1.140 ms
+	Integration:            2.984 ms
+	Integration of assets:  0.003 ms
+	Thread Wait Time:       0.011 ms
+	Total Operation Time:   4.137 ms
+Asset Pipeline Refresh (id=25ee1a25ea31b464d9f034d9d2e62376): Total: 0.012 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Loaded scene 'Library/Unused/a075ff4f0bf65a54691a1213a603834a'
+	Deserialize:            0.803 ms
+	Integration:            2.501 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.063 ms
+	Total Operation Time:   3.369 ms
+Asset Pipeline Refresh (id=3c1f542be61510f4c9c15c3fa5e602f5): Total: 0.011 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Worker ready: AssetImportWorkerHW0 0
+Importing 'GUID: 3084147a922ebe7428f48ee8378d8e2f - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/WhiteWolf/Crouch.anim' with importer (NativeFormatImporter)
+Main Object Name 'WhiteWolf_Crouch' does not match filename 'Crouch'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 3084147a922ebe7428f48ee8378d8e2f' -> (Import Result ID: 'a5b5c72b99ad062dec229f0994851769') in 0.006 seconds [static dependencies only]. Details - ImportResultOutputID=a614e837310608df952fc55ce2307c6c DependenciesID=69871886a5927924b60f83d232ce6be4 StaticDependenciesID=3dcef3954921bfaa452fd86c209c1d9d 
+Importing 'GUID: 40d5b09c58d1b5a4a980216a7918674d - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Boss/Die.anim' with importer (NativeFormatImporter)
+Main Object Name 'Boss_Die' does not match filename 'Die'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 40d5b09c58d1b5a4a980216a7918674d' -> (Import Result ID: '24284ddd35aa991ed2f7deb79269b30d') in 0.003 seconds [static dependencies only]. Details - ImportResultOutputID=96a1be461f3ab338adc864ab0cf5f439 DependenciesID=7c93f2f95cc700fe7c177fa02c4af62c StaticDependenciesID=f9fefef26a967b246808640c8adb1485 
+Importing 'GUID: 50a193afd591a8c4cb16fcb38ea794ba - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Boss/Walk.anim' with importer (NativeFormatImporter)
+Main Object Name 'Boss_Walk' does not match filename 'Walk'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 50a193afd591a8c4cb16fcb38ea794ba' -> (Import Result ID: '8b7c28b00423893b0fc2fcf0bf24be96') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=efade364df23e057a5c3b7ebd7f3cf7d DependenciesID=5eeecc4b610e1bf9bdad85efcd893c8a StaticDependenciesID=48f765ff884ae40bdf39116c49f12341 
+Importing 'GUID: 703176f928cc59649ae1ad7a2d7bc078 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/WhiteWolf/Special.anim' with importer (NativeFormatImporter)
+Main Object Name 'WhiteWolf_Special' does not match filename 'Special'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 703176f928cc59649ae1ad7a2d7bc078' -> (Import Result ID: 'a989d5ace372c352d61d1ceec1d6ccd9') in 0.005 seconds [static dependencies only]. Details - ImportResultOutputID=687d3c92ffba5bf93ffe15b26b97df8a DependenciesID=44d2dbc4044e445454904a4c7aecd207 StaticDependenciesID=7ddca73818da1d08980b62625fa5d6f2 
+Importing 'GUID: 219bbe4cc44f2b04eb9c83c1505c8e48 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Mage/Walk.anim' with importer (NativeFormatImporter)
+Main Object Name 'Mage_Walk' does not match filename 'Walk'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 219bbe4cc44f2b04eb9c83c1505c8e48' -> (Import Result ID: '52e2ce8d56c035a8a6a03f25dc5e3f4d') in 0.005 seconds [static dependencies only]. Details - ImportResultOutputID=53da206446f25acbce461f1e061ff482 DependenciesID=7ce0894094a80d4af8c32959bfb6a27a StaticDependenciesID=5c7ac4c2e68dccf4815ab2e93fb42c30 
+Importing 'GUID: a1d267229b2a0ab42a92470df7b365c9 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Archer/Crouch.anim' with importer (NativeFormatImporter)
+Main Object Name 'Archer_Crouch' does not match filename 'Crouch'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: a1d267229b2a0ab42a92470df7b365c9' -> (Import Result ID: 'fd61e9a53abb2460934eed3d5ca0ba8f') in 0.006 seconds [static dependencies only]. Details - ImportResultOutputID=9dccb56386a0445c9459c83fffcd1af4 DependenciesID=da2d39cc5f76d54333fcb5dd99160bee StaticDependenciesID=5b67a8b606b66e6795b208eec5927c74 
+Importing 'GUID: a146f911ed4c18a488dc649f61dafd59 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Player/Crouch.anim' with importer (NativeFormatImporter)
+Main Object Name 'Player_Crouch' does not match filename 'Crouch'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: a146f911ed4c18a488dc649f61dafd59' -> (Import Result ID: 'f5997a80f0efc0474dacd01cc9f7f26d') in 0.005 seconds [static dependencies only]. Details - ImportResultOutputID=33a1816e2f43b370cecffb78ec01e93d DependenciesID=815f1cf2a16bbfe5629c38ffc6324fb7 StaticDependenciesID=dee4dbbcf644908cd2a0ae441e75613d 
+Importing 'GUID: 2289a17d9a4ad244bb7b6c1019305af6 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Mage/Idle.anim' with importer (NativeFormatImporter)
+Main Object Name 'Mage_Idle' does not match filename 'Idle'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 2289a17d9a4ad244bb7b6c1019305af6' -> (Import Result ID: '50c678b17545b0d49884c625d05ffebf') in 0.005 seconds [static dependencies only]. Details - ImportResultOutputID=d9081e8d1771bb69ab5074217d0131c1 DependenciesID=abed0fbfe82425a926849368b8079218 StaticDependenciesID=8c0408edf8432c0524608e7275015754 
+Importing 'GUID: c2b218dfc34af8b48ab8ba88cc1c2177 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/BlueWolf/Walk.anim' with importer (NativeFormatImporter)
+Main Object Name 'BlueWolf_Walk' does not match filename 'Walk'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: c2b218dfc34af8b48ab8ba88cc1c2177' -> (Import Result ID: '4971e620c7e1d67b63ea84eea14eb68b') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=465594442722855fb91132523152e745 DependenciesID=e5611ca899fb0b14687723e01f05e28d StaticDependenciesID=d8fc305f74af80bc5d2a9daaaf1058fc 
+Importing 'GUID: 035f4461de51c1048bb2bbfa9771dce2 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Archer/Die.anim' with importer (NativeFormatImporter)
+Main Object Name 'Archer_Die' does not match filename 'Die'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 035f4461de51c1048bb2bbfa9771dce2' -> (Import Result ID: '26325e705ea0b9dc89edbbb1bf8ef9d7') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=74c126afcb20e5ca2323cd1d4a3b3da9 DependenciesID=747b2a0565fc426046a8ddad1de21b1a StaticDependenciesID=6c02bda08f426b933a53d0aa1b0033ad 
+Importing 'GUID: 7409e4a71b96b124b86551f622223c43 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/WhiteWolf/Die.anim' with importer (NativeFormatImporter)
+Main Object Name 'WhiteWolf_Die' does not match filename 'Die'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 7409e4a71b96b124b86551f622223c43' -> (Import Result ID: 'bd8dffdb59632e5d3c756afe1a5fe9dc') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=7dc4bab2b40fbb68e27ad58c4679fcbc DependenciesID=fe94b012894a01eabbe5e62c9674e381 StaticDependenciesID=f19dcef6496cc775b76f09504262ebcb 
+Importing 'GUID: 840227ea3252d8145a9795c373df5b7b - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/BlueWolf/Die.anim' with importer (NativeFormatImporter)
+Main Object Name 'BlueWolf_Die' does not match filename 'Die'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 840227ea3252d8145a9795c373df5b7b' -> (Import Result ID: '17e151508f6b16b414379e3184eee9ea') in 0.003 seconds [static dependencies only]. Details - ImportResultOutputID=c3d74d233c8a09a26568e917bf159b23 DependenciesID=f98f6ac3e9def4434d76ef6bf7dcc18b StaticDependenciesID=0c518f732dd6768e706b61b4f162d93e 
+Importing 'GUID: 05c2e87007ad2194982f0a44669b99d6 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Archer/CrouchAttack.anim' with importer (NativeFormatImporter)
+Main Object Name 'Archer_CrouchAttack' does not match filename 'CrouchAttack'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 05c2e87007ad2194982f0a44669b99d6' -> (Import Result ID: 'c26a7a1ad77506d74b07caef85a529e0') in 0.012 seconds [static dependencies only]. Details - ImportResultOutputID=efd5c53a77783665118d73223cf9d2a8 DependenciesID=e224c228a7388cefe3c2a82797ded931 StaticDependenciesID=f20fb1c238ad522310ec281c3146ea38 
+Importing 'GUID: 05dc86a2ca7490c43993214e82245886 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Player/Walk.anim' with importer (NativeFormatImporter)
+Main Object Name 'Player_Walk' does not match filename 'Walk'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 05dc86a2ca7490c43993214e82245886' -> (Import Result ID: '1ea69055ad7138d2084e244082b03a7c') in 0.008 seconds [static dependencies only]. Details - ImportResultOutputID=a6e700a8da61e3194be3d91a87f5ee09 DependenciesID=835ba6b2bf059d34ced00951554409f3 StaticDependenciesID=430efcdda70d19bf31eae4cdbd0070c5 
+Importing 'GUID: 2580a368bf3167d4296696792219af78 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/BlueWolf/Idle.anim' with importer (NativeFormatImporter)
+Main Object Name 'BlueWolf_Idle' does not match filename 'Idle'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 2580a368bf3167d4296696792219af78' -> (Import Result ID: '0cca72d6906196fe5b01e7c7a05bacb3') in 0.007 seconds [static dependencies only]. Details - ImportResultOutputID=2d8019519ea537ce853bf1467715a29e DependenciesID=b91f5749480c0855e5bf6f4d0aab822f StaticDependenciesID=12da0a2e2b0e1b60cdb0c74c9e85dac1 
+Importing 'GUID: 85b2107a97d78ae498de7fd73720d947 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/BlueWolf/Jump.anim' with importer (NativeFormatImporter)
+Main Object Name 'BlueWolf_Jump' does not match filename 'Jump'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 85b2107a97d78ae498de7fd73720d947' -> (Import Result ID: '7bdf8e565d543fc7dda7e8ce8ff8458c') in 0.008 seconds [static dependencies only]. Details - ImportResultOutputID=afc6248339ae4fb641f6892fdce4f16c DependenciesID=2b98a216fdac0a48a2928a60deb08fcf StaticDependenciesID=4f2b385b001516c7fe629409efede30e 
+Importing 'GUID: e581657b86992664499c2a74c996cdbb - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Boss/Idle.anim' with importer (NativeFormatImporter)
+Main Object Name 'Boss_Idle' does not match filename 'Idle'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: e581657b86992664499c2a74c996cdbb' -> (Import Result ID: '367db5445a9b679778af86fbaebd0018') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=f412c96f8005b466b565b38661d69a07 DependenciesID=3d67261bd1246f0a1a19143a156e8c56 StaticDependenciesID=50595d2f6532fc7b4ffedd0f6e1fdb2d 
+Importing 'GUID: 877684e301c090a4d8faaae3e3ec651f - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/BlueWolf/CrouchAttack.anim' with importer (NativeFormatImporter)
+Main Object Name 'BlueWolf_CrouchAttack' does not match filename 'CrouchAttack'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 877684e301c090a4d8faaae3e3ec651f' -> (Import Result ID: 'f7faa98290ac5a2c5bd1668a34a6d822') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=093ef5e88afdf5a5c92439717aa4d3b3 DependenciesID=92c64622143a1cb96dcfe04c65683d58 StaticDependenciesID=718e6751b168087fdcbda7414b2f246e 
+Importing 'GUID: 87abb81ed305b3949b6d214ef0a6fb6b - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Mage/Die.anim' with importer (NativeFormatImporter)
+Main Object Name 'Mage_Die' does not match filename 'Die'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 87abb81ed305b3949b6d214ef0a6fb6b' -> (Import Result ID: '17903ddcfa8b18d1811592318d1ac799') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=b6d0b55adbb1923a65ee39deb1841978 DependenciesID=59d82ec6f146fb0e7341c3f7cbc303b8 StaticDependenciesID=a7a4f897b1888a3e61c8af0a6a873865 
+Importing 'GUID: 38a1cd0ee4164de49bd441bc9b96dc44 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Archer/Special.anim' with importer (NativeFormatImporter)
+Main Object Name 'Archer_Special' does not match filename 'Special'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 38a1cd0ee4164de49bd441bc9b96dc44' -> (Import Result ID: '3d938a2a27aac5aad53d95bacf8d51be') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=54436165aa6689616dd6e0f769ad302a DependenciesID=d403599f0e521898935875b928ab7fcc StaticDependenciesID=a0af38ea4d07cb6614995423ec9c3ecc 
+Importing 'GUID: 3858e812a017cc94d92613cbfec88ede - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Boss/CrouchAttack.anim' with importer (NativeFormatImporter)
+Main Object Name 'Boss_CrouchAttack' does not match filename 'CrouchAttack'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 3858e812a017cc94d92613cbfec88ede' -> (Import Result ID: 'aa67b4d6a2143687763316caed297a90') in 0.003 seconds [static dependencies only]. Details - ImportResultOutputID=e2977c659fd150646ffeeb6a599854ec DependenciesID=a9e1cd693c74bc06c0c6a8fce9ef8d12 StaticDependenciesID=efa225b473945c7dedcbba2e3c3509fc 
+Importing 'GUID: 4846052c472533c41bb5ceab192fdb98 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Player/Attack.anim' with importer (NativeFormatImporter)
+Main Object Name 'Player_Attack' does not match filename 'Attack'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 4846052c472533c41bb5ceab192fdb98' -> (Import Result ID: '3ad2c0fb4ec846ce91892f1138212550') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=2f1c24e0c7165b5d3fc4f18ed27c33ea DependenciesID=46db40f27a0982f385c8ffe8c35711f3 StaticDependenciesID=e051e3e58df99f838b40489e407bff92 
+Importing 'GUID: 4879b4957c13e7140a1d8c688bb21314 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Boss/Special.anim' with importer (NativeFormatImporter)
+Main Object Name 'Boss_Special' does not match filename 'Special'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 4879b4957c13e7140a1d8c688bb21314' -> (Import Result ID: 'e917fa276688e979a9e19de86d69b9a0') in 0.003 seconds [static dependencies only]. Details - ImportResultOutputID=42bb976476f2676f9bca9217c2d1c86a DependenciesID=54482f6a1e8a5bc2c6ab6f906d1b74ce StaticDependenciesID=4ddfbac31ecbd4d1db89f76b06efe453 
+Importing 'GUID: 686a93141664fd241aa42f6894160650 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Archer/Attack.anim' with importer (NativeFormatImporter)
+Main Object Name 'Archer_Attack' does not match filename 'Attack'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 686a93141664fd241aa42f6894160650' -> (Import Result ID: 'a3aa7cc7e50d77b8b5eb0965c4466f3f') in 0.003 seconds [static dependencies only]. Details - ImportResultOutputID=51f322d04650716d5d8fd538bd7d2211 DependenciesID=a6277f758701ffc298b527647b5cd5b9 StaticDependenciesID=ebd61573e4ae1124cf766f498d301318 
+Importing 'GUID: 98c51728f57993f4ca531e56faada5c4 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Player/Special.anim' with importer (NativeFormatImporter)
+Main Object Name 'Player_Special' does not match filename 'Special'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 98c51728f57993f4ca531e56faada5c4' -> (Import Result ID: 'c8d68dbb14948ced84c7567a47c14aee') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=63a59bb3daf858862d28554d141d22c8 DependenciesID=ed693fa31984a5e19bd367a52da530dd StaticDependenciesID=87ed641b7468328fdec1653e1c212495 
+Importing 'GUID: c877116c678634d44920db6837039d12 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Mage/Special.anim' with importer (NativeFormatImporter)
+Main Object Name 'Mage_Special' does not match filename 'Special'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: c877116c678634d44920db6837039d12' -> (Import Result ID: '200ea3df388fb142c6cfe427cb678d03') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=6eb42e709e5f5d0bae9ade6300e6b2e9 DependenciesID=e626abe412516481868036ce56f1c019 StaticDependenciesID=0511eb72747c1df07720ab7261704b7f 
+Importing 'GUID: 792080c2ac516c446b137baac5fbcf2b - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/WhiteWolf/Idle.anim' with importer (NativeFormatImporter)
+Main Object Name 'WhiteWolf_Idle' does not match filename 'Idle'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 792080c2ac516c446b137baac5fbcf2b' -> (Import Result ID: '93d171186da47955b4389c1b64f3e47d') in 0.005 seconds [static dependencies only]. Details - ImportResultOutputID=2f3bdc72b29b1f30b789df00bc2a7836 DependenciesID=e3320bd37969c5b0a58a3dbe4f1f43fc StaticDependenciesID=012828070bd72754b9a0473c4191a5d7 
+Importing 'GUID: 6a7cb45360167234ca36fa8eeed858c8 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Boss/Crouch.anim' with importer (NativeFormatImporter)
+Main Object Name 'Boss_Crouch' does not match filename 'Crouch'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 6a7cb45360167234ca36fa8eeed858c8' -> (Import Result ID: '14be16584bc5ccd4028b75c00d948d98') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=1eaefd2a8385163e694409a9ee45a266 DependenciesID=1f943ece11af6621b984c8c294f96b60 StaticDependenciesID=97270f8ee634accfaf2f078911a72826 
+Importing 'GUID: baa23f43541362e47b66415bb8288d11 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Archer/Idle.anim' with importer (NativeFormatImporter)
+Main Object Name 'Archer_Idle' does not match filename 'Idle'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: baa23f43541362e47b66415bb8288d11' -> (Import Result ID: 'd84691374c7e15f434c74b462abe415e') in 0.006 seconds [static dependencies only]. Details - ImportResultOutputID=135bf092acfdb7048d29afa683bdd87a DependenciesID=3fe884ee3038094eba27ee9c94e3b7ad StaticDependenciesID=8f4786f86ff8217994d34cbf749de6ac 
+Importing 'GUID: da1aba6152cbdc945a915381400e2cff - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/BlueWolf/Crouch.anim' with importer (NativeFormatImporter)
+Main Object Name 'BlueWolf_Crouch' does not match filename 'Crouch'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: da1aba6152cbdc945a915381400e2cff' -> (Import Result ID: '461af25dacb4610c2419b88dd5a0ecaa') in 0.005 seconds [static dependencies only]. Details - ImportResultOutputID=0aa0d9004e7a69f3c1528d4b3ca945d1 DependenciesID=b74411311e062a4968d5d9b1484f4d4c StaticDependenciesID=25abbf15c107018c6c2fcf91c5c9adca 
+Importing 'GUID: ea2cb6cd874bafe45aacd664db71b01f - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Mage/Attack.anim' with importer (NativeFormatImporter)
+Main Object Name 'Mage_Attack' does not match filename 'Attack'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: ea2cb6cd874bafe45aacd664db71b01f' -> (Import Result ID: 'd75d237d0fb708caf6f6122f4707d2f8') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=c361c2f36ac04df9fdb16ee7c42d21a9 DependenciesID=e6501c2baa47552974b98e0c5186030f StaticDependenciesID=711610a114b83d447c64c2733f81ef7c 
+Importing 'GUID: 2bdfd2ed002ac5144970672cd261aeec - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/WhiteWolf/Jump.anim' with importer (NativeFormatImporter)
+Main Object Name 'WhiteWolf_Jump' does not match filename 'Jump'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 2bdfd2ed002ac5144970672cd261aeec' -> (Import Result ID: '01ddba07b9da13683b594bebf0b61e0b') in 0.007 seconds [static dependencies only]. Details - ImportResultOutputID=cfa0c97945caee3f03171cecdd632719 DependenciesID=729488b9ab554fbe4c319b805660e750 StaticDependenciesID=5b9f2a6ccada52e76387b87d1c19ed9a 
+Importing 'GUID: 3b9a492eb0ac80f46924111421cf8a10 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Boss/Attack.anim' with importer (NativeFormatImporter)
+Main Object Name 'Boss_Attack' does not match filename 'Attack'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 3b9a492eb0ac80f46924111421cf8a10' -> (Import Result ID: '548601ab31f03f70e6579bb621f1edcb') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=84e725e3aefb644bbc074f3d6ca5e17e DependenciesID=14cf6fc2f325ec6a3027bf372e26c13e StaticDependenciesID=502f91398f3443f7d7fb18c7a0951fc9 
+Importing 'GUID: 7b80291732d58c9408e5aac0f8f0c18c - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Mage/Crouch.anim' with importer (NativeFormatImporter)
+Main Object Name 'Mage_Crouch' does not match filename 'Crouch'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 7b80291732d58c9408e5aac0f8f0c18c' -> (Import Result ID: '35156d4e6991c75880debfc958c074b3') in 0.005 seconds [static dependencies only]. Details - ImportResultOutputID=a62f0213b29ca5ef1a6790e65e2c2415 DependenciesID=7151833099e84e047ee0fb12e796e488 StaticDependenciesID=9a09ce9a2717e09bf929d856f3b8fb8e 
+Importing 'GUID: bbbb202971bc57a469f8a834a34707bb - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Mage/CrouchAttack.anim' with importer (NativeFormatImporter)
+Main Object Name 'Mage_CrouchAttack' does not match filename 'CrouchAttack'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: bbbb202971bc57a469f8a834a34707bb' -> (Import Result ID: 'f99f88f2f448bab92389cdf4cfaf377b') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=ebabcaa17a273dfc473d3bc6c3b81144 DependenciesID=7e1eb97632365aec120d21e40a8d44d3 StaticDependenciesID=9707a7d1a86a428de324a641b27f37ac 
+Importing 'GUID: eb418135b85bdd44e90ee43ee29df859 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/WhiteWolf/CrouchAttack.anim' with importer (NativeFormatImporter)
+Main Object Name 'WhiteWolf_CrouchAttack' does not match filename 'CrouchAttack'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: eb418135b85bdd44e90ee43ee29df859' -> (Import Result ID: '5849f35e79b10cb9d71dcbcc205e9779') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=7955ad1d8c520ba49168a4837f6ecd12 DependenciesID=356eca50c290a9a3770d9a3e650aa742 StaticDependenciesID=fcc257626c9ad7481e93c5cbf51ce340 
+Importing 'GUID: fb6f813073fed8f42af2bdc3f9d8f097 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/WhiteWolf/Attack.anim' with importer (NativeFormatImporter)
+Main Object Name 'WhiteWolf_Attack' does not match filename 'Attack'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: fb6f813073fed8f42af2bdc3f9d8f097' -> (Import Result ID: 'f5250fbf4fd62338da4cbd6f7e374c4d') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=dd6f89dfeeaaa15daa525082bae6081d DependenciesID=8f2d14863a2b35625855ac94a88174da StaticDependenciesID=2df1a4f63c5e9d80ce9de5b2a92ac73a 
+Importing 'GUID: 0cb0f68af8dbddf47b463b86b8ebe4c0 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Player/Die.anim' with importer (NativeFormatImporter)
+Main Object Name 'Player_Die' does not match filename 'Die'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 0cb0f68af8dbddf47b463b86b8ebe4c0' -> (Import Result ID: 'd9ded1f429f5fea314a374e2d376abb2') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=4e74e60ce923d931667764a36b6d9750 DependenciesID=773ac2d891455207cb19aa385f45a611 StaticDependenciesID=49c8563ca2271b7e6901b06c9656d8df 
+Importing 'GUID: 3c0531ebae39a764ead10588aa6c2098 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/BlueWolf/Special.anim' with importer (NativeFormatImporter)
+Main Object Name 'BlueWolf_Special' does not match filename 'Special'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 3c0531ebae39a764ead10588aa6c2098' -> (Import Result ID: '6493bf1e01a330a53806e5984aee0301') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=fb48b3ed17711c058076d28d54af1239 DependenciesID=336a2d34188e5992aafb6f29c28284fa StaticDependenciesID=a799775382005063733001b89d7f0cb6 
+Importing 'GUID: 4cb5a95a79be41147b84bfa0f852b4ca - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Player/Jump.anim' with importer (NativeFormatImporter)
+Main Object Name 'Player_Jump' does not match filename 'Jump'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 4cb5a95a79be41147b84bfa0f852b4ca' -> (Import Result ID: '9064fc668d323f88812deb799d7e814c') in 0.006 seconds [static dependencies only]. Details - ImportResultOutputID=1b6e1f879ee29c694ec140fc25d61202 DependenciesID=d1cc42046e6f83d3fa43df49c7a1cd29 StaticDependenciesID=70bb97bfb8f993c4368082feef6eb99f 
+Importing 'GUID: 5ceeb365b44a1264aabf7ad9528276b6 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Player/Idle.anim' with importer (NativeFormatImporter)
+Main Object Name 'Player_Idle' does not match filename 'Idle'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 5ceeb365b44a1264aabf7ad9528276b6' -> (Import Result ID: 'ea4e8dbdfcdd50867b3debe3900587d3') in 0.005 seconds [static dependencies only]. Details - ImportResultOutputID=71b7ab50b033eafe681e9e0346e99bec DependenciesID=641fdc4666d5afa5de69f0733fcde86d StaticDependenciesID=f35535974d6b50112484c324c4e0f93c 
+Importing 'GUID: 7cbe3b3b2f616bc45aebc455c593af60 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Player/CrouchAttack.anim' with importer (NativeFormatImporter)
+Main Object Name 'Player_CrouchAttack' does not match filename 'CrouchAttack'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 7cbe3b3b2f616bc45aebc455c593af60' -> (Import Result ID: '64432d98928b23881fe8fb8894429f9e') in 0.003 seconds [static dependencies only]. Details - ImportResultOutputID=f95ed7601bce60a12f5ee8bc72b50368 DependenciesID=c168932c91c8db03cf31311ceafc835f StaticDependenciesID=dac85fb265e105b6c9ef1908c3af97e2 
+Importing 'GUID: 8cb746d5d8039d54982cdfcb4478d8f3 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Boss/Jump.anim' with importer (NativeFormatImporter)
+Main Object Name 'Boss_Jump' does not match filename 'Jump'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 8cb746d5d8039d54982cdfcb4478d8f3' -> (Import Result ID: '7bc8a05514ee1f727644df521fd60d6a') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=70f356786c8316c3e75ff739b8a8ebe5 DependenciesID=004fa8fed61adc9621d8e5be659d91c7 StaticDependenciesID=a4b3c36eccd36aabf7b0d82366f44865 
+Importing 'GUID: 6daad6746de13984aa774c9044d3a208 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/BlueWolf/Attack.anim' with importer (NativeFormatImporter)
+Main Object Name 'BlueWolf_Attack' does not match filename 'Attack'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 6daad6746de13984aa774c9044d3a208' -> (Import Result ID: '370b693ed85c9de266018608c20f3970') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=c2f9665958ec24e5bc9e76db56efbc56 DependenciesID=1488049526d2c0dc433057f4ad5c14ce StaticDependenciesID=9d714c8c1eb7b1c0b3d6e2fea0cae4e8 
+Importing 'GUID: cdd08b17e0e86b84198a9cc0f33ad7f5 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Archer/Walk.anim' with importer (NativeFormatImporter)
+Main Object Name 'Archer_Walk' does not match filename 'Walk'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: cdd08b17e0e86b84198a9cc0f33ad7f5' -> (Import Result ID: 'a131e4cbbc0073c9ac81ac17088dc2be') in 0.005 seconds [static dependencies only]. Details - ImportResultOutputID=d1bbf518064baf9129989079a1fd1a1b DependenciesID=497f059ec4695e0490012fe59d72a046 StaticDependenciesID=1ee0d9d7bd2cbe78df2a7e7e7ac63d62 
+Importing 'GUID: 4e804f7f36140f44b915b17ee4e0f184 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Mage/Jump.anim' with importer (NativeFormatImporter)
+Main Object Name 'Mage_Jump' does not match filename 'Jump'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: 4e804f7f36140f44b915b17ee4e0f184' -> (Import Result ID: 'e75f19c2532473f21afb2fe04f9ebf89') in 0.006 seconds [static dependencies only]. Details - ImportResultOutputID=ebb423cf5e74162b0d91a1cb8e0290c5 DependenciesID=b9f31dbfcff7d0e6e972a8649ffbbdc0 StaticDependenciesID=367313639d1c16aa28047bc9ac82552b 
+Importing 'GUID: ce006d49c5ceeb94babdc5c26ae8087d - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/Archer/Jump.anim' with importer (NativeFormatImporter)
+Main Object Name 'Archer_Jump' does not match filename 'Jump'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: ce006d49c5ceeb94babdc5c26ae8087d' -> (Import Result ID: 'fc89e1fe7baf7e83e78449b770e95225') in 0.008 seconds [static dependencies only]. Details - ImportResultOutputID=44b66be62a3ebde22ecf61c59624398c DependenciesID=036528d49f4f49f3548a0f948f4ecd51 StaticDependenciesID=3f6cfaae14a6dd3fc9bb10a54f785370 
+Importing 'GUID: af53b8202550d724d93395a7c964a658 - Path: Assets/OneMoreTime/Generated_Hacha_Final/Animations/WhiteWolf/Walk.anim' with importer (NativeFormatImporter)
+Main Object Name 'WhiteWolf_Walk' does not match filename 'Walk'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:30)
+
+[Assets/OneMoreTime/Editor/DemoBatch.cs line 30]
+
+Imported 'GUID: af53b8202550d724d93395a7c964a658' -> (Import Result ID: '3ec1567f3b48483268d8013ec6dde82f') in 0.005 seconds [static dependencies only]. Details - ImportResultOutputID=7a501c268a0aab637d6d89822fe298c0 DependenciesID=483ba85fcfd87354984f48ada5c435cd StaticDependenciesID=18278eb0e556ad040e906075d70df9e0 
+Refreshing native plugins compatible for Editor in 2.87 ms, found 5 plugins.
+
+Asset Pipeline Refresh (id=e5db5197ac16dd14a9a1dc560f9675df): Total: 0.371 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=48 (actual=48, local cache=0, cache server=0)
+		Asset DB Process Time: managed=7 ms, native=352 ms
+		Asset DB Callback time: managed=4 ms, native=5 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=1628, non-scripts=3526
+		Asset File Changes: new=0, changed=48, moved=0, deleted=0
+		Scan Filter Count: 58
+	ApplyChangesToAssetFolders: 0.125ms
+	Scan: 16.833ms
+	Collect global state as custom dependencies: 0.102ms
+	OnSourceAssetsModified: 0.288ms
+	CategorizeScriptCompilationAssets: 0.067ms
+	ProcessAssetsWithTransientArtifactChanges: 0.077ms
+	CategorizeAssets: 18.254ms
+	ImportOutOfDateAssets: 320.527ms (13.425ms without children)
+		ImportManagerImport: 255.603ms (2.331ms without children)
+			UpdateCategorizedAssets: 0.262ms
+		ReloadNativeAssets: 0.167ms
+		UnloadImportedAssets: 0.287ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.817ms
+		ImportSchedulerStart: 50.206ms
+	PostProcessAllAssets: 7.513ms
+		XRBuildSystem.XRAssetImported 0.802ms
+		SpriteAtlasDatabase.OnAssetPostprocessCallback 0.171ms
+		PostProcessCallbackCreateDeferredMaterials 0.125ms
+		ShaderAssetModifiedCallback 0.080ms
+		LocalizationDatabase.AssetDatabasePostprocessCallback 0.051ms
+		MonoPostProcessAllAssets: 4.639ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 1.276ms
+			SyncVS.PostprocessSyncProject 0.861ms
+			AssetPostprocessor.OnPostprocessAllAssets 0.356ms
+			PostProcessor.OnPostprocessAllAssets 0.290ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.186ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.184ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.152ms
+			MaterialPostprocessor.OnPostprocessAllAssets 0.152ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.146ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.138ms
+			SpriteSlicePostprocessor.OnPostprocessAllAssets 0.131ms
+			AssetChangedListener.OnPostprocessAllAssets 0.091ms
+			SpriteEditorTexturePostprocessor.OnPostprocessAllAssets 0.051ms
+	PostAssetChangesProfiler: 3.055ms
+	GatherAllCurrentPrimaryImportResultRevisions: 0.233ms
+	PersistCurrentRevisions: 0.609ms
+	Untracked: 3.340ms
+
+OMT_POSES_EXPORTED
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoVisualValidation:RenderPoses () (at Assets/OneMoreTime/Editor/DemoVisualValidation.cs:52)
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:31)
+
+(Filename: Assets/OneMoreTime/Editor/DemoVisualValidation.cs Line: 52)
+
+OMT_PRESENTATION_PASS
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+OneMoreTime.Editor.DemoBatch:RefreshPresentation () (at Assets/OneMoreTime/Editor/DemoBatch.cs:32)
+
+(Filename: Assets/OneMoreTime/Editor/DemoBatch.cs Line: 32)
+
+Batchmode quit successfully invoked - shutting down!
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-gehbd-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-gehbd channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0
