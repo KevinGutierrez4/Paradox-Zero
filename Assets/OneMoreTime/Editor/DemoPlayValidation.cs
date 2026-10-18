@@ -110,11 +110,11 @@ namespace OneMoreTime.Editor
         {
             if (File.Exists("Verification/play-pass.txt")) File.Delete("Verification/play-pass.txt");
             yield return null; yield return null;
-            game = FindAnyObjectByType<GameManager>(); player = game.Player; body = player.GetComponent<Rigidbody2D>(); melee = player.GetComponent<MeleeWeapon>();
+            game = FindFirstObjectByType<GameManager>(); player = game.Player; body = player.GetComponent<Rigidbody2D>(); melee = player.GetComponent<MeleeWeapon>();
             Set(game, "persistRecords", false);
             TutorialController.Suppressed = true; GameManager.SuppressFocusPause = true;
             int storedRecord = PlayerPrefs.GetInt("OMT.BestScore.v1", 0);
-            var ui = FindAnyObjectByType<UIManager>();
+            var ui = FindFirstObjectByType<UIManager>();
             Check(game.State == RunState.MainMenu, "Scene starts at main menu");
             Ref<Button>(ui, "optionsButton").onClick.Invoke(); Check(Ref<GameObject>(ui, "optionsPanel").activeSelf, "Options button works");
             Ref<Button>(ui, "optionsBackButton").onClick.Invoke();
@@ -251,7 +251,7 @@ namespace OneMoreTime.Editor
             yield return new WaitForSeconds(0.42f);
             Check(a.Current == 88 && b.Current == 88, "One damage per enemy per swing despite multiple colliders; sweep hits multiple enemies");
             Check(friend.Current == 100 && player.Health.Current == 100, "Melee does not damage self or allies");
-            Check(FindObjectsByType<Projectile>().Length == 0, "Axe generates no projectiles");
+            Check(FindObjectsByType<Projectile>(FindObjectsSortMode.None).Length == 0, "Axe generates no projectiles");
             Destroy(a.gameObject); Destroy(b.gameObject); Destroy(friend.gameObject); yield return null;
             driver.Face(-1); var left = Dummy("LeftEnemy", new Vector2(-0.8f, 1)); Physics2D.SyncTransforms(); melee.RequestAttack(12, 1.6f);
             yield return new WaitForSeconds(0.7f); Check(left.Current == 88, "Left-facing axe deals damage"); Destroy(left.gameObject); yield return null;
@@ -283,7 +283,7 @@ namespace OneMoreTime.Editor
             Place(game.PhaseStart + 4);
             string scenePath = EditorBuildSettings.scenes[0].path;
             string generated = scenePath.Substring(0, scenePath.LastIndexOf("/Scenes/", StringComparison.Ordinal));
-            var pool = FindAnyObjectByType<ProjectilePool>();
+            var pool = FindFirstObjectByType<ProjectilePool>();
             foreach (string kind in new[] { "Archer", "Mage" })
             {
                 var rangedPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(generated + "/Prefabs/" + kind + ".prefab");
@@ -293,7 +293,7 @@ namespace OneMoreTime.Editor
                 bool found = false; float deadline = Time.time + 1.8f;
                 while (!found && Time.time < deadline)
                 {
-                    foreach (var shot in FindObjectsByType<Projectile>())
+                    foreach (var shot in FindObjectsByType<Projectile>(FindObjectsSortMode.None))
                     {
                         string art = shot.GetComponent<SpriteRenderer>().sprite.name;
                         if (kind == "Archer" ? art.Contains("flecha") : art.Contains("magia")) found = true;
@@ -318,7 +318,7 @@ namespace OneMoreTime.Editor
             Set(player.Health, "invulnerabilitySeconds", 0f); float hpBefore = player.Health.Current;
             yield return new WaitForSeconds(1.1f);
             Check(player.Health.Current < hpBefore && player.Health.Current >= hpBefore - 11, "Wolf bite applies one damage per swing without projectiles");
-            Check(FindObjectsByType<Projectile>().Length == 0, "Wolf creates no projectiles");
+            Check(FindObjectsByType<Projectile>(FindObjectsSortMode.None).Length == 0, "Wolf creates no projectiles");
             Check(player.LastKnockback.x < -2f && player.LastKnockback.y < 3.5f, "P2: wolf bite knocks the player back horizontally away from the wolf: " + player.LastKnockback);
             Destroy(wolfActor.gameObject); player.Health.ResetHealth(100, Team.Player); yield return null;
             // P1: player and enemy bodies never collide physically.
@@ -588,8 +588,8 @@ namespace OneMoreTime.Editor
             {
                 Check(!game.Portals.ExitOpen && !game.Portals.RequestEnter(), "Portal stays closed and unusable before objectives, phase " + phase);
                 // P7: every winter receives its own functional scenery.
-                var traps = FindObjectsByType<ArenaTrap>();
-                Check(game.Stage.Count >= 6 && FindObjectsByType<OneWayPlatform>().Length >= 1 && (phase == 1 || traps.Length >= 1),
+                var traps = FindObjectsByType<ArenaTrap>(FindObjectsSortMode.None);
+                Check(game.Stage.Count >= 6 && FindObjectsByType<OneWayPlatform>(FindObjectsSortMode.None).Length >= 1 && (phase == 1 || traps.Length >= 1),
                     "P7: phase " + phase + " has platforms, covers and traps (" + game.Stage.Count + " props, " + traps.Length + " traps)");
                 foreach (var t in traps) Check(!t.Dangerous || t.State == TrapState.Active, "P7: trap " + t.Kind + " only hurts in its active state");
                 if (phase == 2)
@@ -602,14 +602,14 @@ namespace OneMoreTime.Editor
                     string archerScene = EditorBuildSettings.scenes[0].path;
                     var archerPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(archerScene.Substring(0, archerScene.LastIndexOf("/Scenes/", StringComparison.Ordinal)) + "/Prefabs/Archer.prefab");
                     var postArcher = Instantiate(archerPrefab, new Vector3(post.CenterX, post.TopY + 0.05f, 0), Quaternion.identity).GetComponent<EnemyAI>();
-                    postArcher.Initialize(game, player, FindAnyObjectByType<ProjectilePool>(), 2, LayerMask.GetMask("OMT_Ground"));
+                    postArcher.Initialize(game, player, FindFirstObjectByType<ProjectilePool>(), 2, LayerMask.GetMask("OMT_Ground"));
                     postArcher.AnchorTo(post);
                     Place(post.CenterX - 6f);
                     yield return new WaitForSeconds(3f);
                     Check(Mathf.Abs(postArcher.transform.position.y - post.TopY) < 0.35f && postArcher.transform.position.x >= post.MinX - 0.2f && postArcher.transform.position.x <= post.MaxX + 0.2f,
                         "P8: archer stays on its post while engaging (no falling, no walking off)");
                     postArcher.Health.Kill(); yield return new WaitForSeconds(0.2f);
-                    FindAnyObjectByType<ProjectilePool>().ClearActive();
+                    FindFirstObjectByType<ProjectilePool>().ClearActive();
                 }
                 float hpAtStart = player.Health.Current, damageAtStart = player.Stats.Current.damage;
                 Place(game.PhaseEnd - 1.3f);
@@ -617,7 +617,7 @@ namespace OneMoreTime.Editor
                 while (game.State == RunState.Playing && Time.realtimeSinceStartup < until)
                 {
                     Place(game.PhaseEnd - 1.1f);
-                    foreach (var enemy in FindObjectsByType<EnemyActor>())
+                    foreach (var enemy in FindObjectsByType<EnemyActor>(FindObjectsSortMode.None))
                     {
                         if (!enemy.IsAlive) continue;
                         var anchoredArcher = enemy as EnemyAI;
@@ -653,7 +653,7 @@ namespace OneMoreTime.Editor
                         Check(text.text.Contains("BUFF") && text.text.Contains("DEBUFF") && text.supportRichText, "P5: card shows name, description, BUFF and DEBUFF in colour");
                     }
                 }
-                var offered = (UpgradeDefinition[])Field(typeof(UpgradeManager), "choices").GetValue(FindAnyObjectByType<UpgradeManager>());
+                var offered = (UpgradeDefinition[])Field(typeof(UpgradeManager), "choices").GetValue(FindFirstObjectByType<UpgradeManager>());
                 var chosen = offered[0]; var statsBefore = player.Stats.Current.Copy();
                 game.SelectUpgrade(0); game.SelectUpgrade(1);
                 float b0 = statsBefore.Get(chosen.Stat), b1 = player.Stats.Current.Get(chosen.Stat);
@@ -678,7 +678,7 @@ namespace OneMoreTime.Editor
             Check(serpent != null && serpent.Built && serpent.HasArt && bossBody.bodyType == RigidbodyType2D.Kinematic,
                 "P3: Jörmungandr is built from the phase atlases and anchored (kinematic, never displaced)");
             Check(serpent.PlateCount >= 6 && boss.FrontX < game.PhaseEnd - 3f, "P3: the scenery is its body: scale plates embedded along the arena floor");
-            Check(ArenaCover.All.Count >= 2 && FindObjectsByType<OneWayPlatform>().Length >= 3, "P7: boss arena has useful cover and high platforms only");
+            Check(ArenaCover.All.Count >= 2 && FindObjectsByType<OneWayPlatform>(FindObjectsSortMode.None).Length >= 3, "P7: boss arena has useful cover and high platforms only");
             Vector3 anchored = boss.transform.position;
             Time.timeScale = 3; float introDeadline = Time.realtimeSinceStartup + 14; bool introShot = false;
             var bossBar = Ref<Slider>(ui, "bossBar");
@@ -686,7 +686,7 @@ namespace OneMoreTime.Editor
             string camInfo = "";
             while (!boss.IntroFinished && Time.realtimeSinceStartup < introDeadline)
             {
-                if (FindObjectsByType<Projectile>().Length > 0 || !player.ControlLocked) introShot = true;
+                if (FindObjectsByType<Projectile>(FindObjectsSortMode.None).Length > 0 || !player.ControlLocked) introShot = true;
                 barEarly |= bossBar.gameObject.activeSelf;
                 if (boss.PatternName == "...")
                 {
@@ -733,7 +733,7 @@ namespace OneMoreTime.Editor
                 {
                     sawA |= boss.AttackStageNow == AttackStage.Anticipation; sawB |= boss.AttackStageNow == AttackStage.Active; sawC |= boss.AttackStageNow == AttackStage.Recovery;
                     started |= boss.CurrentAttack != BossAttack.None;
-                    projectile |= FindObjectsByType<Projectile>().Length > 0;
+                    projectile |= FindObjectsByType<Projectile>(FindObjectsSortMode.None).Length > 0;
                     maxHazards = Mathf.Max(maxHazards, boss.HazardCount);
                     if (started && sawC && boss.AttackStageNow == AttackStage.Recovery && boss.CurrentAttack == attack && boss.StageProgress >= 0.99f) break;
                     yield return null;
@@ -749,7 +749,7 @@ namespace OneMoreTime.Editor
             foreach (int spot in new[] { 0, 1, 2 })
             {
                 OneWayPlatform high = null;
-                foreach (var platform in FindObjectsByType<OneWayPlatform>()) if (platform.GetComponent<MovingPlatform>() == null && platform.GetComponent<CrumblingPlatform>() == null && (high == null || platform.transform.position.x > high.transform.position.x)) high = platform;
+                foreach (var platform in FindObjectsByType<OneWayPlatform>(FindObjectsSortMode.None)) if (platform.GetComponent<MovingPlatform>() == null && platform.GetComponent<CrumblingPlatform>() == null && (high == null || platform.transform.position.x > high.transform.position.x)) high = platform;
                 float hp0 = player.Health.Current;
                 if (spot == 0) Place(boss.FrontX - 4f);
                 if (spot == 1) Place(cover.Bounds.min.x - 0.35f);
@@ -777,9 +777,9 @@ namespace OneMoreTime.Editor
                 // V8 · The single destructible platform of the final arena: Idle → Cracking → Breaking → Destroyed →
                 // Respawning → Idle. 2 s standing, warning in the last 0,6 s, back exactly 3 s after breaking, waits
                 // while the player occupies its space, never moves, never touches the main floor.
-                var crumbles = FindObjectsByType<CrumblingPlatform>();
-                Check(crumbles.Length == 1 && FindObjectsByType<MovingPlatform>().Length == 0
-                    && FindObjectsByType<OneWayPlatform>().Length == 4,
+                var crumbles = FindObjectsByType<CrumblingPlatform>(FindObjectsSortMode.None);
+                Check(crumbles.Length == 1 && FindObjectsByType<MovingPlatform>(FindObjectsSortMode.None).Length == 0
+                    && FindObjectsByType<OneWayPlatform>(FindObjectsSortMode.None).Length == 4,
                     "V8: the final arena has exactly ONE extra destructible platform and no moving platform");
                 var cp = crumbles[0];
                 Vector3 cpHome = cp.transform.position;
@@ -928,7 +928,7 @@ namespace OneMoreTime.Editor
             int logged = boss.AttackLog.Count; float watch = Time.realtimeSinceStartup + 8; bool phaseOk = true, shotsSeen = false;
             while (Time.realtimeSinceStartup < watch)
             {
-                shotsSeen |= FindObjectsByType<Projectile>().Length > 0;
+                shotsSeen |= FindObjectsByType<Projectile>(FindObjectsSortMode.None).Length > 0;
                 yield return null;
             }
             for (int i = logged; i < boss.AttackLog.Count; i++)
@@ -941,7 +941,7 @@ namespace OneMoreTime.Editor
             boss.Health.Kill(); yield return null;
             Check(game.State == RunState.Victory && Time.timeScale == 0, "Boss defeat ends run in victory");
             Check(boss.CombatState == BossCombatState.Defeated && boss.AttacksSinceRest == 0, "V7: defeat resets the attack counter");
-            Check(FindObjectsByType<Projectile>().Length == 0 && FindObjectsByType<BossHazard>().Length == 0 && !stun.Active,
+            Check(FindObjectsByType<Projectile>(FindObjectsSortMode.None).Length == 0 && FindObjectsByType<BossHazard>(FindObjectsSortMode.None).Length == 0 && !stun.Active,
                 "No projectiles, boss hazards or stun remain after the fight");
             int seed = game.Seed; game.StartNewRun();
             Check(game.Phase == 1 && player.Stats.Current.fireRate == 1.6f && player.Health.Current == 100 && game.Seed != seed, "Victory retry resets stats, timers and seed");
@@ -968,7 +968,7 @@ namespace OneMoreTime.Editor
                     while (game.State == RunState.Playing && Time.realtimeSinceStartup < limit)
                     {
                         Place(game.PhaseEnd - 1.4f);
-                        foreach (var e in FindObjectsByType<EnemyActor>()) if (e.IsAlive) e.Health.Kill();
+                        foreach (var e in FindObjectsByType<EnemyActor>(FindObjectsSortMode.None)) if (e.IsAlive) e.Health.Kill();
                         if (game.Portals.ExitOpen) game.Portals.RequestEnter();
                         yield return null;
                     }
@@ -979,7 +979,7 @@ namespace OneMoreTime.Editor
                     "V7: after a restart the boss presentation starts again (control locked, counter at 0)");
                 float replay = Time.realtimeSinceStartup + 16; bool silentAgain = true;
                 while (again != null && !again.IntroFinished && Time.realtimeSinceStartup < replay)
-                { silentAgain &= FindObjectsByType<AudioSource>().Length == 0; yield return null; }
+                { silentAgain &= FindObjectsByType<AudioSource>(FindObjectsSortMode.None).Length == 0; yield return null; }
                 yield return new WaitForSecondsRealtime(0.15f);
                 Check(again != null && again.IntroFinished && !player.ControlLocked && Ref<Slider>(ui, "bossBar").gameObject.activeSelf && silentAgain,
                     "V7: the repeated presentation finishes silently and hands control back with the health bar");

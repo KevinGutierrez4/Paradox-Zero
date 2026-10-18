@@ -130,8 +130,8 @@ namespace OneMoreTime.Editor
         private IEnumerator Run()
         {
             yield return null; yield return null;
-            game = FindAnyObjectByType<GameManager>(); player = game.Player; body = player.GetComponent<Rigidbody2D>();
-            ui = FindAnyObjectByType<UIManager>();
+            game = FindFirstObjectByType<GameManager>(); player = game.Player; body = player.GetComponent<Rigidbody2D>();
+            ui = FindFirstObjectByType<UIManager>();
             typeof(GameManager).GetField("persistRecords", BindingFlags.Instance | BindingFlags.NonPublic)?.SetValue(game, false);
             TutorialController.Suppressed = false; GameManager.SuppressFocusPause = true;
             game.Tutorial.Persist = false;
@@ -165,7 +165,7 @@ namespace OneMoreTime.Editor
                 while (game.State == RunState.Playing && Time.realtimeSinceStartup < until)
                 {
                     Place(game.PhaseEnd - 1.4f);
-                    foreach (var e in FindObjectsByType<EnemyActor>()) if (e.IsAlive) e.Health.Kill();
+                    foreach (var e in FindObjectsByType<EnemyActor>(FindObjectsSortMode.None)) if (e.IsAlive) e.Health.Kill();
                     if (game.Portals.ExitOpen) game.Portals.RequestEnter();
                     yield return null;
                 }
@@ -211,7 +211,7 @@ namespace OneMoreTime.Editor
             // The single destructible platform: the hero stands on it, it cracks, warns, breaks, he falls,
             // he steps aside and it comes back 3 s later.
             boss.AutoAttack = false;
-            CrumblingPlatform cp = null; foreach (var c in FindObjectsByType<CrumblingPlatform>()) cp = c;
+            CrumblingPlatform cp = null; foreach (var c in FindObjectsByType<CrumblingPlatform>(FindObjectsSortMode.None)) cp = c;
             if (cp != null)
             {
                 player.enabled = true; body.constraints = RigidbodyConstraints2D.FreezeRotation;
@@ -254,7 +254,7 @@ namespace OneMoreTime.Editor
             boss.Health.Kill();
             yield return Film("death", 3.2f, 0.4f, () => "Defeat");
             Flush("10_defeat");
-            log.WriteLine("End " + game.State + " projectiles " + FindObjectsByType<Projectile>().Length + " hazards " + FindObjectsByType<BossHazard>().Length);
+            log.WriteLine("End " + game.State + " projectiles " + FindObjectsByType<Projectile>(FindObjectsSortMode.None).Length + " hazards " + FindObjectsByType<BossHazard>(FindObjectsSortMode.None).Length);
         }
     }
 }

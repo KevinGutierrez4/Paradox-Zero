@@ -134,7 +134,7 @@ namespace OneMoreTime
         {
             if (panel != null) return;
             var parent = game != null && game.UI != null ? game.UI.HudRoot : null;
-            if (parent == null) { var canvas = FindAnyObjectByType<Canvas>(); parent = canvas != null ? canvas.transform : null; }
+            if (parent == null) { var canvas = FindFirstObjectByType<Canvas>(); parent = canvas != null ? canvas.transform : null; }
             if (parent == null) return;
             var font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
             panel = new GameObject("RoarStunQTE", typeof(RectTransform), typeof(Image));

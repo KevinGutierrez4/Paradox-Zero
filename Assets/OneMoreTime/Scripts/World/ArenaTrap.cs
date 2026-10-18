@@ -49,8 +49,8 @@ namespace OneMoreTime
         {
             art = GetComponentInChildren<SpriteRenderer>();
             platformCollider = GetComponent<Collider2D>();
-            game = FindAnyObjectByType<GameManager>();
-            player = game != null ? game.Player : FindAnyObjectByType<PlayerController>();
+            game = FindFirstObjectByType<GameManager>();
+            player = game != null ? game.Player : FindFirstObjectByType<PlayerController>();
             playerCollider = player != null ? player.GetComponent<Collider2D>() : null;
             restPosition = transform.localPosition;
             timer = -phaseOffset;

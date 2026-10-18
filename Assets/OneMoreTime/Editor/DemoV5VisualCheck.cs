@@ -106,7 +106,7 @@ namespace OneMoreTime.Editor
         private IEnumerator Run()
         {
             yield return null; yield return null;
-            game = FindAnyObjectByType<GameManager>(); player = game.Player; body = player.GetComponent<Rigidbody2D>();
+            game = FindFirstObjectByType<GameManager>(); player = game.Player; body = player.GetComponent<Rigidbody2D>();
             typeof(GameManager).GetField("persistRecords", BindingFlags.Instance | BindingFlags.NonPublic)?.SetValue(game, false);
             game.StartNewRun();
             game.Spawner.enabled = false;
@@ -116,7 +116,7 @@ namespace OneMoreTime.Editor
             player.GetComponent<AnimationDriver>().Face(1);
             yield return new WaitForSeconds(0.3f);
             string root = EditorBuildSettings.scenes[0].path; root = root.Substring(0, root.LastIndexOf("/Scenes/", StringComparison.Ordinal));
-            var pool = FindAnyObjectByType<ProjectilePool>();
+            var pool = FindFirstObjectByType<ProjectilePool>();
             foreach (var (kind, dx, seconds) in new[] { ("WhiteWolf", 3.2f, 2.4f), ("BlueWolf", 4.2f, 2.4f), ("Archer", 5.5f, 2.6f), ("Mage", 5.5f, 2.8f) })
             {
                 var prefab = AssetDatabase.LoadAssetAtPath<GameObject>(root + "/Prefabs/" + kind + ".prefab");
@@ -135,7 +135,7 @@ namespace OneMoreTime.Editor
             while (!game.Portals.ExitOpen && !game.Portals.ExitOpening && Time.realtimeSinceStartup < until)
             {
                 Place(game.PhaseEnd - 6f);
-                foreach (var e in FindObjectsByType<EnemyActor>()) if (e.IsAlive) e.Health.Kill();
+                foreach (var e in FindObjectsByType<EnemyActor>(FindObjectsSortMode.None)) if (e.IsAlive) e.Health.Kill();
                 yield return null;
             }
             Time.timeScale = 1;
@@ -156,7 +156,7 @@ namespace OneMoreTime.Editor
             {
                 if (game.State == RunState.ChoosingUpgrade) { game.SelectUpgrade(0); yield return null; continue; }
                 Place(game.PhaseEnd - 1.4f);
-                foreach (var e in FindObjectsByType<EnemyActor>()) if (e.IsAlive) e.Health.Kill();
+                foreach (var e in FindObjectsByType<EnemyActor>(FindObjectsSortMode.None)) if (e.IsAlive) e.Health.Kill();
                 if (game.Portals.ExitOpen) game.Portals.RequestEnter();
                 yield return null;
             }
@@ -177,7 +177,7 @@ namespace OneMoreTime.Editor
             boss.Health.Kill();
             yield return null;
             for (int i = 0; i < 8; i++) { yield return new WaitForSecondsRealtime(0.3f); Capture($"Boss_death_{i:000}"); }
-            log.WriteLine("End state " + game.State + " projectiles " + FindObjectsByType<Projectile>().Length + " hazards " + FindObjectsByType<BossHazard>().Length);
+            log.WriteLine("End state " + game.State + " projectiles " + FindObjectsByType<Projectile>(FindObjectsSortMode.None).Length + " hazards " + FindObjectsByType<BossHazard>(FindObjectsSortMode.None).Length);
         }
     }
 }

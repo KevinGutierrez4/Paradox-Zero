@@ -13,29 +13,29 @@ namespace OneMoreTime.Editor
         public static void ValidateAll()
         {
             ValidateRules();
-            var game = UnityEngine.Object.FindAnyObjectByType<GameManager>();
+            var game = UnityEngine.Object.FindFirstObjectByType<GameManager>();
             Check(game != null, "No hay GameManager en la escena abierta.");
             Require(game, "config", "player", "spawner", "upgrades", "projectiles", "ui", "cameraFollow", "backgrounds", "phaseExitMarker");
             var config = (RunConfig)new SerializedObject(game).FindProperty("config").objectReferenceValue;
             Check(config.Validate(out string error), error);
-            var spawner = UnityEngine.Object.FindAnyObjectByType<EnemySpawner>();
+            var spawner = UnityEngine.Object.FindFirstObjectByType<EnemySpawner>();
             Check(spawner != null && spawner.IsConfigured, "Spawner incompleto: prefabs o GroundMask.");
-            var pool = UnityEngine.Object.FindAnyObjectByType<ProjectilePool>();
+            var pool = UnityEngine.Object.FindFirstObjectByType<ProjectilePool>();
             Check(pool != null && pool.IsConfigured, "Falta el prefab de proyectil.");
-            var ui = UnityEngine.Object.FindAnyObjectByType<UIManager>();
+            var ui = UnityEngine.Object.FindFirstObjectByType<UIManager>();
             Require(ui, "mainMenu", "optionsPanel", "hud", "pausePanel", "upgradePanel", "resultPanel",
                 "playButton", "optionsButton", "optionsBackButton", "quitButton", "resumeButton", "pauseMenuButton", "retryButton", "resultMenuButton",
                 "healthBar", "bossBar", "volumeSlider", "healthText", "phaseText", "statsText", "progressText", "scoreText", "bossText", "resultTitle", "resultDetails", "menuRecord");
             var cards = new SerializedObject(ui).FindProperty("cards");
             Check(cards.arraySize == 3, "La UI debe tener tres tarjetas.");
             for (int i = 0; i < cards.arraySize; i++) Require(cards.GetArrayElementAtIndex(i).objectReferenceValue, "title", "description");
-            var player = UnityEngine.Object.FindAnyObjectByType<PlayerController>();
+            var player = UnityEngine.Object.FindFirstObjectByType<PlayerController>();
             Check(player != null && player.GetComponent<Rigidbody2D>() != null, "Falta jugador 2D.");
             Require(player, "groundCheck");
             Check(player.GetComponent<MeleeWeapon>() != null && player.GetComponent<ProjectileWeapon>() == null, "El jugador debe usar exclusivamente el hacha cuerpo a cuerpo.");
             Check(player.GetComponent<ArticulatedRig>() != null, "Falta el rig articulado.");
             Check(player.GetComponent<Animator>().runtimeAnimatorController != null, "Falta el Animator Controller del jugador.");
-            Check(UnityEngine.Object.FindAnyObjectByType<EventSystem>()?.GetComponent<StandaloneInputModule>() != null, "Falta EventSystem con StandaloneInputModule.");
+            Check(UnityEngine.Object.FindFirstObjectByType<EventSystem>()?.GetComponent<StandaloneInputModule>() != null, "Falta EventSystem con StandaloneInputModule.");
 #if !ENABLE_LEGACY_INPUT_MANAGER
             throw new InvalidOperationException("Activa Input Manager (Old) o Both antes de jugar.");
 #endif
