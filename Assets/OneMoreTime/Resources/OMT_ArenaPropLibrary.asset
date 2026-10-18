@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53e2d9b81a7e7350dbcbcd668a42912, type: 3}
+  m_Name: OMT_ArenaPropLibrary
+  m_EditorClassIdentifier: Assembly-CSharp::OneMoreTime.ArenaPropLibrary
+  sprites:
+  - id: SerpentScalePlatform
+    sprite: {fileID: 21300000, guid: 90ad02cf3cd2b512ec1aac457ad29d9c, type: 3}
+  - id: SerpentScalePlatformLarge
+    sprite: {fileID: 21300000, guid: 5c486e21d0c94900792a619dae6cc566, type: 3}
+  - id: SerpentSpineBridge
+    sprite: {fileID: 21300000, guid: 1747449094f9aff335ac46dd59e883c2, type: 3}
+  - id: ArcherPostPlatform
+    sprite: {fileID: 21300000, guid: 5f4c94a7afdca0c3d91c5acb9f5e5277, type: 3}
+  - id: FloatingIceSmall
+    sprite: {fileID: 21300000, guid: 54c40d5221b89cdde55a293dec80b3ee, type: 3}
+  - id: FloatingIceTiny
+    sprite: {fileID: 21300000, guid: 97902ccd6945c4e0056002572fde816d, type: 3}
+  - id: StoneCover
+    sprite: {fileID: 21300000, guid: 2c013784203b91f76b36d9666a0959b7, type: 3}
+  - id: StoneCairn
+    sprite: {fileID: 21300000, guid: 8b37b5a9ef830d01122e6bf4602bc6a0, type: 3}
+  - id: WoodenBarricade
+    sprite: {fileID: 21300000, guid: cbb86d38d66f55cc31b72f06662993cd, type: 3}
+  - id: BrokenBarricade
+    sprite: {fileID: 21300000, guid: 316a957e65e4c1c6ee2a50e825181d9b, type: 3}
+  - id: TuskRibs
+    sprite: {fileID: 21300000, guid: 403ff9e058f0cde10e708050c791b0bc, type: 3}
+  - id: TuskFenceDeco
+    sprite: {fileID: 21300000, guid: c77b24aeff1a3c27be081b9309250794, type: 3}
+  - id: Crate
+    sprite: {fileID: 21300000, guid: c7a23dfa8981069c275f80d81b626f4e, type: 3}
+  - id: CrateSmall
+    sprite: {fileID: 21300000, guid: ba5e9672f255661021a88b2bd003eac5, type: 3}
+  - id: BannerPost
+    sprite: {fileID: 21300000, guid: deaee3e199d237e5701ffdb915c3cdf1, type: 3}
+  - id: RunePillar
+    sprite: {fileID: 21300000, guid: 658b5b41aeb78bd41b03274495683cc4, type: 3}
+  - id: StoneStump
+    sprite: {fileID: 21300000, guid: 9b5b1523aca2c3e2c4811682ee066182, type: 3}
+  - id: ScaleHumpLarge
+    sprite: {fileID: 21300000, guid: 4bf4edd43c2270859431f632e3672076, type: 3}
+  - id: ScaleHump
+    sprite: {fileID: 21300000, guid: c07dd252962ba0776124292f9fd36bdc, type: 3}
+  - id: BoneSpikes
+    sprite: {fileID: 21300000, guid: 52d79d48424143105e8db06844da6f0f, type: 3}
+  - id: IceSpikes
+    sprite: {fileID: 21300000, guid: 2bc7a3494c03143277300f36c136532a, type: 3}
+  - id: FinTusks
+    sprite: {fileID: 21300000, guid: ee35f78005adafdfe9ccb410e315e000, type: 3}
+  - id: TuskFence
+    sprite: {fileID: 21300000, guid: 4cc505b8142a7f1017be75cedb319954, type: 3}
+  - id: LowTusks
+    sprite: {fileID: 21300000, guid: 38a98608d85b337876c69b42d7350cba, type: 3}
+  - id: LowStoneSpikes
+    sprite: {fileID: 21300000, guid: a24372451d29c18d74d2ce31b421faf4, type: 3}
+  - id: StakeFence
+    sprite: {fileID: 21300000, guid: a66982eb6700c20f13aebbfdde0d3a4d, type: 3}
+  - id: IceSpikeRow
+    sprite: {fileID: 21300000, guid: 2deb207c1e7f6f06f1664749d36b0763, type: 3}
+  - id: CrackedIceSlab
+    sprite: {fileID: 21300000, guid: c5b9ae02ca214dc8822bcb721c60efb7, type: 3}
+  - id: IceChunkA
+    sprite: {fileID: 21300000, guid: 7533becca72eff2dd9fc014ccc8323b8, type: 3}
+  - id: IceChunkB
+    sprite: {fileID: 21300000, guid: 89d9d149477cd9c11ad64d942e3e5b7f, type: 3}
+  - id: IcicleOverhang
+    sprite: {fileID: 21300000, guid: 5f4195ada73d548300b4e40ab3e26992, type: 3}
+  - id: IcicleOverhangLarge
+    sprite: {fileID: 21300000, guid: c5b3bc987185cfb1a62e3f320136f9c0, type: 3}
+  - id: IcePillar
+    sprite: {fileID: 21300000, guid: f995dc3f9eb99bb6e3c0dff0ccf29fbe, type: 3}
+  - id: GeyserActiveSmall
+    sprite: {fileID: 21300000, guid: d22512345daff5b985295d09f115d351, type: 3}
+  - id: GeyserActive
+    sprite: {fileID: 21300000, guid: 968b4806bb2eb3cd88467461fbeefe3a, type: 3}
+  - id: GeyserIdle
+    sprite: {fileID: 21300000, guid: 4dc25dfe933af4a4498b0e06b77d2d40, type: 3}
+  - id: VenomVentSmall
+    sprite: {fileID: 21300000, guid: 9fe8c5da6f7ec4879b37799ad8402a78, type: 3}
+  - id: VenomVent
+    sprite: {fileID: 21300000, guid: 8c5197d1385e3560e34c2147bee8d2ed, type: 3}
+  - id: VenomVentActive
+    sprite: {fileID: 21300000, guid: 726339484ffaa68e6c9930749530d8be, type: 3}
+  - id: JawTrapClosed
+    sprite: {fileID: 21300000, guid: 04095490fc2d7b5e963fbb99301d1d7d, type: 3}
+  - id: JawTrapOpen
+    sprite: {fileID: 21300000, guid: b0f616afc887f426d3084aa1812b826d, type: 3}
+  - id: JawTrapTusks
+    sprite: {fileID: 21300000, guid: 44e85b5876edc80830fea8585e58f0e6, type: 3}
+  - id: JawTrapSnap
+    sprite: {fileID: 21300000, guid: 74ef665d73ef2e6a21e1e909ecf8bf82, type: 3}
+  - id: JawTrapChain
+    sprite: {fileID: 21300000, guid: 5b7ab6cbd704f4da13bebeb1c8956b23, type: 3}
+  - id: SkullTotem
+    sprite: {fileID: 21300000, guid: 23c85e9ee74f6272ea93d720f569385d, type: 3}
+  - id: IcicleFrame
+    sprite: {fileID: 21300000, guid: 09643fc1d3f330dcc788e942dcb8ed57, type: 3}
+  - id: IciclesHanging
+    sprite: {fileID: 21300000, guid: dcd8457efde4e21b2469d6e04de8641f, type: 3}
+  - id: Icicle
+    sprite: {fileID: 21300000, guid: ca3b69e762e4e68d42e47be62d488b63, type: 3}
+  - id: RuneStone
+    sprite: {fileID: 21300000, guid: b5014a3863ad8db40a1e6693c61361bf, type: 3}
+  - id: RuneStoneGlow
+    sprite: {fileID: 21300000, guid: 0c8bdbeddb06cc9923b733ed5090a429, type: 3}
+  - id: RuneStoneBurst
+    sprite: {fileID: 21300000, guid: 8094368ff24c4827249ebc04509b16ae, type: 3}
+  prefabs:
+  - id: IcePlatform
+    prefab: {fileID: 6134024963888260521, guid: 97e3d711d83fe8e4ca51e617310d18e1, type: 3}
+  - id: SerpentScalePlatform
+    prefab: {fileID: 9158109494984036389, guid: 6e1db69d1aac2af4e9269b1020d21829, type: 3}
+  - id: StoneCover
+    prefab: {fileID: 400188475209993534, guid: 4b2c7ecc4adfa4440bf8d15eb1c9252e, type: 3}
+  - id: WoodenBarricade
+    prefab: {fileID: 496752203622251277, guid: 82acacf879399464ab0f1b18b6eb73a0, type: 3}
+  - id: BreakableCover
+    prefab: {fileID: 746637783233105520, guid: 999fa2a1330586c498cef867a6a6643c, type: 3}
+  - id: ArcherPost
+    prefab: {fileID: 6939328767447348231, guid: 0546cf7414dd1a64e9d11eb3b8c00c11, type: 3}
+  - id: IceSpikes
+    prefab: {fileID: 4635514273141376350, guid: 3feb77ae88a7f17468dd861717b8221f, type: 3}
+  - id: BoneSpikes
+    prefab: {fileID: 7257573930533729106, guid: 4be347d4d1d262243a55a3d9a1c38a6b, type: 3}
+  - id: VenomVent
+    prefab: {fileID: 7773059705333160405, guid: 9ba355ec756b8254ba6bddee01843f3d, type: 3}
+  - id: JawTrap
+    prefab: {fileID: 1080209652114452320, guid: ab2dff8533d61694d998dbe50899cb0b, type: 3}
+  - id: IceGeyser
+    prefab: {fileID: 908992389869363745, guid: 75dcd8fb4dc650d4493b8ff7dee647d3, type: 3}
+  - id: DangerousIce
+    prefab: {fileID: 7978345419453512680, guid: 0feec6436f106214e85623381e473ca2, type: 3}
+  - id: Crack
+    prefab: {fileID: 6890647996392962547, guid: 942f9495b97e298488a9c8545894cc38, type: 3}
+  - id: UnstablePlatform
+    prefab: {fileID: 3362860188681727099, guid: 6700b730afd48954f84ccdd5d2ff569d, type: 3}
+  - id: MovingPlatform
+    prefab: {fileID: 6538775411959574761, guid: 92ce6f0c292d04a4eb75a8f9874f9998, type: 3}
+  - id: IcicleTrap
+    prefab: {fileID: 4442195341585908835, guid: a1ef9132d6d4c1b4ab44060d422a76f5, type: 3}
