@@ -1,0 +1,650 @@
+PASS: Scene starts at main menu
+PASS: Options button works
+PASS: Play button starts phase one
+PASS: Player has no projectile weapon
+PASS: P6: tutorial starts with the movement step (A/D)
+PASS: P6: tutorial steps move → jump → attack → defend → dodge, then it ends
+PASS: P6: tutorial can be skipped
+PASS: P6: tutorial never starts outside phase one
+PASS: P6: dodge is mapped to L (and Left Shift)
+PASS: Player drawing faces movement 1 with parent scale 1 after Animator evaluation
+PASS: Axe and shield follow their own wrists facing 1 under parent scale 1 (0.0000/0.0000)
+PASS: Live hero has a single procedural pose writer
+PASS: Player drawing faces movement -1 with parent scale 1 after Animator evaluation
+PASS: Axe and shield follow their own wrists facing -1 under parent scale 1 (0.0000/0.0000)
+PASS: Live hero has a single procedural pose writer
+PASS: Player drawing faces movement 1 with parent scale -1 after Animator evaluation
+PASS: Axe and shield follow their own wrists facing 1 under parent scale -1 (0.0000/0.0000)
+PASS: Live hero has a single procedural pose writer
+PASS: Player drawing faces movement -1 with parent scale -1 after Animator evaluation
+PASS: Axe and shield follow their own wrists facing -1 under parent scale -1 (0.0000/0.0000)
+PASS: Live hero has a single procedural pose writer
+PASS: Player plants the backwards-moving foot and lifts the forwards return
+PASS: Player FrontArm FrontArm artwork pivots at the joint with original inclination corrected
+PASS: Player FrontArm Lower artwork pivots at the joint with original inclination corrected
+PASS: Player BackArm BackArm artwork pivots at the joint with original inclination corrected
+PASS: Player BackArm Lower artwork pivots at the joint with original inclination corrected
+PASS: Archer drawing faces movement 1 with parent scale 1 after Animator evaluation
+PASS: Archer drawing faces movement -1 with parent scale 1 after Animator evaluation
+PASS: Archer drawing faces movement 1 with parent scale -1 after Animator evaluation
+PASS: Archer drawing faces movement -1 with parent scale -1 after Animator evaluation
+PASS: Archer plants the backwards-moving foot and lifts the forwards return
+PASS: Archer FrontArm FrontArm artwork pivots at the joint with original inclination corrected
+PASS: Archer FrontArm Lower artwork pivots at the joint with original inclination corrected
+PASS: Archer BackArm BackArm artwork pivots at the joint with original inclination corrected
+PASS: Archer BackArm Lower artwork pivots at the joint with original inclination corrected
+PASS: Mage drawing faces movement 1 with parent scale 1 after Animator evaluation
+PASS: Mage drawing faces movement -1 with parent scale 1 after Animator evaluation
+PASS: Mage drawing faces movement 1 with parent scale -1 after Animator evaluation
+PASS: Mage drawing faces movement -1 with parent scale -1 after Animator evaluation
+PASS: Mage plants the backwards-moving foot and lifts the forwards return
+PASS: Mage FrontArm FrontArm artwork pivots at the joint with original inclination corrected
+PASS: Mage FrontArm Lower artwork pivots at the joint with original inclination corrected
+PASS: Mage BackArm BackArm artwork pivots at the joint with original inclination corrected
+PASS: Mage BackArm Lower artwork pivots at the joint with original inclination corrected
+PASS: WhiteWolf drawing faces movement 1 with parent scale 1 after Animator evaluation
+PASS: WhiteWolf drawing faces movement -1 with parent scale 1 after Animator evaluation
+PASS: WhiteWolf drawing faces movement 1 with parent scale -1 after Animator evaluation
+PASS: WhiteWolf drawing faces movement -1 with parent scale -1 after Animator evaluation
+PASS: BlueWolf drawing faces movement 1 with parent scale 1 after Animator evaluation
+PASS: BlueWolf drawing faces movement -1 with parent scale 1 after Animator evaluation
+PASS: BlueWolf drawing faces movement 1 with parent scale -1 after Animator evaluation
+PASS: BlueWolf drawing faces movement -1 with parent scale -1 after Animator evaluation
+PASS: Boss drawing faces movement 1 with parent scale 1 after Animator evaluation
+PASS: Boss drawing faces movement -1 with parent scale 1 after Animator evaluation
+PASS: Boss drawing faces movement 1 with parent scale -1 after Animator evaluation
+PASS: Boss drawing faces movement -1 with parent scale -1 after Animator evaluation
+PASS: Run follows serpent slope
+PASS: Buffered grounded jump launches Rigidbody2D
+PASS: Jump falls and lands on actual surface
+PASS: Crouch collider reduces height with fixed feet
+PASS: Low ceiling prevents standing
+PASS: Standing resumes with clearance
+PASS: Player prefab contains shield guard
+PASS: Held shield prevents attacking
+PASS: Shield reduces enemy damage by 65 percent
+PASS: Shield permits slower walking
+PASS: Shield composes with permanent armor
+PASS: Pause releases shield and temporary protection
+PASS: Releasing shield restores normal armored damage
+PASS: Shield does not protect against environmental damage
+PASS: Melee swing starts
+PASS: Facing remains locked during swing
+PASS: Anticipation deals no damage
+PASS: One damage per enemy per swing despite multiple colliders; sweep hits multiple enemies
+PASS: Melee does not damage self or allies
+PASS: Axe generates no projectiles
+PASS: Left-facing axe deals damage
+PASS: Wall blocks melee hit
+PASS: Pause cancels swing and rejects attacks
+PASS: Resume does not replay cancelled damage
+PASS: Maximum axe cadence preserves single hit window
+PASS: Late input buffer chains exactly one further swing
+PASS: Articulated crouch keeps scale of Visual
+PASS: Articulated crouch keeps scale of Rig
+PASS: Articulated crouch keeps scale of Pelvis
+PASS: Articulated crouch keeps scale of BackLeg
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Lower
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Foot
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of FrontLeg
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Lower
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Foot
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Torso
+PASS: Articulated crouch keeps scale of Body
+PASS: Articulated crouch keeps scale of Head
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of FacingPoint
+PASS: Articulated crouch keeps scale of FrontArm
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Lower
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Hand
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of AxeSocket
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Grip
+PASS: Articulated crouch keeps scale of BladeTip
+PASS: Articulated crouch keeps scale of BackArm
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Lower
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Hand
+PASS: Articulated crouch keeps scale of JointOverlap
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of ShieldSocket
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of Grip
+PASS: Articulated crouch keeps scale of Cloth
+PASS: Articulated crouch keeps scale of Sprite
+PASS: Articulated crouch keeps scale of AxeSwipe
+PASS: Archer emits its own projectile artwork after preparing attack
+PASS: Mage emits its own projectile artwork after preparing attack
+PASS: Wolf bite applies one damage per swing without projectiles
+PASS: Wolf creates no projectiles
+PASS: P2: wolf bite knocks the player back horizontally away from the wolf: (-4.05, 0.88)
+PASS: P1: player/enemy physics collisions are ignored
+PASS: P1: enemies keep terrain collisions
+PASS: P1: player falls through a wolf to the ground instead of standing on it: 0.07
+PASS: P1: wolf stays on the terrain
+PASS: P6: dodge grants invulnerability frames
+PASS: P6: dodge dashes forward and invulnerability ends: 2.90
+PASS: Axe starts impact test facing 1
+PASS: Axe pushes live enemy AI a short distance backwards facing 1: 0.50
+PASS: Enemy resumes its own steering after short push (no residual knockback)
+PASS: Axe starts impact test facing -1
+PASS: Axe pushes live enemy AI a short distance backwards facing -1: 0.40
+PASS: Enemy resumes its own steering after short push (no residual knockback)
+PASS: Actual axe kill restores exactly 5 player HP
+PASS: Same enemy death cannot heal twice
+PASS: Kill healing is capped at maximum player HP
+PASS: Environmental death does not award player kill healing
+PASS: berserker applies once and starts matching visual feedback
+PASS: berserker changes its own distinct benefit
+PASS: HUD displays kill healing and resistance
+PASS: berserker really applies its DEBUFF too
+PASS: berserker leaves the hero playable
+PASS: Furia del Berserker: +25% damage and really takes 12% more damage
+PASS: midgard applies once and starts matching visual feedback
+PASS: midgard changes its own distinct benefit
+PASS: HUD displays kill healing and resistance
+PASS: midgard really applies its DEBUFF too
+PASS: midgard leaves the hero playable
+PASS: Resistencia de Midgard: +25% max HP (heals only the added capacity) and -8% speed
+PASS: devastador applies once and starts matching visual feedback
+PASS: devastador changes its own distinct benefit
+PASS: HUD displays kill healing and resistance
+PASS: devastador really applies its DEBUFF too
+PASS: devastador leaves the hero playable
+PASS: guerrero applies once and starts matching visual feedback
+PASS: guerrero changes its own distinct benefit
+PASS: HUD displays kill healing and resistance
+PASS: guerrero really applies its DEBUFF too
+PASS: guerrero leaves the hero playable
+PASS: hacha applies once and starts matching visual feedback
+PASS: hacha changes its own distinct benefit
+PASS: HUD displays kill healing and resistance
+PASS: hacha really applies its DEBUFF too
+PASS: hacha leaves the hero playable
+PASS: stone applies once and starts matching visual feedback
+PASS: stone changes its own distinct benefit
+PASS: HUD displays kill healing and resistance
+PASS: stone really applies its DEBUFF too
+PASS: stone leaves the hero playable
+PASS: Stone pact actually reduces incoming damage 15 percent and movement 10 percent
+PASS: vampire applies once and starts matching visual feedback
+PASS: vampire changes its own distinct benefit
+PASS: HUD displays kill healing and resistance
+PASS: vampire really applies its DEBUFF too
+PASS: vampire leaves the hero playable
+PASS: Vampire pact increases real kill healing to 7 with 90 maximum HP
+PASS: Upgrade effect follows phase relocation of player root
+PASS: Feedback finishes even while time is paused
+PASS: Reset removes all pact benefits, costs and particles
+PASS: Surface sampling matches collider phase 1 point 0
+PASS: Surface sampling matches collider phase 1 point 1
+PASS: Surface sampling matches collider phase 1 point 2
+PASS: Surface sampling matches collider phase 1 point 3
+PASS: Surface sampling matches collider phase 1 point 4
+PASS: Surface sampling matches collider phase 1 point 5
+PASS: Surface sampling matches collider phase 1 point 6
+PASS: Surface sampling matches collider phase 1 point 7
+PASS: Surface sampling matches collider phase 1 point 8
+PASS: Surface sampling matches collider phase 1 point 9
+PASS: Surface sampling matches collider phase 1 point 10
+PASS: Surface sampling matches collider phase 1 point 11
+PASS: Surface sampling matches collider phase 1 point 12
+PASS: Surface sampling matches collider phase 1 point 13
+PASS: Surface sampling matches collider phase 1 point 14
+PASS: Surface sampling matches collider phase 1 point 15
+PASS: Surface sampling matches collider phase 1 point 16
+PASS: Surface sampling matches collider phase 1 point 17
+PASS: Surface sampling matches collider phase 1 point 18
+PASS: Surface sampling matches collider phase 1 point 19
+PASS: Surface sampling matches collider phase 1 point 20
+PASS: Surface sampling matches collider phase 2 point 0
+PASS: Surface sampling matches collider phase 2 point 1
+PASS: Surface sampling matches collider phase 2 point 2
+PASS: Surface sampling matches collider phase 2 point 3
+PASS: Surface sampling matches collider phase 2 point 4
+PASS: Surface sampling matches collider phase 2 point 5
+PASS: Surface sampling matches collider phase 2 point 6
+PASS: Surface sampling matches collider phase 2 point 7
+PASS: Surface sampling matches collider phase 2 point 8
+PASS: Surface sampling matches collider phase 2 point 9
+PASS: Surface sampling matches collider phase 2 point 10
+PASS: Surface sampling matches collider phase 2 point 11
+PASS: Surface sampling matches collider phase 2 point 12
+PASS: Surface sampling matches collider phase 2 point 13
+PASS: Surface sampling matches collider phase 2 point 14
+PASS: Surface sampling matches collider phase 2 point 15
+PASS: Surface sampling matches collider phase 2 point 16
+PASS: Surface sampling matches collider phase 2 point 17
+PASS: Surface sampling matches collider phase 2 point 18
+PASS: Surface sampling matches collider phase 2 point 19
+PASS: Surface sampling matches collider phase 2 point 20
+PASS: Surface sampling matches collider phase 3 point 0
+PASS: Surface sampling matches collider phase 3 point 1
+PASS: Surface sampling matches collider phase 3 point 2
+PASS: Surface sampling matches collider phase 3 point 3
+PASS: Surface sampling matches collider phase 3 point 4
+PASS: Surface sampling matches collider phase 3 point 5
+PASS: Surface sampling matches collider phase 3 point 6
+PASS: Surface sampling matches collider phase 3 point 7
+PASS: Surface sampling matches collider phase 3 point 8
+PASS: Surface sampling matches collider phase 3 point 9
+PASS: Surface sampling matches collider phase 3 point 10
+PASS: Surface sampling matches collider phase 3 point 11
+PASS: Surface sampling matches collider phase 3 point 12
+PASS: Surface sampling matches collider phase 3 point 13
+PASS: Surface sampling matches collider phase 3 point 14
+PASS: Surface sampling matches collider phase 3 point 15
+PASS: Surface sampling matches collider phase 3 point 16
+PASS: Surface sampling matches collider phase 3 point 17
+PASS: Surface sampling matches collider phase 3 point 18
+PASS: Surface sampling matches collider phase 3 point 19
+PASS: Surface sampling matches collider phase 3 point 20
+PASS: Surface sampling matches collider phase 4 point 0
+PASS: Surface sampling matches collider phase 4 point 1
+PASS: Surface sampling matches collider phase 4 point 2
+PASS: Surface sampling matches collider phase 4 point 3
+PASS: Surface sampling matches collider phase 4 point 4
+PASS: Surface sampling matches collider phase 4 point 5
+PASS: Surface sampling matches collider phase 4 point 6
+PASS: Surface sampling matches collider phase 4 point 7
+PASS: Surface sampling matches collider phase 4 point 8
+PASS: Surface sampling matches collider phase 4 point 9
+PASS: Surface sampling matches collider phase 4 point 10
+PASS: Surface sampling matches collider phase 4 point 11
+PASS: Surface sampling matches collider phase 4 point 12
+PASS: Surface sampling matches collider phase 4 point 13
+PASS: Surface sampling matches collider phase 4 point 14
+PASS: Surface sampling matches collider phase 4 point 15
+PASS: Surface sampling matches collider phase 4 point 16
+PASS: Surface sampling matches collider phase 4 point 17
+PASS: Surface sampling matches collider phase 4 point 18
+PASS: Surface sampling matches collider phase 4 point 19
+PASS: Surface sampling matches collider phase 4 point 20
+PASS: Surface sampling matches collider phase 5 point 0
+PASS: Surface sampling matches collider phase 5 point 1
+PASS: Surface sampling matches collider phase 5 point 2
+PASS: Surface sampling matches collider phase 5 point 3
+PASS: Surface sampling matches collider phase 5 point 4
+PASS: Surface sampling matches collider phase 5 point 5
+PASS: Surface sampling matches collider phase 5 point 6
+PASS: Surface sampling matches collider phase 5 point 7
+PASS: Surface sampling matches collider phase 5 point 8
+PASS: Surface sampling matches collider phase 5 point 9
+PASS: Surface sampling matches collider phase 5 point 10
+PASS: Surface sampling matches collider phase 5 point 11
+PASS: Surface sampling matches collider phase 5 point 12
+PASS: Surface sampling matches collider phase 5 point 13
+PASS: Surface sampling matches collider phase 5 point 14
+PASS: Surface sampling matches collider phase 5 point 15
+PASS: Surface sampling matches collider phase 5 point 16
+PASS: Surface sampling matches collider phase 5 point 17
+PASS: Surface sampling matches collider phase 5 point 18
+PASS: Surface sampling matches collider phase 5 point 19
+PASS: Surface sampling matches collider phase 5 point 20
+PASS: Surface sampling matches collider phase 6 point 0
+PASS: Surface sampling matches collider phase 6 point 1
+PASS: Surface sampling matches collider phase 6 point 2
+PASS: Surface sampling matches collider phase 6 point 3
+PASS: Surface sampling matches collider phase 6 point 4
+PASS: Surface sampling matches collider phase 6 point 5
+PASS: Surface sampling matches collider phase 6 point 6
+PASS: Surface sampling matches collider phase 6 point 7
+PASS: Surface sampling matches collider phase 6 point 8
+PASS: Surface sampling matches collider phase 6 point 9
+PASS: Surface sampling matches collider phase 6 point 10
+PASS: Surface sampling matches collider phase 6 point 11
+PASS: Surface sampling matches collider phase 6 point 12
+PASS: Surface sampling matches collider phase 6 point 13
+PASS: Surface sampling matches collider phase 6 point 14
+PASS: Surface sampling matches collider phase 6 point 15
+PASS: Surface sampling matches collider phase 6 point 16
+PASS: Surface sampling matches collider phase 6 point 17
+PASS: Surface sampling matches collider phase 6 point 18
+PASS: Surface sampling matches collider phase 6 point 19
+PASS: Surface sampling matches collider phase 6 point 20
+PASS: Portal stays closed and unusable before objectives, phase 1
+PASS: P7: phase 1 has platforms, covers and traps (9 props, 2 traps)
+PASS: P7: trap Spikes only hurts in its active state
+PASS: P7: trap Spikes only hurts in its active state
+PASS: Enemy spawns on surface phase 1
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 1
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 1
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 1
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 1
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 1
+PASS: Wolf prefab uses melee only
+PASS: Portal entered once; no duplicated transition, phase 1
+PASS: Portal travel keeps health and stats, phase 1
+PASS: Phase 1 clears into paused upgrade choice
+PASS: Previous upgrade notice never overlaps the next choice
+PASS: Upgrade description fits card without clipping
+PASS: Card shows effective before and after values
+PASS: P5: card shows name, description, BUFF and DEBUFF in colour
+PASS: Upgrade description fits card without clipping
+PASS: Card shows effective before and after values
+PASS: P5: card shows name, description, BUFF and DEBUFF in colour
+PASS: Upgrade description fits card without clipping
+PASS: Card shows effective before and after values
+PASS: P5: card shows name, description, BUFF and DEBUFF in colour
+PASS: Single choice advances once, applies its BUFF and keeps the hero playable (vampire)
+PASS: Next phase starts on the terrain with the exit reset, phase 2
+PASS: Portal stays closed and unusable before objectives, phase 2
+PASS: P7: phase 2 has platforms, covers and traps (7 props, 4 traps)
+PASS: P7: trap JawTrap only hurts in its active state
+PASS: P7: trap Spikes only hurts in its active state
+PASS: P7: trap Spikes only hurts in its active state
+PASS: P7: trap Spikes only hurts in its active state
+PASS: P8: winter one has an elevated archer post
+PASS: P8: archer post is elevated but reachable with one jump: 2.40
+PASS: P8: archer stays on its post while engaging (no falling, no walking off)
+PASS: Enemy spawns on surface phase 2
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 2
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 2
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 2
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 2
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 2
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 2
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 2
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 2
+PASS: Wolf prefab uses melee only
+PASS: Portal entered once; no duplicated transition, phase 2
+PASS: Portal travel keeps health and stats, phase 2
+PASS: Phase 2 clears into paused upgrade choice
+PASS: Single choice advances once, applies its BUFF and keeps the hero playable (vampire)
+PASS: Next phase starts on the terrain with the exit reset, phase 3
+PASS: Portal stays closed and unusable before objectives, phase 3
+PASS: P7: phase 3 has platforms, covers and traps (9 props, 6 traps)
+PASS: P7: trap JawTrap only hurts in its active state
+PASS: P7: trap Spikes only hurts in its active state
+PASS: P7: trap UnstablePlatform only hurts in its active state
+PASS: P7: trap IceGeyser only hurts in its active state
+PASS: P7: trap DangerousIce only hurts in its active state
+PASS: P7: trap Spikes only hurts in its active state
+PASS: Enemy spawns on surface phase 3
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 3
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 3
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 3
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 3
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 3
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 3
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 3
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 3
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 3
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 3
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 3
+PASS: Wolf prefab uses melee only
+PASS: Portal entered once; no duplicated transition, phase 3
+PASS: Portal travel keeps health and stats, phase 3
+PASS: Phase 3 clears into paused upgrade choice
+PASS: Single choice advances once, applies its BUFF and keeps the hero playable (berserker)
+PASS: Next phase starts on the terrain with the exit reset, phase 4
+PASS: Portal stays closed and unusable before objectives, phase 4
+PASS: P7: phase 4 has platforms, covers and traps (10 props, 10 traps)
+PASS: P7: trap IceGeyser only hurts in its active state
+PASS: P7: trap IceGeyser only hurts in its active state
+PASS: P7: trap DangerousIce only hurts in its active state
+PASS: P7: trap JawTrap only hurts in its active state
+PASS: P7: trap Spikes only hurts in its active state
+PASS: P7: trap UnstablePlatform only hurts in its active state
+PASS: P7: trap IceGeyser only hurts in its active state
+PASS: P7: trap UnstablePlatform only hurts in its active state
+PASS: P7: trap Spikes only hurts in its active state
+PASS: P7: trap DangerousIce only hurts in its active state
+PASS: Enemy spawns on surface phase 4
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 4
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 4
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 4
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 4
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 4
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 4
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 4
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 4
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 4
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 4
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 4
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 4
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 4
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 4
+PASS: Wolf prefab uses melee only
+PASS: Portal entered once; no duplicated transition, phase 4
+PASS: Portal travel keeps health and stats, phase 4
+PASS: Phase 4 clears into paused upgrade choice
+PASS: Single choice advances once, applies its BUFF and keeps the hero playable (devastador)
+PASS: Next phase starts on the terrain with the exit reset, phase 5
+PASS: Portal stays closed and unusable before objectives, phase 5
+PASS: P7: phase 5 has platforms, covers and traps (13 props, 13 traps)
+PASS: P7: trap IceGeyser only hurts in its active state
+PASS: P7: trap Icicle only hurts in its active state
+PASS: P7: trap IceGeyser only hurts in its active state
+PASS: P7: trap Crack only hurts in its active state
+PASS: P7: trap DangerousIce only hurts in its active state
+PASS: P7: trap JawTrap only hurts in its active state
+PASS: P7: trap Icicle only hurts in its active state
+PASS: P7: trap UnstablePlatform only hurts in its active state
+PASS: P7: trap JawTrap only hurts in its active state
+PASS: P7: trap VenomVent only hurts in its active state
+PASS: P7: trap Spikes only hurts in its active state
+PASS: P7: trap Crack only hurts in its active state
+PASS: P7: trap VenomVent only hurts in its active state
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Enemy spawns on surface phase 5
+PASS: Wolf prefab uses melee only
+PASS: Portal entered once; no duplicated transition, phase 5
+PASS: Portal travel keeps health and stats, phase 5
+PASS: Phase 5 clears into paused upgrade choice
+PASS: Single choice advances once, applies its BUFF and keeps the hero playable (hacha)
+PASS: Next phase starts on the terrain with the exit reset, phase 6
+PASS: Boss spawns in phase six
+PASS: Boss presentation locks control and protects the boss
+PASS: Boss takes no damage during the presentation
+PASS: Silent roar: no AudioSource exists in the scene
+PASS: P3: Jörmungandr is built from the phase atlases and anchored (kinematic, never displaced)
+PASS: P3: the scenery is its body: scale plates embedded along the arena floor
+PASS: P7: boss arena has useful cover and high platforms only
+PASS: Presentation completes without attacks and without releasing control early
+PASS: Battle starts: control returns and the boss can be damaged
+PASS: P1: player is held in front of the serpent's body: 356.40 <= 356.70
+PASS: P4: MordidaDeMidgard runs Anticipation, Active and Recovery
+PASS: P4: MordidaDeMidgard creates no projectile or bullet
+PASS: P4: MordidaDeMidgard shows a ground warning or hazard tied to the attack
+PASS: P4: VentiscaRasante runs Anticipation, Active and Recovery
+PASS: P4: VentiscaRasante creates no projectile or bullet
+PASS: P4: VentiscaRasante shows a ground warning or hazard tied to the attack
+PASS: P4: OlaDeEscamas runs Anticipation, Active and Recovery
+PASS: P4: OlaDeEscamas creates no projectile or bullet
+PASS: P4: OlaDeEscamas shows a ground warning or hazard tied to the attack
+PASS: P4: ErupcionDeColmillos runs Anticipation, Active and Recovery
+PASS: P4: ErupcionDeColmillos creates no projectile or bullet
+PASS: P4: ErupcionDeColmillos shows a ground warning or hazard tied to the attack
+PASS: P4: RespiracionDeVeneno runs Anticipation, Active and Recovery
+PASS: P4: RespiracionDeVeneno creates no projectile or bullet
+PASS: P4: RespiracionDeVeneno shows a ground warning or hazard tied to the attack
+PASS: P4: ContraccionDosTiempos runs Anticipation, Active and Recovery
+PASS: P4: ContraccionDosTiempos creates no projectile or bullet
+PASS: P4: ContraccionDosTiempos shows a ground warning or hazard tied to the attack
+PASS: P4: EspinasCarmesi runs Anticipation, Active and Recovery
+PASS: P4: EspinasCarmesi creates no projectile or bullet
+PASS: P4: EspinasCarmesi shows a ground warning or hazard tied to the attack
+PASS: P4: AlientoDelRagnarok runs Anticipation, Active and Recovery
+PASS: P4: AlientoDelRagnarok creates no projectile or bullet
+PASS: P4: AlientoDelRagnarok shows a ground warning or hazard tied to the attack
+PASS: P4: FracturaDelMundo runs Anticipation, Active and Recovery
+PASS: P4: FracturaDelMundo creates no projectile or bullet
+PASS: P4: FracturaDelMundo shows a ground warning or hazard tied to the attack
+PASS: P4: JuicioDeLaSerpiente runs Anticipation, Active and Recovery
+PASS: P4: JuicioDeLaSerpiente creates no projectile or bullet
+PASS: P4: JuicioDeLaSerpiente shows a ground warning or hazard tied to the attack
+PASS: Counterplay: frost wind damages a player standing in the open
+PASS: Counterplay: stone cover blocks the frost wind
+PASS: Counterplay: a high platform is above the frost wind
+PASS: Counterplay: hugging solid cover blocks the Ragnarök breath
+PASS: P3: the serpent never moves its body (root fixed through every attack)
+PASS: Threshold cancels the attack, clears hazards, makes the boss invulnerable and starts phase two
+PASS: Boss is invulnerable during the transition; single health bar never resets
+PASS: Transformation order body → neck → head → silent roar → stun: Cancel,MorphBody,MorphNeck,MorphHead,Roar,Stun
+PASS: Roar stun: A + D alternated, 4 cycles, player locked
+PASS: QTE ignores keys outside the pair and out-of-order presses
+PASS: QTE counter 0/4 after A
+PASS: QTE counter 1/4 after A
+PASS: QTE counter 2/4 after A
+PASS: Eight alternating presses free the player (Recovered)
+PASS: Queued second transition: Quebranto glacial ran once, then phase three began
+PASS: Phase three stun uses W + D
+PASS: QTE timeout frees the player with a light penalty
+PASS: Eclipse carmesí ran once after the player was freed; combat resumes
+PASS: Neck and head now show the phase-three drawings
+PASS: Phase three only uses its own attacks and never fires projectiles
+PASS: Boss defeat ends run in victory
+PASS: No projectiles, boss hazards or stun remain after the fight
+PASS: Victory retry resets stats, timers and seed
+PASS: Death cancels combat and shield and opens result
+PASS: Death lands on actual ground even when killed airborne at timeScale zero
+PASS: Final corpse holds Rig
+PASS: Final corpse holds Pelvis
+PASS: Final corpse holds BackLeg
+PASS: Final corpse holds JointOverlap
+PASS: Final corpse holds Sprite
+PASS: Final corpse holds Lower
+PASS: Final corpse holds JointOverlap
+PASS: Final corpse holds Sprite
+PASS: Final corpse holds Foot
+PASS: Final corpse holds JointOverlap
+PASS: Final corpse holds Sprite
+PASS: Final corpse holds FrontLeg
+PASS: Final corpse holds JointOverlap
+PASS: Final corpse holds Sprite
+PASS: Final corpse holds Lower
+PASS: Final corpse holds JointOverlap
+PASS: Final corpse holds Sprite
+PASS: Final corpse holds Foot
+PASS: Final corpse holds JointOverlap
+PASS: Final corpse holds Sprite
+PASS: Final corpse holds Torso
+PASS: Final corpse holds Body
+PASS: Final corpse holds Head
+PASS: Final corpse holds Sprite
+PASS: Final corpse holds FacingPoint
+PASS: Final corpse holds FrontArm
+PASS: Final corpse holds JointOverlap
+PASS: Final corpse holds Sprite
+PASS: Final corpse holds Lower
+PASS: Final corpse holds JointOverlap
+PASS: Final corpse holds Sprite
+PASS: Final corpse holds Hand
+PASS: Final corpse holds JointOverlap
+PASS: Final corpse holds Sprite
+PASS: Final corpse holds AxeSocket
+PASS: Final corpse holds Sprite
+PASS: Final corpse holds Grip
+PASS: Final corpse holds BladeTip
+PASS: Final corpse holds BackArm
+PASS: Final corpse holds JointOverlap
+PASS: Final corpse holds Sprite
+PASS: Final corpse holds Lower
+PASS: Final corpse holds JointOverlap
+PASS: Final corpse holds Sprite
+PASS: Final corpse holds Hand
+PASS: Final corpse holds JointOverlap
+PASS: Final corpse holds Sprite
+PASS: Final corpse holds ShieldSocket
+PASS: Final corpse holds Sprite
+PASS: Final corpse holds Grip
+PASS: Final corpse holds Cloth
+PASS: Final corpse holds Sprite
+PASS: Final corpse holds AxeSwipe
+PASS: Death retry restores player
+PASS: Return to menu cleans run
+PASS: Acceptance leaves persisted record unchanged
+PASS: No runtime exceptions during acceptance

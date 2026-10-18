@@ -1,0 +1,9 @@
+WhiteWolf final state Recovery
+BlueWolf final state Recovery
+Archer final state Anticipation
+Mage final state Anticipation
+Portal state after enter ChoosingUpgrade
+Reached phase 6 boss True
+Intro finished True locked False invulnerable False
+End state Victory projectiles 0 hazards 0
+ERRORS 0

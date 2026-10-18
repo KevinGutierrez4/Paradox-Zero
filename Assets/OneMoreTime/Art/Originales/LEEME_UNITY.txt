@@ -1,0 +1,6 @@
+SPRITES ORIGINALES DEL USUARIO - FONDO TRANSPARENTE
+Carpetas: PNG separados con transparencia, para importar en Unity.
+Hojas: ensamblados de piezas sin fondos sobre posiciones aproximadas del original.
+En Unity: Texture Type = Sprite (2D and UI), Sprite Mode = Single, Filter Mode = Point (no filter), Compression = None.
+Usar cada pieza en un GameObject hijo del personaje, ajustando pivotes en el Sprite Editor.
+Aviso: las imágenes originales tienen algunos detalles pegados, fragmentos cortados en el borde y 2 marcas de texto; no se pueden restaurar zonas ocultas solo quitando el fondo.
