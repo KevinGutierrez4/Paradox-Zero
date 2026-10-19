@@ -13,6 +13,8 @@ namespace OneMoreTime
         private float nextShot;
         private GameManager game;
         public Vector2 MuzzlePosition => muzzle != null ? (Vector2)muzzle.position : (Vector2)transform.position + Vector2.up;
+        public Transform Muzzle => muzzle;
+        public bool IsArrow => arrow;
 
         public void Initialize(ProjectilePool projectilePool, GameManager manager = null)
         {
@@ -31,6 +33,18 @@ namespace OneMoreTime
             if (Time.time - nextShot > interval) nextShot = Time.time;
             nextShot += interval; // Preserve cadence across uneven frame times without a catch-up burst.
             pool.Fire(MuzzlePosition, direction, damage, owner.Team, projectileSpeed, 3, false, arrow);
+            return true;
+        }
+
+        /// <summary>
+        /// Fires exactly at the release frame of an animated attack. The attack's own timeline is the
+        /// cadence, so no cooldown can silently swallow a shot whose animation was already shown.
+        /// </summary>
+        public bool FireNow(Vector2 origin, Vector2 direction, float damage)
+        {
+            if (pool == null || game == null || !game.IsPlaying || owner == null || owner.IsDead) return false;
+            pool.Fire(origin, direction, damage, owner.Team, projectileSpeed, 3, false, arrow);
+            nextShot = Time.time;
             return true;
         }
     }

@@ -24,6 +24,13 @@ MonoBehaviour:
   bossHealth: 850
   recoveryBetweenPhases: 8
   healOnKill: 5
+  lifeStealBonusPerLevel:
+  - 0.002
+  - 0.003
+  - 0.004
+  - 0.005
+  - 0.006
+  lifeStealDefensePenaltyPerLevel: 0.01
   phases:
   - length: 48
     enemyBudget: 6

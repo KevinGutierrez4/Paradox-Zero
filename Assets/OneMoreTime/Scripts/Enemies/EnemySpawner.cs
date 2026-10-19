@@ -53,6 +53,7 @@ namespace OneMoreTime
 
         private void Update()
         {
+            if (game != null && game.Tutorial != null && game.Tutorial.Active) { nextSpawn = Time.time + 0.8f; return; }
             if (!active || bossPhase || game == null || !game.IsPlaying || Time.time < nextSpawn
                 || spawned >= settings.enemyBudget || alive.Count >= settings.maxAlive) return;
             // Progress unlocks more of the fixed budget; all are unlocked near the exit.
@@ -65,8 +66,25 @@ namespace OneMoreTime
             if (Mathf.Abs(x - player.transform.position.x) < 3.5f)
                 x = Mathf.Clamp(player.transform.position.x - 7f, game.PhaseStart + 3f, game.PhaseEnd - 3f);
             var prefab = enemyPrefabs[random.Next(enemyPrefabs.Length)];
-            var enemy = Instantiate(prefab, GroundPosition(x), Quaternion.identity, transform);
+            // Never inside a cover or a trap.
+            if (game.Stage != null) x = game.Stage.FreeX(x, game.PhaseStart + 3f, game.PhaseEnd - 2f);
+            Vector2 point = GroundPosition(x);
+            ArcherPost post = null;
+            var ai = prefab.GetComponent<EnemyAI>();
+            if (ai != null && ai.name.Contains("Archer"))
+            {
+                // Archers take a free elevated post ahead of the player when there is one.
+                foreach (var candidate in ArcherPost.All)
+                {
+                    if (!candidate.Free) continue;
+                    float cx = candidate.CenterX;
+                    if (cx < game.PhaseStart || cx > game.PhaseEnd || cx < player.transform.position.x + 4f) continue;
+                    post = candidate; point = new Vector2(cx, candidate.TopY + 0.05f); break;
+                }
+            }
+            var enemy = Instantiate(prefab, point, Quaternion.identity, transform);
             enemy.Initialize(game, player, pool, phase, groundMask);
+            if (post != null && enemy is EnemyAI archer) archer.AnchorTo(post);
             Track(enemy); spawned++;
             nextSpawn = Time.time + settings.spawnInterval * Mathf.Lerp(0.8f, 1.2f, (float)random.NextDouble());
         }
@@ -103,6 +121,7 @@ namespace OneMoreTime
             {
                 if (actor == null) continue;
                 actor.Defeated -= HandleDefeated; actor.Removed -= HandleRemoved;
+                if (actor is BossAI boss) boss.Stun?.Close();
                 actor.gameObject.SetActive(false);
                 Destroy(actor.gameObject);
             }

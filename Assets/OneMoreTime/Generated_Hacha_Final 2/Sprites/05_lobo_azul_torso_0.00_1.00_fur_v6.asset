@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!28 &-6019016355125169642
+--- !u!28 &-7838362170907536390
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72,7 +72,7 @@ Sprite:
   m_SpriteAtlas: {fileID: 0}
   m_RD:
     serializedVersion: 4
-    texture: {fileID: -6019016355125169642}
+    texture: {fileID: -7838362170907536390}
     alphaTexture: {fileID: 0}
     secondaryTextures: []
     m_SubMeshes:
@@ -168,7 +168,7 @@ Sprite:
     downscaleMultiplier: 1
   m_AtlasRD:
     serializedVersion: 4
-    texture: {fileID: -6019016355125169642}
+    texture: {fileID: -7838362170907536390}
     alphaTexture: {fileID: 0}
     secondaryTextures: []
     m_SubMeshes:

@@ -38,6 +38,7 @@ namespace OneMoreTime
         [SerializeField] private Text menuRecord;
         private GameManager game;
         private float nextRefresh;
+        public Transform HudRoot => hud != null ? hud.transform : transform;
         private CanvasGroup upgradeNotice;
         private Text upgradeNoticeText;
         private float noticeUntil;
@@ -63,7 +64,7 @@ namespace OneMoreTime
             game.Player.Stats.UpgradeApplied += ShowUpgradeNotice;
             CreateUpgradeNotice();
             var controls = mainMenu.transform.Find("Controls")?.GetComponent<Text>();
-            if (controls != null) controls.text = "A/D o flechas: correr · Espacio: saltar · S/↓: agacharse\nJ / clic izquierdo: hacha · K / clic derecho: bloquear (65% menos daño)\nEsc: pausa";
+            if (controls != null) controls.text = "A/D o flechas: correr · Espacio: saltar · S/↓: agacharse · S + Espacio: bajar de plataforma\nJ / clic izquierdo: hacha · K / clic derecho: bloquear · L / Shift: esquivar (invulnerable)\nW / ↑ / E: atravesar portal · Esc: pausa";
             var hint = new GameObject("GuardHint", typeof(RectTransform), typeof(Text)); hint.transform.SetParent(hud.transform, false);
             var hintRect = hint.GetComponent<RectTransform>(); hintRect.anchorMin = hintRect.anchorMax = new Vector2(0.5f, 0); hintRect.anchoredPosition = new Vector2(0, 22); hintRect.sizeDelta = new Vector2(1100, 30);
             guardHint = hint.GetComponent<Text>(); guardHint.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf"); guardHint.fontSize = 18; guardHint.alignment = TextAnchor.MiddleCenter;
@@ -138,18 +139,23 @@ namespace OneMoreTime
                 ? "BLOQUEANDO · Recibes 65% menos daño · Suelta K / clic derecho para atacar" : "K / clic derecho: bloquear · J / clic izquierdo: hachazo";
             healthBar.value = hp.Maximum > 0 ? hp.Current / hp.Maximum : 0;
             healthText.text = $"VIDA {Mathf.CeilToInt(hp.Current - 0.0001f)}/{Mathf.CeilToInt(hp.Maximum - 0.0001f)}";
-            phaseText.text = game.Phase == 6 ? "FASE 6/6 · BOSS" : $"FASE {game.Phase}/6";
+            phaseText.text = game.Phase == 6 ? "FASE 6/6 · JÖRMUNGANDR" : $"FASE {game.Phase}/6 · {game.WinterName}";
             statsText.fontSize = 20;
-            statsText.text = $"Daño {stats.damage:0.#}   Vel. {stats.moveSpeed:0.#}   Ataques {stats.fireRate:0.#}/s   Resiste {(1 - stats.damageTaken) * 100:0.#}%   Cura/baja {stats.killHealing:0.#}";
-            progressText.text = game.Phase == 6 ? "Derrota a la serpiente" : $"Enemigos {game.Spawner.SpawnedCount}/{game.Spawner.Budget} · Vivos {game.Spawner.AliveCount} · Avanza hasta la fisura >";
+            statsText.text = $"Daño {stats.damage:0.#}   Vel. {stats.moveSpeed:0.#}   Ataques {stats.fireRate:0.#}/s   Resiste {(1 - stats.damageTaken) * 100:0.#}%   Cura/baja {stats.killHealing:0.#}" + (stats.lifeStealLevel > 0 ? "   Robo " + (stats.lifeSteal * 100).ToString("0.0#", System.Globalization.CultureInfo.InvariantCulture).Replace('.', ',') + "%" : "");
+            var portals = game.Portals;
+            if (game.Phase == 6) progressText.text = "Derrota a la Serpiente de Midgard";
+            else if (portals != null && portals.Busy) progressText.text = "Atravesando el portal...";
+            else if (portals != null && portals.ExitOpen) progressText.text = portals.PlayerInRange ? "Pulsa W / ↑ / E para atravesar el portal" : "¡Portal rúnico abierto! Avanza hasta él >";
+            else progressText.text = $"Enemigos {game.Spawner.SpawnedCount}/{game.Spawner.Budget} · Vivos {game.Spawner.AliveCount} · Derrótalos para abrir el portal >";
             scoreText.text = $"{game.Score:000000} PTS   {FormatTime(game.RunTime)}";
             var boss = game.Spawner.CurrentBoss;
-            bool showBoss = game.Phase == 6 && boss != null && boss.IsAlive;
+            // The health bar appears when the presentation ends and the fight actually starts.
+            bool showBoss = game.Phase == 6 && boss != null && boss.IsAlive && boss.IntroFinished;
             bossBar.gameObject.SetActive(showBoss); bossText.gameObject.SetActive(showBoss);
             if (showBoss)
             {
                 bossBar.value = boss.Health.Current / boss.Health.Maximum;
-                bossText.text = (boss.Enraged ? "SERPIENTE · FURIA · " : "SERPIENTE · ") + boss.PatternName;
+                bossText.text = "JÖRMUNGANDR · " + (boss.Stage == 1 ? "FASE I · " : boss.Stage == 2 ? "FASE II · " : "FASE III · ") + boss.PatternName;
             }
         }
 
@@ -171,8 +177,12 @@ namespace OneMoreTime
         }
         private void ShowUpgradeNotice(UpgradeDefinition upgrade)
         {
-            upgradeNoticeText.text = (upgrade.HasTradeoff ? "PACTO: " : "MEJORA: ") + upgrade.Title + "\n" + upgrade.Description;
-            upgradeNoticeText.color = upgrade.HasTradeoff ? new Color(1, 0.73f, 0.55f) : new Color(0.5f, 1, 0.75f);
+            upgradeNoticeText.supportRichText = true;
+            var now = game.Player.Stats.Current;
+            string name = upgrade.Leveled ? "Robo de Vida — Nivel " + now.lifeStealLevel + " (" + (now.lifeSteal * 100).ToString("0.0#", System.Globalization.CultureInfo.InvariantCulture).Replace('.', ',') + " % por golpe)" : upgrade.Title;
+            upgradeNoticeText.text = name + "\n<color=" + UpgradeDefinition.BuffColor + ">[+] " + UpgradeDefinition.Label(upgrade.Stat) + "</color>   "
+                + (upgrade.HasTradeoff ? "<color=" + UpgradeDefinition.DebuffColor + ">[-] " + UpgradeDefinition.Label(upgrade.TradeoffStat) + "</color>" : "");
+            upgradeNoticeText.color = new Color(1f, 0.9f, 0.7f);
             upgradeNotice.gameObject.SetActive(true); upgradeNotice.transform.SetAsLastSibling();
             upgradeNotice.alpha = 1; noticeUntil = Time.unscaledTime + 2.4f;
         }

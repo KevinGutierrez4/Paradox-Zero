@@ -14,8 +14,11 @@ PASS: Pause releases guard and clears damage reduction
 PASS: Boss tool menu is available
 PASS: Boss tool jumps from pause to a fresh phase 6 without playing phases 1-5
 PASS: Boss shortcut preserves its presentation
+PASS: Recovered boss uses the three-phase artwork and continuous neck
+PASS: Recovered boss arena keeps the supplied final background
 PASS: Restarting boss preview closes the old QTE without unlocking the new introduction
 PASS: Boss presentation finishes and hands control back for combat
+PASS: Recovered giant boss keeps the intended sprite scale and aligned jaw
 PASS: Boss preview cannot alter saved or displayed records
 PASS: Normal JUGAR still starts phase 1 after a boss preview
 PASS: No runtime errors during guard, walking-attack, or boss shortcut tests

@@ -8,6 +8,9 @@ namespace OneMoreTime.Editor
 {
     internal static class DemoAnimatorFactory
     {
+        private static string[] StatesFor(string kind) => kind == "Boss" ? new[] { "Idle", "Attack", "Special", "Die" } : kind == "Player"
+            ? new[] { "Idle", "Walk", "Crouch", "Jump", "Attack", "CrouchAttack", "Special", "Die" }
+            : new[] { "Idle", "Walk", "Attack", "Die" };
         internal static void RefreshHero(string root)
         {
             string directory = root + "/Animations/Player";
@@ -38,7 +41,7 @@ namespace OneMoreTime.Editor
             var machine = controller.layers[0].stateMachine;
             var states = new Dictionary<string, AnimatorState>(); foreach (var item in machine.states) states[item.state.name] = item.state;
             if (states.ContainsKey("Fall")) { states["Fall"].motion = clip; return; }
-            var fall = machine.AddState("Fall"); fall.motion = clip; fall.writeDefaultValues = false;
+            var fall = machine.AddState("Fall"); fall.motion = clip; fall.writeDefaultValues = true;
             var enter = states["Jump"].AddTransition(fall); Instant(enter);
             enter.AddCondition(AnimatorConditionMode.IfNot, 0, "Grounded"); enter.AddCondition(AnimatorConditionMode.Less, 0, "VerticalSpeed");
             foreach (string state in new[] { "Idle", "Walk", "Crouch", "Jump" })
@@ -58,7 +61,7 @@ namespace OneMoreTime.Editor
         internal static void RefreshClips(string root)
         {
             foreach (string kind in new[] { "Player", "Archer", "Mage", "WhiteWolf", "BlueWolf", "Boss" })
-                foreach (string state in new[] { "Idle", "Walk", "Crouch", "Jump", "Attack", "CrouchAttack", "Special", "Die" })
+                foreach (string state in StatesFor(kind))
                 {
                     var destination = AssetDatabase.LoadAssetAtPath<AnimationClip>(root + "/Animations/" + kind + "/" + state + ".anim");
                     var source = Clip(state, kind);
@@ -78,35 +81,43 @@ namespace OneMoreTime.Editor
             controller.AddParameter("Pattern", AnimatorControllerParameterType.Int);
             var machine = controller.layers[0].stateMachine;
             var states = new Dictionary<string, AnimatorState>();
-            foreach (string name in new[] { "Idle", "Walk", "Crouch", "Jump", "Attack", "CrouchAttack", "Special", "Die" })
+            foreach (string name in StatesFor(kind))
             {
                 var clip = Clip(name, kind);
                 AssetDatabase.CreateAsset(clip, directory + "/" + name + ".anim");
                 var state = machine.AddState(name);
-                state.motion = clip; state.writeDefaultValues = false;
+                state.motion = clip; state.writeDefaultValues = true;
                 states.Add(name, state);
             }
             machine.defaultState = states["Idle"];
             var death = machine.AddAnyStateTransition(states["Die"]);
             Instant(death); death.AddCondition(AnimatorConditionMode.If, 0, "Dead");
+            if (states.ContainsKey("Special"))
+            {
             var special = machine.AddAnyStateTransition(states["Special"]);
             Instant(special); special.AddCondition(AnimatorConditionMode.IfNot, 0, "Dead");
             special.AddCondition(AnimatorConditionMode.If, 0, "Attack");
             special.AddCondition(AnimatorConditionMode.Equals, 2, "Pattern");
+            }
             var attack = machine.AddAnyStateTransition(states["Attack"]);
             Instant(attack); attack.AddCondition(AnimatorConditionMode.IfNot, 0, "Dead");
             attack.AddCondition(AnimatorConditionMode.If, 0, "Attack");
             attack.AddCondition(AnimatorConditionMode.NotEqual, 2, "Pattern");
             attack.AddCondition(AnimatorConditionMode.IfNot, 0, "Crouch");
+            if (states.ContainsKey("CrouchAttack"))
+            {
             var crouchAttack = machine.AddAnyStateTransition(states["CrouchAttack"]);
             Instant(crouchAttack); crouchAttack.AddCondition(AnimatorConditionMode.IfNot, 0, "Dead");
             crouchAttack.AddCondition(AnimatorConditionMode.If, 0, "Attack");
             crouchAttack.AddCondition(AnimatorConditionMode.NotEqual, 2, "Pattern");
             crouchAttack.AddCondition(AnimatorConditionMode.If, 0, "Crouch");
+            }
             foreach (string from in new[] { "Idle", "Walk", "Crouch", "Jump" })
             {
+                if (!states.ContainsKey(from)) continue;
                 foreach (string to in new[] { "Idle", "Walk", "Crouch", "Jump" })
                 {
+                    if (!states.ContainsKey(to)) continue;
                     if (from == to) continue;
                     var transition = states[from].AddTransition(states[to]);
                     Instant(transition);
@@ -122,6 +133,7 @@ namespace OneMoreTime.Editor
             }
             foreach (string from in new[] { "Attack", "CrouchAttack", "Special" })
             {
+                if (!states.ContainsKey(from)) continue;
                 var exit = states[from].AddTransition(states["Idle"]);
                 exit.hasExitTime = true; exit.exitTime = 1; exit.duration = 0.02f;
                 exit.AddCondition(AnimatorConditionMode.IfNot, 0, "Dead");

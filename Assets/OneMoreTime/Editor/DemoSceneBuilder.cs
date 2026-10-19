@@ -20,16 +20,21 @@ namespace OneMoreTime.Editor
         private static Sprite solid;
         private static PhysicsMaterial2D physicsMaterial;
         private static Font font;
-
-        [MenuItem("Tools/One More Time/1. Crear demo 2D")]
         public static void Build()
         {
             if (EditorApplication.isPlayingOrWillChangePlaymode) throw new InvalidOperationException("Sal de Play antes de generar la demo.");
             if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
+            if (File.Exists(DemoProjectSetup.ScenePath))
+            {
+                EditorSceneManager.OpenScene(DemoProjectSetup.ScenePath);
+                DemoProjectSetup.Prepare();
+                Debug.Log("Demo existente preparada. Pulsa Play para jugar.");
+                return;
+            }
             // Change scenes before creating or retaining prefab assets. A scene switch may
             // unload assets whose only remaining reference is a local managed variable.
             Scene scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
-            generated = AssetDatabase.GenerateUniqueAssetPath(Root + "/Generated_Hacha_Final");
+            generated = DemoProjectSetup.GameRoot;
             Directory.CreateDirectory(generated + "/Prefabs");
             Directory.CreateDirectory(generated + "/Sprites");
             foreach (string kind in new[] { "Player", "Archer", "Mage", "WhiteWolf", "BlueWolf", "Boss" })
@@ -161,7 +166,8 @@ namespace OneMoreTime.Editor
                 if (importer == null) continue;
                 importer.textureType = TextureImporterType.Sprite;
                 importer.spriteImportMode = SpriteImportMode.Single;
-                importer.spritePixelsPerUnit = 100;
+                // Phase sprites and their measured joints use 72 pixels per world unit.
+                importer.spritePixelsPerUnit = path.Contains("/JormungandrPhases/") ? 72 : 100;
                 importer.alphaIsTransparency = true;
                 importer.filterMode = FilterMode.Point;
                 importer.textureCompression = TextureImporterCompression.Uncompressed;
@@ -240,6 +246,14 @@ namespace OneMoreTime.Editor
                 {
                     var ai = actor.AddComponent<BossAI>();
                     Float(ai, "baseHealth", 850); Float(ai, "baseDamage", 10);
+                    // Jörmungandr drawings (clean crops of 06_serpiente_azul, originals untouched).
+                    const string bossArt = "Assets/OneMoreTime/Art/JormungandrV5/";
+                    Ref(ai, "headAttackSprite", AssetDatabase.LoadAssetAtPath<Sprite>(bossArt + "Jormungandr_HeadAttack.png"));
+                    Ref(ai, "headRoarSprite", AssetDatabase.LoadAssetAtPath<Sprite>(bossArt + "Jormungandr_HeadRoar.png"));
+                    Ref(ai, "breathPuffSprite", AssetDatabase.LoadAssetAtPath<Sprite>(bossArt + "Jormungandr_BreathPuff.png"));
+                    Ref(ai, "bodySegmentSprite", AssetDatabase.LoadAssetAtPath<Sprite>(bossArt + "Jormungandr_BodySegment.png"));
+                    Ref(ai, "iceFangSprite", AssetDatabase.LoadAssetAtPath<Sprite>(bossArt + "Jormungandr_IceFang.png"));
+                    Ref(ai, "finSprite", AssetDatabase.LoadAssetAtPath<Sprite>(bossArt + "Jormungandr_Fin.png"));
                 }
                 else
                 {
@@ -354,6 +368,7 @@ namespace OneMoreTime.Editor
             canvasObject.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
             var scaler = canvasObject.GetComponent<CanvasScaler>();
             scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            scaler.screenMatchMode = CanvasScaler.ScreenMatchMode.Expand;
             scaler.referenceResolution = new Vector2(1280, 720); scaler.matchWidthOrHeight = 0.5f;
             var ui = canvasObject.AddComponent<UIManager>();
             new GameObject("EventSystem", typeof(EventSystem), typeof(StandaloneInputModule));
@@ -377,8 +392,8 @@ namespace OneMoreTime.Editor
             var top = Panel(hud.transform, "TopBar", new Color(0.025f, 0.04f, 0.09f, 0.88f));
             var topRect = top.GetComponent<RectTransform>(); topRect.anchorMin = new Vector2(0, 1); topRect.anchorMax = Vector2.one;
             topRect.pivot = new Vector2(0.5f, 1); topRect.sizeDelta = new Vector2(0, 138); topRect.anchoredPosition = Vector2.zero;
-            Ref(ui, "healthBar", Slider(top.transform, "HealthBar", new Vector2(-420, 30), new Vector2(300, 20), false));
-            Ref(ui, "healthText", Label(top.transform, "HealthText", "VIDA", new Vector2(-420, 58), new Vector2(330, 36), 24));
+            Ref(ui, "healthBar", Slider(top.transform, "HealthBar", new Vector2(-420, 22), new Vector2(300, 20), false));
+            Ref(ui, "healthText", Label(top.transform, "HealthText", "VIDA", new Vector2(-420, 48), new Vector2(330, 36), 24));
             Ref(ui, "phaseText", Label(top.transform, "Phase", "FASE", new Vector2(0, 45), new Vector2(350, 45), 28));
             Ref(ui, "scoreText", Label(top.transform, "Score", "PUNTOS", new Vector2(425, 45), new Vector2(380, 45), 23));
             Ref(ui, "statsText", Label(top.transform, "Stats", "Stats", new Vector2(0, 1), new Vector2(1150, 35), 23));

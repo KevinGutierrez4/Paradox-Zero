@@ -11,6 +11,10 @@ namespace OneMoreTime
         [SerializeField, Min(0.1f)] protected float baseSpeed = 2.2f;
         [SerializeField, Min(1f)] protected float baseDamage = 8f;
         [SerializeField, Min(0.1f)] private float deathDuration = 0.5f;
+        [Tooltip("La pose de muerte dura ~0,5 s; el cuerpo permanece este tiempo mínimo y se desvanece al final.")]
+        [SerializeField, Min(0.3f)] private float minimumCorpseTime = 1.25f;
+        [SerializeField, Min(0.05f)] private float corpseFade = 0.4f;
+        [Tooltip("0 = retroceso completo, 1 = inamovible (jefes).")]
         [SerializeField, Range(0, 1)] private float knockbackResistance;
         [SerializeField, Range(0.05f, 0.5f)] private float knockbackDuration = 0.12f;
         private float knockbackUntil;
@@ -54,6 +58,12 @@ namespace OneMoreTime
 
         protected virtual void OnHitReceived(DamageInfo hit)
         {
+            if (hit.Source == Team.Player && IsAlive)
+            {
+                var c = GetComponent<BoxCollider2D>();
+                Vector2 at = c != null ? (Vector2)c.bounds.center : (Vector2)transform.position;
+                PixelFx.Burst(at, 8, new Color(1f, 0.92f, 0.75f), 3f, 0.25f, -5f, 0.06f, 45, new Vector2(Mathf.Sign(hit.Knockback.x) * 1.2f, 0.4f));
+            }
             // Anchored bosses resist displacement; ordinary enemies keep physical wall collisions.
             if (!CanAct || hit.Source != Team.Player || hit.Knockback.sqrMagnitude < 0.001f
                 || knockbackResistance >= 1 || (body.constraints & RigidbodyConstraints2D.FreezePositionX) != 0) return;
@@ -77,8 +87,15 @@ namespace OneMoreTime
             visuals.SetTelegraph(false);
             visuals.PlayDeath();
             Defeated?.Invoke(this);
-            Destroy(gameObject, deathDuration);
+            // Keep the body until the fall has landed, then fade it (unscaled, so it also completes at timeScale 0).
+            float total = Mathf.Max(deathDuration, minimumCorpseTime);
+            if (FadesCorpse) visuals.FadeOut(total - corpseFade, corpseFade);
+            if (DestroysCorpse) Destroy(gameObject, total);
         }
+
+        /// <summary>Bosses keep their defeat pose on screen; ordinary enemies fade and are removed.</summary>
+        protected virtual bool FadesCorpse => true;
+        protected virtual bool DestroysCorpse => true;
 
         protected virtual void OnDestroy()
         {

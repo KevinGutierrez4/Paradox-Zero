@@ -17,9 +17,13 @@ namespace OneMoreTime
         private readonly List<Projectile> scratch = new List<Projectile>();
         private GameManager game;
         public bool IsConfigured => projectilePrefab != null;
+        public Sprite ArrowSprite => arrowSprite;
+        public Sprite MagicSprite => magicSprite;
+        public int ActiveCount => active.Count;
 
         public void Initialize(GameManager manager)
         {
+            collisionMask |= PropLayers.PropMask; // arrows and magic stop on solid cover
             game = manager;
             if (pool != null || projectilePrefab == null) return;
             pool = new ObjectPool<Projectile>(

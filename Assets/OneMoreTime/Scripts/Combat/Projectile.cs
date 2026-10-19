@@ -96,10 +96,14 @@ namespace OneMoreTime
         {
             var target = collider.GetComponentInParent<Health>();
             if (groundWave && target == null) return;
+            var cover = target == null ? collider.GetComponentInParent<ArenaCover>() : null;
+            if (cover != null) cover.Absorb(damage);
             if (target != null)
             {
                 if (target.Team == team || target.IsDead) return;
-                target.TakeDamage(new DamageInfo(damage, team));
+                // Enemy arrows push the player slightly along the flight direction (mostly horizontal).
+                Vector2 push = team == Team.Enemy ? new Vector2(Mathf.Sign(direction.x == 0 ? 1 : direction.x) * 2.6f, 0.9f) : Vector2.zero;
+                target.TakeDamage(new DamageInfo(damage, team, push));
             }
             Despawn();
         }

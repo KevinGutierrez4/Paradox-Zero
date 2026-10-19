@@ -23,6 +23,12 @@ namespace OneMoreTime
         [Min(0f)] public float recoveryBetweenPhases = 8f;
         [Tooltip("Vida recuperada por el jugador al matar un enemigo. 0 desactiva la curación.")]
         [Min(0f)] public float healOnKill = 5f;
+        [Header("Mejora Robo de Vida (solo se obtiene eligiendo su carta)")]
+        [Tooltip("Bonificación que añade cada nivel, en fracción de la vida máxima por golpe válido (0,002 = 0,2 %). " +
+                 "El número de entradas es el nivel máximo. Valores por defecto: 0,2 % + 0,3 % + 0,4 % + 0,5 % + 0,6 % = 2,0 %.")]
+        public float[] lifeStealBonusPerLevel = { 0.002f, 0.003f, 0.004f, 0.005f, 0.006f };
+        [Tooltip("Debuff por nivel adquirido: puntos de daño recibido añadidos (0,01 = -1 % de defensa).")]
+        [Range(0f, 0.05f)] public float lifeStealDefensePenaltyPerLevel = 0.01f;
         public PhaseSettings[] phases =
         {
             new PhaseSettings { length = 48, enemyBudget = 6, maxAlive = 3, spawnInterval = 1.3f },

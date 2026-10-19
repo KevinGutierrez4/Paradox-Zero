@@ -27,6 +27,8 @@
 *.bak
 *.orig
 sysinfo.txt
+/Verification/
+/Assets/_Recovery/BeforeStartupRepair_*.unity*
 
 # Sistema operativo
 .DS_Store

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ad686dd0edd2fe459177e204a58c83d, type: 3}
+  m_Name: OMT_StageLayouts
+  m_EditorClassIdentifier: Assembly-CSharp::OneMoreTime.StageLayoutLibrary
+  phasePrefabs:
+  - {fileID: 6101243635101609743, guid: ed5d1e42cc6f5a64f9ab7bf938056409, type: 3}
+  - {fileID: 1819077345928221725, guid: 4d19a55f3c4be594295a5ecb2937ee89, type: 3}
+  - {fileID: 1017467309320737964, guid: 49417f0c5f9dbc840b1ba9120b8f9b84, type: 3}
+  - {fileID: 6890061904660387426, guid: 5c76443f5817e914facd969c001aea90, type: 3}
+  - {fileID: 864033666457070233, guid: 22df402bc078c6344ad97d41b77b68f6, type: 3}
+  - {fileID: 6326952759961763661, guid: a0d74f13b94ea814ba15bf3d4c4e68bd, type: 3}

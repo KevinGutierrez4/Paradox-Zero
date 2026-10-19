@@ -9,7 +9,6 @@ namespace OneMoreTime.Editor
 {
     public static class DemoVisualValidation
     {
-        [MenuItem("Tools/One More Time/4. Exportar poses de animacion")]
         public static void RenderPoses()
         {
             string scene = EditorBuildSettings.scenes[0].path;
@@ -36,9 +35,9 @@ namespace OneMoreTime.Editor
                     camera.orthographicSize = kind == "Boss" ? 2.1f : 1.55f;
                     for (int i = 0; i < poses.Length; i++)
                     {
-                        rig.EvaluatePose(i == 2 ? Mathf.PI / 2 : 0, i == 1 || i == 2 ? 7.5f : 0,
-                            i != 3 && i != 4, i == 5 ? 1 : 0, i == 3 ? 12 : i == 4 ? -10 : 0,
-                            i == 6 ? 0.28f : i == 7 ? 0.43f : i == 8 ? 0.68f : -1, i == 9 ? 0.6f : -1);
+                        SampleClip(actor, root, kind, i == 1 || i == 2 ? "Walk" : i == 3 ? "Jump" : i == 4 ? "Fall"
+                            : i == 5 ? "Crouch" : i >= 6 && i <= 8 ? "Attack" : i == 9 ? "Die" : "Idle",
+                            i == 2 ? 0.25f : i == 6 ? 0.28f : i == 7 ? 0.43f : i == 8 ? 0.68f : i == 9 ? 0.98f : 0);
                         camera.Render(); camera.Render();
                         var previous = RenderTexture.active; RenderTexture.active = target;
                         var texture = new Texture2D(512, 512, TextureFormat.RGB24, false);
@@ -52,7 +51,7 @@ namespace OneMoreTime.Editor
                         visual.localScale = new Vector3(direction, 1, 1);
                         foreach (bool attacking in new[] { false, true })
                         {
-                            rig.EvaluatePose(0, attacking ? 0 : 7.5f, true, 0, 0, attacking ? 0.43f : -1);
+                            SampleClip(actor, root, kind, attacking ? "Attack" : "Walk", attacking ? 0.43f : 0);
                             camera.Render(); camera.Render();
                             var previous = RenderTexture.active; RenderTexture.active = target;
                             var image = new Texture2D(512, 512, TextureFormat.RGB24, false);
@@ -68,7 +67,7 @@ namespace OneMoreTime.Editor
                         for (int frame = 0; frame < 48; frame++)
                         {
                             bool walking = frame < 24; float t = walking ? frame / 24f : (frame - 24) / 23f;
-                            rig.EvaluatePose(t * Mathf.PI * 2, walking ? 7.5f : 0, true, 0, 0, walking ? -1 : t);
+                            SampleClip(actor, root, kind, walking ? "Walk" : "Attack", t);
                             camera.Render(); camera.Render();
                             var previous = RenderTexture.active; RenderTexture.active = target;
                             var image = new Texture2D(512, 512, TextureFormat.RGB24, false);
@@ -82,6 +81,13 @@ namespace OneMoreTime.Editor
             }
             finally { camera.targetTexture = null; target.Release(); UnityEngine.Object.DestroyImmediate(target); EditorSceneManager.ClosePreviewScene(previewScene); }
             Debug.Log("OMT_POSES_EXPORTED");
+        }
+
+        private static void SampleClip(GameObject actor, string root, string kind, string state, float normalized)
+        {
+            var clip = AssetDatabase.LoadAssetAtPath<AnimationClip>(root + "/Animations/" + kind + "/" + state + ".anim")
+                ?? AssetDatabase.LoadAssetAtPath<AnimationClip>(root + "/Animations/" + kind + "/Idle.anim");
+            if (clip != null) clip.SampleAnimation(actor, clip.length * normalized);
         }
     }
 }

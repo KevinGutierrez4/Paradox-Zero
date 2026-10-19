@@ -7,6 +7,8 @@ namespace OneMoreTime
     public sealed class SurfaceProfile
     {
         public Sprite image;
+        [Min(0), Tooltip("Metros de imagen y suelo adicionales a cada lado de esta fase.")]
+        public float horizontalMargin = 3f;
         [Tooltip("Coordenadas normalizadas de la imagen: (0,0) abajo izquierda. Ignora las espinas decorativas.")]
         public Vector2[] points;
     }
@@ -27,10 +29,11 @@ namespace OneMoreTime
             if (profile.image == null || profile.points == null || profile.points.Length < 2) throw new InvalidOperationException("Perfil de superficie incompleto.");
             previewPhase = phase;
             var renderer = GetComponent<SpriteRenderer>(); renderer.sprite = profile.image;
-            float width = end - start + 6f;
+            float margin = Mathf.Max(0, profile.horizontalMargin);
+            float width = end - start + margin * 2;
             float height = width * profile.image.rect.height / profile.image.rect.width;
             // Image and edge share one transform. Camera movement cannot offset their alignment.
-            transform.position = new Vector3(start - 3 + width * 0.5f, height * 0.23f, 0);
+            transform.position = new Vector3(start - margin + width * 0.5f, height * 0.23f, 0);
             transform.localScale = Vector3.one * (width / profile.image.bounds.size.x);
             var local = new Vector2[profile.points.Length]; worldPoints = new Vector2[local.Length];
             MinimumY = float.PositiveInfinity; MaximumY = float.NegativeInfinity;

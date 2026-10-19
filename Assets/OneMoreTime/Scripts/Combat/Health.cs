@@ -27,6 +27,10 @@ namespace OneMoreTime
         public Team LastDamageSource { get; private set; } = Team.Environment;
         public float DamageTakenMultiplier { get; set; } = 1f;
         public float GuardDamageMultiplier { get; set; } = 1f;
+        /// <summary>Scripted immunity (e.g. boss presentation). Never set by damage itself.</summary>
+        public bool Invulnerable { get; set; }
+        /// <summary>Invulnerability frames of the player's dodge (separate from scripted immunity).</summary>
+        public bool DodgeInvulnerable { get; set; }
         public bool IsDead => Current <= 0f;
         public event Action<Health> Changed;
         public event Action<Health> Died;
@@ -44,6 +48,7 @@ namespace OneMoreTime
             LastDamageSource = Team.Environment;
             DamageTakenMultiplier = 1f;
             GuardDamageMultiplier = 1f;
+            Invulnerable = false; DodgeInvulnerable = false;
             Changed?.Invoke(this);
         }
 
@@ -64,12 +69,12 @@ namespace OneMoreTime
 
         public bool TakeDamage(DamageInfo hit)
         {
-            if (IsDead || hit.Source == team || hit.Amount <= 0 || float.IsNaN(hit.Amount)
+            if (IsDead || Invulnerable || DodgeInvulnerable || hit.Source == team || hit.Amount <= 0 || float.IsNaN(hit.Amount)
                 || float.IsInfinity(hit.Amount) || Time.time < invulnerableUntil) return false;
             invulnerableUntil = Time.time + invulnerabilitySeconds;
             LastDamageSource = hit.Source;
             float guard = hit.Source == Team.Enemy ? Mathf.Clamp(GuardDamageMultiplier, 0.1f, 1f) : 1;
-            Current = Mathf.Max(0, Current - hit.Amount * Mathf.Clamp(DamageTakenMultiplier, 0.35f, 1f) * guard);
+            Current = Mathf.Max(0, Current - hit.Amount * Mathf.Clamp(DamageTakenMultiplier, 0.35f, 1.5f) * guard);
             HitReceived?.Invoke(hit);
             Damaged?.Invoke(this);
             Changed?.Invoke(this);

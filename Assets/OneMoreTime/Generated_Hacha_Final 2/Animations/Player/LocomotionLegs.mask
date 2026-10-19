@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LocomotionLegs
+  m_Mask: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 0
+  - m_Path: Visual
+    m_Weight: 0
+  - m_Path: Visual/Rig
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/BackLeg
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/BackLeg/JointOverlap
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/BackLeg/Sprite
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/BackLeg/Lower
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/BackLeg/Lower/JointOverlap
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/BackLeg/Lower/Sprite
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/BackLeg/Lower/Foot
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/BackLeg/Lower/Foot/JointOverlap
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/BackLeg/Lower/Foot/Sprite
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/FrontLeg
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/FrontLeg/JointOverlap
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/FrontLeg/Sprite
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/FrontLeg/Lower
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/FrontLeg/Lower/JointOverlap
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/FrontLeg/Lower/Sprite
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/FrontLeg/Lower/Foot
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/FrontLeg/Lower/Foot/JointOverlap
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/FrontLeg/Lower/Foot/Sprite
+    m_Weight: 1
+  - m_Path: Visual/Rig/Pelvis/Torso
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/Body
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/Head
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/Head/Sprite
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/Head/FacingPoint
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/FrontArm
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/FrontArm/JointOverlap
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/FrontArm/Sprite
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/FrontArm/Lower
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/FrontArm/Lower/JointOverlap
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/FrontArm/Lower/Sprite
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/FrontArm/Lower/Hand
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/FrontArm/Lower/Hand/JointOverlap
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/FrontArm/Lower/Hand/Sprite
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/FrontArm/Lower/Hand/AxeSocket
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/FrontArm/Lower/Hand/AxeSocket/Sprite
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/FrontArm/Lower/Hand/AxeSocket/Grip
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/FrontArm/Lower/Hand/AxeSocket/BladeTip
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/BackArm
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/BackArm/JointOverlap
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/BackArm/Sprite
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/BackArm/Lower
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/BackArm/Lower/JointOverlap
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/BackArm/Lower/Sprite
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/BackArm/Lower/Hand
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/BackArm/Lower/Hand/JointOverlap
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/BackArm/Lower/Hand/Sprite
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/BackArm/Lower/Hand/ShieldSocket
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/BackArm/Lower/Hand/ShieldSocket/Sprite
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Torso/BackArm/Lower/Hand/ShieldSocket/Grip
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Cloth
+    m_Weight: 0
+  - m_Path: Visual/Rig/Pelvis/Cloth/Sprite
+    m_Weight: 0
+  - m_Path: Visual/Rig/AxeSwipe
+    m_Weight: 0
+  - m_Path: GroundCheck
+    m_Weight: 0

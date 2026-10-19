@@ -25,8 +25,10 @@ namespace OneMoreTime
         {
             if (health == null) health = GetComponent<Health>();
             bool next = held && isActiveAndEnabled && game != null && game.IsPlaying && !health.IsDead;
+            bool changed = next != IsBlocking;
             if (next && !IsBlocking) melee.Cancel();
             IsBlocking = next; health.GuardDamageMultiplier = next ? damageMultiplier : 1;
+            if (changed) GetComponent<AnimationDriver>()?.SetBlocking(next);
         }
         private void StateChanged(RunState state) { if (state != RunState.Playing) SetBlocking(false); }
         private void OnDisable() { SetBlocking(false); }

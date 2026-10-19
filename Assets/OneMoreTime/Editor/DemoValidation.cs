@@ -9,40 +9,37 @@ namespace OneMoreTime.Editor
 {
     public static class DemoValidation
     {
-        [MenuItem("Tools/One More Time/2. Validar reglas y escena")]
         public static void ValidateAll()
         {
             ValidateRules();
-            var game = UnityEngine.Object.FindFirstObjectByType<GameManager>();
+            var game = UnityEngine.Object.FindAnyObjectByType<GameManager>();
             Check(game != null, "No hay GameManager en la escena abierta.");
             Require(game, "config", "player", "spawner", "upgrades", "projectiles", "ui", "cameraFollow", "backgrounds", "phaseExitMarker");
             var config = (RunConfig)new SerializedObject(game).FindProperty("config").objectReferenceValue;
             Check(config.Validate(out string error), error);
-            var spawner = UnityEngine.Object.FindFirstObjectByType<EnemySpawner>();
+            var spawner = UnityEngine.Object.FindAnyObjectByType<EnemySpawner>();
             Check(spawner != null && spawner.IsConfigured, "Spawner incompleto: prefabs o GroundMask.");
-            var pool = UnityEngine.Object.FindFirstObjectByType<ProjectilePool>();
+            var pool = UnityEngine.Object.FindAnyObjectByType<ProjectilePool>();
             Check(pool != null && pool.IsConfigured, "Falta el prefab de proyectil.");
-            var ui = UnityEngine.Object.FindFirstObjectByType<UIManager>();
+            var ui = UnityEngine.Object.FindAnyObjectByType<UIManager>();
             Require(ui, "mainMenu", "optionsPanel", "hud", "pausePanel", "upgradePanel", "resultPanel",
                 "playButton", "optionsButton", "optionsBackButton", "quitButton", "resumeButton", "pauseMenuButton", "retryButton", "resultMenuButton",
                 "healthBar", "bossBar", "volumeSlider", "healthText", "phaseText", "statsText", "progressText", "scoreText", "bossText", "resultTitle", "resultDetails", "menuRecord");
             var cards = new SerializedObject(ui).FindProperty("cards");
             Check(cards.arraySize == 3, "La UI debe tener tres tarjetas.");
             for (int i = 0; i < cards.arraySize; i++) Require(cards.GetArrayElementAtIndex(i).objectReferenceValue, "title", "description");
-            var player = UnityEngine.Object.FindFirstObjectByType<PlayerController>();
+            var player = UnityEngine.Object.FindAnyObjectByType<PlayerController>();
             Check(player != null && player.GetComponent<Rigidbody2D>() != null, "Falta jugador 2D.");
             Require(player, "groundCheck");
             Check(player.GetComponent<MeleeWeapon>() != null && player.GetComponent<ProjectileWeapon>() == null, "El jugador debe usar exclusivamente el hacha cuerpo a cuerpo.");
             Check(player.GetComponent<ArticulatedRig>() != null, "Falta el rig articulado.");
             Check(player.GetComponent<Animator>().runtimeAnimatorController != null, "Falta el Animator Controller del jugador.");
-            Check(UnityEngine.Object.FindFirstObjectByType<EventSystem>()?.GetComponent<StandaloneInputModule>() != null, "Falta EventSystem con StandaloneInputModule.");
+            Check(UnityEngine.Object.FindAnyObjectByType<EventSystem>()?.GetComponent<StandaloneInputModule>() != null, "Falta EventSystem con StandaloneInputModule.");
 #if !ENABLE_LEGACY_INPUT_MANAGER
             throw new InvalidOperationException("Activa Input Manager (Old) o Both antes de jugar.");
 #endif
             Debug.Log("One More Time: reglas y referencias principales correctas. Completa también las pruebas de Play Mode del LEEME.");
         }
-
-        [MenuItem("Tools/One More Time/3. Probar solo reglas")]
         public static void ValidateRules()
         {
             var run = new RunProgression();
@@ -73,17 +70,19 @@ namespace OneMoreTime.Editor
                 }
             }
             var stats = new StatBlock();
-            var benefits = new HashSet<StatKind>();
+            var benefits = new HashSet<string>();
             foreach (var upgrade in UpgradeDeck.Catalog)
             {
-                Check(benefits.Add(upgrade.Stat), "Dos cartas repiten el mismo beneficio principal.");
+                Check(benefits.Add(upgrade.Stat + "/" + upgrade.TradeoffStat), "Dos cartas repiten la misma combinación de BUFF y DEBUFF.");
+                Check(upgrade.HasTradeoff && upgrade.TradeoffStat != upgrade.Stat, "Una carta no tiene DEBUFF real.");
+                Check(upgrade.Describe(stats).Contains("BUFF") && upgrade.Describe(stats).Contains("DEBUFF"), "La carta no muestra BUFF y DEBUFF.");
                 Check(upgrade.CanApply(stats), "Una carta no tiene efecto inicial.");
                 Check(upgrade.Describe(stats).Contains("→"), "La carta no muestra el resultado efectivo.");
             }
             var cappedStats = stats.Copy(); cappedStats.fireRate = 4;
             for (int seed = 0; seed < 256; seed++)
                 foreach (var upgrade in new UpgradeDeck(seed).DrawThree(cappedStats))
-                    Check(upgrade.Id != "rate", "Se ofreció cadencia sin efecto al alcanzar su límite.");
+                    Check(upgrade.Id != "hacha", "Se ofreció cadencia sin efecto al alcanzar su límite.");
             var copy = stats.Copy(); copy.Multiply(StatKind.Damage, 1.2f);
             Check(Math.Abs(stats.damage - 12f) < 0.001f && Math.Abs(copy.damage - 14.4f) < 0.001f, "La copia modificó las estadísticas base.");
             for (int i = 0; i < 100; i++) copy.Multiply(StatKind.FireRate, 1.4f);
